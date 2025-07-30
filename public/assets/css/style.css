@@ -1,0 +1,4920 @@
+@font-face {
+  font-family: "proxima-light";
+  src: url("../../fonts/proxima/Proxima-Nova-Alt-Light.otf");
+}
+
+@font-face {
+  font-family: "proxima-semiBold";
+  src: url("../../fonts/proxima/Proxima-Nova-Sbold.otf");
+}
+
+@font-face {
+  font-family: "proxima-extraBold";
+  src: url("../../fonts/proxima/Proxima-Nova-Extrabold.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "proxima";
+  src: url("../../fonts/proxima/Proxima-Nova-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "proxima";
+  src: url("../../fonts/proxima/Proxima-Nova-Thin.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "proxima-regular";
+  src: url("../../fonts/proxima/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: "biloxi";
+  src: url("../../fonts/Biloxi-Script.ttf");
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("../../fonts/lato/Lato-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato-regular";
+  src: url("../../fonts/lato/Lato-Regular.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("../../fonts/lato/Lato-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("../../fonts/lato/Lato-Thin.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("../../fonts/lato/Lato-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "proxima";
+  font-weight: initial;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+}
+code {
+  font-family: "proxima";
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: #a0cd4f;
+  color: #fff;
+}
+
+.nav-pills li a {
+  color: #000;
+}
+
+.footer {
+  font-family: "proxima";
+}
+
+.nav-margin {
+  margin-left: auto;
+}
+
+.nav-margin .active {
+  border-bottom: 3px solid #a0cd4f;
+}
+
+.nav-margin .nav-item .active {
+  font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+  font-size: 15px;
+}
+
+.ourCommitmentText .inverted-text-three {
+  position: absolute;
+  transform: rotate(90deg);
+  left: 8px;
+  top: 70px;
+  font-size: 10px;
+  color: #b6b6b6;
+}
+
+.ourCommitmentLogo {
+  position: absolute !important;
+  top: 358px !important;
+  left: 20.5px !important;
+}
+
+.W-guidance {
+  font-size: 52px;
+}
+.youCanTrust {
+  font-size: 52px;
+  text-transform: uppercase;
+  /* word-spacing: 10px; */
+  font-family: "proxima-extraBold";
+}
+
+.blogList::after {
+  display: inline-block;
+  content: "";
+  border-top: 2px solid #a0cd4f;
+  width: 13.5rem;
+  margin: 4px 1rem;
+  transform: translateY(0rem);
+}
+
+.main-image {
+  position: absolute;
+  left: 30%;
+  top: 92px;
+}
+.admin-title-limit {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 45px;
+}
+.blogContent h3 {
+  font-size: 18px;
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 40px;
+}
+.btn-blogEditPost {
+  background-color: #a0cd4f;
+  color: #fff;
+  border: 1px solid #a0cd4f;
+  /* margin-right: 78px; */
+  margin-top: 10px;
+}
+.btn-blogEditPost:hover {
+  background-color: #a0cd4f;
+  color: #fff;
+  border: 1px solid #a0cd4f;
+  margin-right: 78px;
+  margin-top: 10px;
+}
+
+.ml-5 div .btn-outline-secondary {
+  background-color: #a0cd4f;
+  color: #fff;
+  border: 1px solid #a0cd4f;
+}
+.ml-5 div .btn-outline-secondary:hover {
+  background-color: #a0cd4f;
+  color: #fff;
+  border: 1px solid #a0cd4f;
+}
+
+#maincommentscontainer {
+  margin-top: 100px;
+}
+
+.main-bg-image {
+  position: absolute;
+  left: 54%;
+  height: 400px;
+  top: 170px;
+}
+
+.whatIsGuidefi {
+  margin-top: 115px;
+}
+
+.footer-copyright {
+  font-weight: 500;
+}
+
+.news-letter {
+  background-color: #321c41;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  border-radius: 60px;
+}
+
+.list-unstyled li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-margin {
+  margin-top: 30px;
+}
+
+.main-intro {
+  background: #fafafa;
+  position: absolute;
+  top: 46px;
+  left: 15%;
+  padding: 38px;
+  width: 375px;
+}
+
+.mainIntroBorder {
+  height: 2px;
+  background: #a0cd4f;
+  width: 40px;
+  margin-top: 20px;
+}
+
+.main-intro .what {
+  font-size: 25px;
+}
+
+.intro-gudifie {
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 0px;
+  font-family: "lato";
+}
+
+.intro-gudifie-2 {
+  font-size: 13px;
+  margin-top: 20px;
+  font-family: "lato";
+  color: #8f9498;
+  line-height: 23px;
+}
+
+.arrow {
+  position: relative;
+  left: 50%;
+  width: 10%;
+  bottom: 700px;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.green-paragraph {
+  font-size: 13px;
+  color: #a0cd4f;
+}
+
+.text-green {
+  color: #a0cd4f;
+}
+
+.btn-join {
+  background-color: #a0cd4f;
+  border: #a0cd4f;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.btn-join:hover {
+  background-color: #a0cd4f;
+  border: #a0cd4f;
+  color: #fff;
+  border-radius: 20px;
+}
+.btn-advisor {
+  background-color: #a0cd4f;
+  border: #a0cd4f;
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 25px;
+  font-size: 12px;
+}
+.btn-advisor:hover {
+  background-color: #a0cd4f;
+  border: #a0cd4f;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.btn-sign-up {
+  background-color: #a0cd4f;
+  border: #a0cd4f;
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 59px;
+  font-size: 14px;
+}
+.btn-sign-up:hover {
+  background-color: #a0cd4f;
+  border: #a0cd4f;
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 59px;
+  font-size: 14px;
+}
+
+.modal-body .join div input {
+  border: 2px solid #ededed;
+  color: #999999;
+}
+
+.modal-body .join div select {
+  border: 2px solid #ededed;
+  color: #999999;
+}
+
+.inverted-text-two {
+  position: absolute;
+  transform: rotate(90deg);
+  left: 14px;
+  top: 96px;
+  font-size: 10px;
+  color: #b6b6b6;
+}
+
+.landingPageHeading{
+  font-size: 38px;
+  letter-spacing: 0.76px;
+}
+
+.faqCircleBig .circleTwo{
+    width: 900px;
+    height: 900px;
+    transform: rotate(241deg);
+    position: absolute;
+    z-index: -1;
+    bottom: 0px;
+    left: 1%;
+    border-radius: 50%;
+    border: 10px solid #f8fbf3;
+    border-bottom: 0;
+    background: #f8fbf3;
+}
+
+.commitment {
+  margin-right: 121px;
+  margin-top: 65px;
+  font-size: 26px;
+  letter-spacing: 0.52px;
+  line-height: 32px;
+  width: 75% !important;
+}
+.smallCircleOne {
+  position: relative;
+  background: #a0cd4f;
+  width: 61px;
+  border-radius: 50%;
+  z-index: -1;
+  height: 59px;
+  right: 33px;
+  top: 24px;
+}
+.smallCircleTwo {
+  position: relative;
+  background: #a0cd4f;
+  width: 61px;
+  border-radius: 50%;
+  z-index: -1;
+  height: 59px;
+  right: 37px;
+  top: 23px;
+}
+.smallCircleThree {
+  position: relative;
+  background: #a0cd4f;
+  width: 61px;
+  border-radius: 50%;
+  z-index: -1;
+  height: 59px;
+  right: 27px;
+  top: 23px;
+}
+.smallCircleFour {
+  position: relative;
+  background: #a0cd4f;
+  width: 61px;
+  border-radius: 50%;
+  z-index: -1;
+  height: 59px;
+  right: 28px;
+  top: 22px;
+}
+.inverted-text-two::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid #dbdbdb;
+  width: 15rem;
+  margin: -1px -7rem;
+  transform: rotate(0deg) translateY(-3px) translateX(117px);
+}
+.inverted-text-two::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid #dbdbdb;
+  width: 15rem;
+  margin: -1px -7rem;
+  transform: rotate(0deg) translateY(-3px) translateX(117px);
+}
+
+.circleTwo {
+  width: 1000px;
+  height: 1000px;
+  transform: rotate(241deg);
+  position: absolute;
+  z-index: -1;
+  bottom: -212px;
+  left: 1%;
+  border-radius: 50%;
+  border: 10px solid #f8fbf3;
+  border-bottom: 0;
+  background: #f8fbf3;
+}
+
+.btn-download {
+  background-color: #a0cd4f;
+  border: #a0cd4f;
+  color: #fff;
+  border-radius: 40px;
+  width: 258px;
+  height: 50px;
+  margin-top: 10px;
+}
+.btn-download:hover {
+  background-color: #a0cd4f;
+  border: #a0cd4f;
+  color: #fff;
+  border-radius: 40px;
+  width: 258px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.below-green {
+  /* font-size: 13px; */
+  color: #737373;
+  font-family: "lato";
+  line-height: 22px;
+}
+.horizontal-line::before {
+  display: inline-block;
+  content: "";
+  border-top: 0.1rem solid #4a2a5f;
+  width: 11rem;
+  transform: rotate(180deg) translateY(5px) translateX(13px);
+  margin-left: -190px;
+}
+
+.dif-bg {
+  background: url("../images/Group-9215.png");
+  background-repeat: round;
+  height: 438px;
+  padding-top: 101px !important;
+}
+
+.main-image-1 {
+  position: relative;
+  bottom: 34px;
+  /* top: -36px; */
+  left: 7%;
+}
+
+.footer-logo {
+  color: #dbdbdb;
+}
+
+.font-44 {
+  font-size: 44px;
+}
+
+.whatIsGuidefii {
+  background-image: url(../images/Mask-Group.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  margin-top: 133px;
+  padding-bottom: 220px;
+  height: 700px;
+  width: 80%;
+  margin: 15px auto;
+}
+.whatIsGuidefii div .fourPeople {
+  position: relative;
+  right: 12%;
+  padding-top: 40px;
+  z-index: -1;
+}
+
+.whatIsGuidefii .card {
+  padding: 10px 25px;
+  top: 25%;
+  background-color: #fafafa;
+  height: fit-content;
+  max-width: 43%;
+}
+
+/* .whatIsGuidefii .card .card-body {
+  padding: 21px 35px;
+} */
+
+.financialWelness {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "lato-regular";
+}
+
+.card-title {
+  font-size: 32px;
+  letter-spacing: 0.76px;
+  line-height: 46px;
+  font-family: "proxima-semiBold";
+  padding-top: 13px;
+}
+
+.whatIsGuidefii .card .card-body .card-text {
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 17px;
+  font-family: "lato-regular";
+  color: #495057;
+}
+
+.main-bg-image-1 {
+  position: relative;
+  left: 50%;
+  height: 515px;
+  /* top: -30px; */
+  bottom: 30px;
+}
+
+.gdi-app {
+  margin-top: 180px;
+}
+
+.main-intro-1 {
+  background: #fafafa;
+  position: relative;
+  width: 30%;
+  padding: 25px;
+  bottom: 490px;
+  left: 16%;
+}
+
+.sign-in {
+  color: white;
+  padding-top: 20px;
+}
+
+.sign-in-positon {
+  position: absolute;
+  left: 20%;
+}
+
+.signin-input {
+  border-radius: 20px;
+  margin-top: 14px;
+}
+
+.app-margin {
+  margin-left: 47%;
+  margin-top: 105px;
+}
+
+.text-gray {
+  background-color: #f5f5f5;
+}
+
+.main-image-text {
+  position: absolute;
+  bottom: 54px;
+  left: 9%;
+}
+.main-image-text button {
+  margin-top: 79px;
+}
+.W-guidance-paragraph {
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  line-height: 29px;
+}
+
+.top-image {
+  position: absolute;
+  right: 65%;
+}
+
+#navbarText .nav-margin li {
+  padding-top: 15px;
+}
+
+#navbarText .nav-margin li a {
+  padding-bottom: 13px;
+}
+.main-intro-height {
+  height: 660px;
+}
+.join-height {
+  height: 500px;
+}
+
+.charlene {
+  font-family: "biloxi" !important;
+  color: #a0cd4f;
+  font-size: 86px;
+  line-height: 10px;
+  margin-top: 153px !important;
+}
+
+.charlene-picture {
+  margin-top: 75px;
+}
+
+.text-gray-actual {
+  color: #5a5a5a;
+  font-family: "lato";
+  line-height: 30px;
+}
+
+.commitmentTwo {
+  float: right;
+  width: 71%;
+  margin-right: 144px;
+  margin-top: 17px;
+}
+
+.circle {
+  width: 1000px;
+  height: 1000px;
+  transform: rotate(241deg);
+  position: absolute;
+  z-index: -1;
+  bottom: 542px;
+  left: 9%;
+  border-radius: 50%;
+  border: 10px solid #f8fbf3;
+  border-bottom: 0;
+  background: #f8fbf3;
+}
+
+.font-10 {
+  font-size: 10px;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-42 {
+  font-size: 42px;
+}
+
+.inverted-text {
+  position: absolute;
+  transform: rotate(90deg);
+  left: 96px;
+  top: 130px;
+  font-size: 10px;
+  color: #b6b6b6;
+}
+
+.inverted-text::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid #dbdbdb;
+  width: 15rem;
+  margin: -1px -7rem;
+  transform: rotate(0deg) translateY(-3px) translateX(117px);
+}
+
+.inverted-logos {
+  position: absolute;
+  top: 445px;
+  left: 120px;
+}
+
+.about-us-p-width {
+  line-height: 34px;
+  font-size: 23px;
+  letter-spacing: 1.15px;
+  font-family: "lato";
+}
+
+.about-us-p-width-1 {
+  line-height: 34px;
+  font-size: 18px;
+  font-family: "lato";
+}
+
+.font-23 {
+  font-size: 23px;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-black:hover {
+  color: #000;
+}
+.faq_arrow_position_one {
+  margin-top: -9px;
+}
+
+.accordion-inner {
+  color: #737373;
+  font-size: 18px;
+  font-family: "lato";
+  line-height: 24px;
+}
+
+.accordion-group {
+  border-bottom: 1px solid #dddfda !important;
+}
+
+.accordion-toggle i {
+  float: right;
+}
+
+.blogSearchBox {
+  width: 130%;
+}
+
+.btnBlogSearch {
+  background-color: #fff;
+  color: #888888;
+  position: relative;
+  bottom: 50px;
+  left: 40%;
+}
+.btnSearchBlog {
+  background-color: #a0cd4f;
+  color: #fff;
+  float: left;
+}
+.btnBlogSearch:hover {
+  background-color: #fff;
+  color: #888888;
+}
+.btnSearchBlog:hover {
+  background-color: #a0cd4f;
+  color: #fff;
+  float: left;
+}
+
+.blogContent h3 a {
+  color: #000;
+  font-weight: 600;
+}
+
+.blogContent h5 {
+  color: #000;
+}
+
+.blogContent p {
+  color: #8c9083;
+  font-size: 14px;
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navbar-laravel {
+  background-color: #ddf2f8 !important;
+  box-shadow: none;
+}
+
+.blogAdmin {
+  background-color: #ddf2f8 !important;
+}
+
+.btn-default {
+  border: 1px solid #5a5a5a;
+  font-size: 10px;
+}
+
+.sideNavBackGround {
+  background: url(../img/sidebar_bg.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% bottom;
+  border-radius: 10px;
+  position: fixed;
+}
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 0rem;
+  margin-bottom: -1px;
+  background-color: transparent;
+  border: none;
+}
+
+.list-group-item.active {
+  background: transparent;
+  color: #000;
+}
+
+.list-group a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #000;
+  width: 250px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.list-group-item-action {
+  padding-left: 20px;
+}
+
+.card {
+  border: none;
+}
+
+.fixed-scroll {
+  top: -90px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-color {
+  background-color: #ddf2f8;
+}
+.sidebar {
+  min-height: 100vh;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  background: #ddf2f8;
+  padding: 0;
+  width: 250px;
+  z-index: 11;
+  transition: width 0.25s ease, background 0.25s ease;
+  -webkit-transition: width 0.25s ease, background 0.25s ease;
+  -moz-transition: width 0.25s ease, background 0.25s ease;
+  -ms-transition: width 0.25s ease, background 0.25s ease;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+.sidebar.sidebar-info .sidebar-content-wrapper {
+  background: url(/assets/img/sidebar_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% bottom;
+}
+
+.sidebar .sidebar-content-wrapper {
+  background: linear-gradient(to bottom right, #389466, #42b883);
+  margin: 18px 0px 18px 20px;
+  border-radius: 8px;
+}
+.sidebar .nav:not(.sub-menu) {
+  margin-top: 0.5rem;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.sidebar .nav .nav-item {
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  transition-property: background;
+  -webkit-transition-property: background;
+}
+
+ul li,
+ol li,
+dl li {
+  line-height: 1.8;
+}
+
+.sidebar .nav:not(.sub-menu) > .nav-item > .nav-link {
+  margin: 0;
+}
+
+.sidebar .nav .nav-item .nav-link {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  white-space: nowrap;
+  padding: 0.75rem 2rem 0.75rem 2rem;
+  color: #ffffff;
+  -webkit-transition-duration: 0.45s;
+  -moz-transition-duration: 0.45s;
+  -o-transition-duration: 0.45s;
+  transition-duration: 0.45s;
+  transition-property: color;
+  -webkit-transition-property: color;
+}
+
+.sidebar .nav .nav-item .nav-link .menu-title {
+  color: inherit;
+  display: inline-block;
+  /* font-size: 0.7rem; */
+  line-height: 1;
+  color: #000;
+  font-size: 14px;
+  vertical-align: middle;
+  font-weight: 500;
+}
+
+.sidebar .nav .nav-item .collapse {
+  z-index: 999;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.sidebar .nav {
+  overflow: hidden;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.sidebar .nav:not(.sub-menu) > .nav-item {
+  margin-top: 0.625rem;
+}
+
+.sidebar .nav.sub-menu {
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style: none;
+  padding: 0.25rem 0 0 3.5rem;
+}
+
+.sidebar .nav.sub-menu .nav-item {
+  padding: 0;
+}
+
+.flex-column,
+.nav-tabs.nav-tabs-vertical,
+.nav-tabs.nav-tabs-vertical-custom,
+.nav-pills.nav-pills-vertical,
+.email-wrapper .mail-sidebar .menu-bar .profile-list-item a .user {
+  flex-direction: column !important;
+}
+
+.sidebar .nav.sub-menu .nav-item .nav-link {
+  color: #ffffff;
+  padding: 1rem 0rem;
+  position: relative;
+  font-size: 0.7rem;
+  line-height: 1;
+  height: auto;
+  border-top: 0;
+}
+
+.menu-arrow {
+  font-size: 10px;
+  color: #000;
+  position: absolute;
+  left: 170px;
+}
+
+.menu-arrow-1 {
+  font-size: 10px;
+  color: #000;
+  position: absolute;
+  left: 170px;
+}
+
+.menu-arrow-3 {
+  font-size: 10px;
+  color: #000;
+  position: absolute;
+  left: 170px;
+}
+
+.menu-arrow-4 {
+  font-size: 10px;
+  color: #000;
+  position: absolute;
+  left: 170px;
+}
+
+.menu-arrow-5 {
+  font-size: 10px;
+  color: #000;
+  position: absolute;
+  left: 170px;
+}
+
+.sub-menu .nav-item .nav-link .menu-title {
+  font-size: 10px !important;
+}
+
+.sub-menu .nav-item .list-group-item {
+  font-size: 11px !important;
+  color: #000;
+}
+
+.sub-menu .nav-item .list-group-item:hover {
+  font-size: 11px !important;
+  color: #000;
+  background: transparent;
+}
+
+.stay-connected {
+  margin-top: 45px;
+  font-size: 26px;
+}
+
+.blogImagewidth {
+  width: 100%;
+}
+
+.blog-post article {
+  margin-bottom: 30px;
+  box-shadow: -5px 0px 20px 0px rgba(51, 51, 102, 0.08);
+  border-radius: 10px;
+}
+.entry-content-wrapper {
+  padding: 24px 30px 30px 30px;
+  background: #f8f9fa;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.entry-meta-top {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.entry-meta-data {
+  color: #8c98a2;
+  font-size: 13px;
+}
+.entry-meta-data::after {
+  content: "-";
+  padding-left: 5px;
+}
+.entry-meta-category a {
+  text-decoration: none;
+  color: #8c98a2;
+  font-size: 13px;
+}
+.entry-title {
+  font-size: 20px;
+  font-weight: 600;
+  word-wrap: break-word;
+  line-height: 1.45;
+  margin-top: 0;
+  margin-bottom: 12px;
+  height: 14vh;
+  overflow: hidden;
+}
+.entry-title a {
+  text-decoration: none;
+  color: #000;
+}
+.entry-excerpt {
+  height: 10vh;
+  overflow: hidden;
+}
+.entry-excerpt p {
+  margin: 0px 0px 20.8px;
+  color: #637282;
+}
+/* .blog_image a img{
+  width: 297px;
+  height: 169px;
+} */
+.widget {
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+.blog-search-box input {
+  border: solid 1px rgba(199, 199, 199, 0.2);
+  box-shadow: 0px 3px 10px 0px rgba(30, 32, 90, 0.08);
+  background-color: #fff;
+  border-radius: 45px;
+  height: 60px;
+}
+.blog-search-box input::placeholder {
+  padding-left: 10px;
+}
+.blog-search-box span {
+  position: relative;
+  left: 90%;
+  bottom: 40px;
+}
+.blog-search-box span .fa-search {
+  color: #8f8888;
+}
+.recent-posts {
+  border: solid 1px rgba(199, 199, 199, 0.2);
+  box-shadow: 0px 3px 10px 0px rgba(30, 32, 90, 0.08);
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 30px;
+}
+.widget-title {
+  font-variant-ligatures: common-ligatures;
+  font-weight: 600;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.recent-posts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.recent-posts ul li {
+  padding: 10px 0px;
+  border-bottom: 1px solid #dfddd9;
+}
+
+.recent-posts ul li a {
+  text-decoration: none;
+  color: #332064;
+  font-size: 18px;
+  word-break: break-all;
+}
+
+.category-list {
+  border: solid 1px rgba(199, 199, 199, 0.2);
+  box-shadow: 0px 3px 10px 0px rgba(30, 32, 90, 0.08);
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.carousel-caption button{
+  padding-top: 80px;
+}
+
+.category-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.category-list ul li {
+  padding: 10px 0px;
+  border-bottom: 1px solid #dfddd9;
+}
+
+.category-list ul li a {
+  text-decoration: none;
+  color: #332064;
+  font-size: 18px;
+}
+.post_text {
+  padding: 84px 100px 80px 100px;
+  background: #fff;
+  position: relative;
+  margin: -110px 0px 0 0px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px 0px rgba(30, 32, 90, 0.08);
+}
+.post_meta_top {
+  margin-bottom: 3px;
+  color: #8c98a2;
+  font-size: 14px;
+  text-decoration: none;
+}
+.post_meta_top span a {
+  color: #8c98a2;
+  font-size: 14px;
+  text-decoration: none;
+}
+.post_meta_top span:not(:last-child):after {
+  content: "-";
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.post_title {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  line-height: 1.45;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  color: #1e205a;
+  font-weight: 800;
+}
+.post_content p {
+  margin-bottom: 0.85rem;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #000;
+  font-family: 'lato-regular';
+}
+.post_content ul li{
+  font-family: 'lato-regular';
+}
+.blog-post-comments label{
+font-family: 'lato-regular';
+}
+blockquote,
+.blockquote {
+  margin: 23px 0;
+  font-style: italic;
+  font-size: 24px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-left: 0;
+  line-height: 1.556;
+  color: #1e205a;
+}
+.separator-line {
+  margin: 30px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.nav-subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #637282;
+}
+.nav-title a {
+  color: #1e205a;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+}
+.comments-area .comment-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.comments-area .comment-list > li.comment {
+  padding: 1.5rem 0 1.3rem;
+  margin-bottom: 0.7rem;
+  position: relative;
+  list-style: none;
+  border-bottom: solid 1px #f4f4f4;
+}
+.comments-area .comment-list li article {
+  margin: 0;
+}
+.comments-area .comment-list li article .comment-meta {
+  margin-bottom: 10px;
+}
+.comments-area .comment-list li article .comment-content {
+  margin-left: 0.888rem;
+}
+cite span {
+  font-size: 18px;
+  color: #1e205a;
+  font-family: "proxima" !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+cite span:hover {
+  font-size: 18px;
+  color: #5d5d5d;
+  font-family: "proxima" !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+.comment-meta a {
+  color: #1e205a;
+  text-decoration: none;
+  padding-left: 5px;
+}
+.comment-meta a:hover {
+  color: #5d5d5d;
+  text-decoration: none;
+}
+.comments-area .comment-list li .avatar {
+  width: 75px;
+  height: 75px;
+  float: left;
+  margin-right: 2.1rem;
+}
+.comments-area .comment-list p {
+  color: #5d5d5d;
+  font-size: 18px;
+}
+.comment-reply-title {
+  color: #1e205a;
+  font-weight: 600;
+}
+.btn-shadow {
+  background-color: #1e205a;
+  color: #fff;
+}
+.btn-shadow:hover {
+  background-color: #1e205a;
+  color: #fff;
+}
+.faqCircle {
+  right: 415px;
+  width: 500px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  background: #f8fbf3;
+  height: 500px;
+  top: 554px;
+}
+.inverted-logos-1 {
+  position: absolute;
+  top: 375px;
+  left: 24px;
+}
+.faq_picture {
+  width: 81% !important;
+  margin-top: 78.5px;
+}
+.advisor {
+  box-shadow: none !important;
+}
+.howGudefiworks p {
+  width: 380px;
+  font-size: 18px;
+  line-height: 34px;
+  margin-left: 15px;
+}
+.howGudefiworks h5 {
+  margin-left: 15px;
+  font-family: "lato";
+}
+.sign-up-banner {
+  letter-spacing: 0.52px;
+  line-height: 34px;
+  font-size: 26px;
+}
+.accordion-toggle {
+  font-weight: 700;
+  font-family: "lato";
+  letter-spacing: 1.15px;
+  line-height: 34px;
+}
+
+.overflow-hidden div .fadirepo {
+  letter-spacing: 5px;
+  margin-left: 118px !important;
+  margin-top: 18px;
+}
+
+.circleBottom {
+  width: 814px;
+  border-radius: 50%;
+  height: 1000px;
+  background: #f8fbf3;
+  position: absolute;
+  z-index: -1;
+  top: 570px;
+  right: 250px;
+}
+.largeScreenMargins div p {
+  font-family: "lato";
+}
+
+.contact-us p {
+  font-family: "lato";
+}
+.accordion-inner p {
+  font-size: 18px !important;
+}
+.inverted-logos-2 {
+  position: absolute;
+  top: 358px;
+  left: 172.5px;
+}
+.inverted-text-three {
+  position: absolute;
+  transform: rotate(90deg);
+  left: 164px;
+  top: 70px;
+  font-size: 10px;
+  color: #b6b6b6;
+}
+.inverted-text-three::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid #dbdbdb;
+  width: 15rem;
+  margin: -1px -7rem;
+  transform: rotate(0deg) translateY(-3px) translateX(117px);
+}
+.wePlan {
+  font-size: 18px;
+  line-height: 34px;
+}
+.sign-up-banner-1 {
+  font-size: 26px;
+  line-height: 39px !important;
+  margin-top: 18px;
+  width: 810px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "lato";
+  line-height: 39px;
+  font-weight: 400;
+}
+.ourCommitment-p-width {
+  line-height: 34px;
+  font-size: 18px !important;
+  letter-spacing: 1.15px;
+  width: 85%;
+  font-family: "lato";
+}
+.commitment-picture {
+  height: 572px;
+  width: 557px;
+}
+.carousel-caption h2 {
+  font-size: 52px;
+  line-height: 58px;
+  color: #000;
+  font-family: "proxima-light";
+}
+.carousel-caption h1 {
+  font-size: 52px;
+  letter-spacing: 1.04px;
+  line-height: 63px;
+  color: #000;
+  font-family: "proxima-extraBold";
+}
+.carousel-caption p {
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  line-height: 29px;
+  padding-top: 15px;
+  color: #000;
+  font-family: "proxima-regular";
+}
+.headerPicture {
+  background: url("../images/Group-1550.jpg");
+  min-height: 950px;
+  width: 100%;
+}
+.carousel-caption {
+  position: absolute;
+  right: 25%;
+  bottom: 0px;
+  top: 157px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 118px;
+  left: auto;
+  text-align: center;
+}
+.first-arrow{
+  margin-top: 125px;
+}
+#carouselExampleIndicators{
+  background-color: #E1E3E2;
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 349px) {
+  .gdi-app {
+    margin-top: 0px;
+  }
+  .commitment-picture {
+    width: 100% !important;
+    padding-right: 0px !important;
+    margin-top: 0px !important;
+  }
+  .charlene-picture .float-right {
+    float: none !important;
+  }
+  .commitment {
+    margin-right: 0px;
+    margin-top: 65px;
+    width: 100% !important;
+  }
+  .commitmentTwo {
+    float: right;
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 45px;
+  }
+  .overflow-hidden div h1 {
+    font-size: 35px;
+  }
+  .smallCircleFour {
+    position: absolute;
+    background: #a0cd4f;
+    width: 41px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 39px;
+    bottom: 52px;
+    right: 236px;
+  }
+  .smallCircleTwo {
+    position: absolute;
+    background: #a0cd4f;
+    width: 41px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 39px;
+    bottom: 112px;
+    right: 237px;
+  }
+  .smallCircleThree {
+    position: absolute;
+    background: #a0cd4f;
+    width: 41px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 39px;
+    bottom: 69px;
+    right: 233px;
+  }
+  .smallCircleOne {
+    position: absolute;
+    background: #a0cd4f;
+    width: 41px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 39px;
+    bottom: 69px;
+    right: 237px;
+  }
+
+  .W-guidance {
+    font-size: 10px;
+  }
+  .main-image-text {
+    position: absolute;
+    top: 20px;
+    left: 9%;
+  }
+  .trust {
+    font-size: 9px;
+  }
+  .W-guidance-paragraph {
+    font-size: 7px;
+    width: 60%;
+    line-height: 29px;
+    margin-top: 0px !important;
+    letter-spacing: 0.9px;
+  }
+  .advisor {
+    margin-top: -20px !important;
+    font-size: 6px;
+    padding: 6px 10px;
+  }
+  .join {
+    margin-top: -8px !important;
+    font-size: 8px;
+  }
+  .what {
+    font-size: 8px;
+  }
+  .main-intro {
+    background: #fafafa;
+    position: absolute;
+    padding: 15px;
+    top: 50px;
+    left: 5%;
+  }
+
+  .intro-gudifie {
+    font-size: 7px;
+    font-weight: 500;
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+  }
+  .intro-gudifie-2 {
+    font-size: 6px;
+    color: #495057;
+  }
+  .intro-gudifie-3 {
+    font-size: 7px;
+    font-weight: 500;
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+  }
+  .intro-gudifie-4 {
+    font-size: 6px;
+    color: #495057;
+  }
+  .main-bg-image {
+    position: absolute;
+    left: 65%;
+    top: -54px;
+  }
+  .main-image {
+    position: absolute;
+    left: 42%;
+    top: 92px;
+  }
+  .main-intro-height {
+    height: 300px;
+  }
+  .no-padding {
+    padding-left: 0px !important;
+  }
+  .process-padding {
+    padding-left: 43px;
+  }
+  .horizontal-line::before {
+    display: none;
+  }
+  .main-intro-1 {
+    background: #fafafa;
+    position: relative;
+    width: 54%;
+    padding: 25px;
+    bottom: 490px;
+    left: 4%;
+  }
+
+  .main-image-1 {
+    position: relative;
+    bottom: 140px;
+    left: 18%;
+  }
+  .intro-gudifie-3 {
+    font-size: 6px;
+    font-weight: 500;
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+  }
+  .intro-gudifie-4 {
+    font-size: 5px;
+    color: #495057;
+  }
+  .intro-heading {
+    font-size: 8px;
+  }
+  .btn-join {
+    background-color: #a0cd4f;
+    border: #a0cd4f;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 6px;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+  }
+  .main-bg-image-1 {
+    position: relative;
+    left: 62%;
+    bottom: 140px;
+  }
+  .join-height {
+    height: 280px;
+  }
+  .app-margin {
+    margin-left: 10%;
+    margin-top: 34px;
+  }
+  .sign-in-positon {
+    position: absolute;
+    left: 4%;
+  }
+  .news-letter {
+    background-color: #321c41;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 13px;
+    border-radius: 60px;
+  }
+  .small-margin {
+    margin-top: 20px;
+  }
+  .hidden {
+    display: none;
+  }
+  .charlene-picture {
+    text-align: center;
+  }
+  .charlene-picture .float-right {
+    float: none !important;
+  }
+  .font-44 {
+    font-size: 20px;
+  }
+  .sign-up-banner {
+    font-size: 14px;
+  }
+  .about-us-p-width {
+    width: 100%;
+  }
+
+  .follow-us {
+    float: none !important;
+    text-align: center;
+  }
+  .follow-us .float-left {
+    float: none !important;
+  }
+  .follow-us .float-right {
+    float: none !important;
+  }
+  .contact-us {
+    text-align: center !important;
+  }
+  .contact-us .float-left {
+    float: none !important;
+  }
+  .header .text-align {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .commitmentTwo::after {
+    display: inline-block;
+    content: "";
+    border-top: 0.2rem solid #a0cd4f;
+    width: 1rem;
+    margin: 0px -227px !important;
+    transform: translateY(-3.5rem) !important;
+  }
+
+  .smallCircleFour {
+    position: absolute;
+    background: #a0cd4f;
+    width: 40px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 40px;
+    bottom: 52px;
+    right: 339px !important;
+  }
+
+  .smallCircleTwo {
+    position: absolute;
+    background: #a0cd4f;
+    width: 40px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 40px;
+    bottom: 85px !important;
+    right: 339px !important;
+  }
+  .smallCircleThree {
+    position: absolute;
+    background: #a0cd4f;
+    width: 40px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 40px;
+    bottom: 52px;
+    right: 339px !important;
+  }
+  .smallCircleOne {
+    position: absolute;
+    background: #a0cd4f;
+    width: 40px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 500px) {
+  .gdi-app {
+    margin-top: 0px;
+  }
+  .commitment-picture {
+    height: auto;
+  }
+  .whatIsGuidefii .card .card-body .card-text {
+    font-size: 8px;
+    line-height: 10px;
+    margin-top: -13px;
+    font-family: "lato-regular";
+    color: #495057;
+}
+.whatIsGuidefii .card .card-body img {
+  margin-top: -30px;
+    width: 20px;
+}
+.financialWelness {
+  font-size: 8px;
+  line-height: 10px;
+  font-family: "lato-regular";
+}
+.card-title {
+  font-size: 11px;
+  letter-spacing: 0.76px;
+  line-height: 0px;
+  font-family: "proxima-semiBold";
+  padding-top: 13px;
+}
+.whatIsGuidefii {
+  background-image: url(../images/Mask-Group.png);
+  background-size: 111%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  margin-top: 133px;
+  padding-bottom: 220px;
+  height: 250px;
+  width: 80%;
+  margin: 15px 25%;
+}
+.whatIsGuidefii .card {
+  padding: 0px;
+  top: 25%;
+  right: 37%;
+  background-color: #fafafa;
+  height: fit-content;
+  max-width: 73%;
+}
+  .carousel-caption {
+    position: absolute;
+    right: 16%;
+    bottom: 0px;
+    top: 30px;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 118px;
+    left: auto;
+    text-align: center;
+}
+.carousel-caption h2 {
+  font-size: 13px;
+  line-height: 0px;
+  color: #000;
+  font-family: "proxima-light";
+}
+.carousel-caption h1 {
+  font-size: 13px;
+  letter-spacing: 1.04px;
+  line-height: 17px;
+  color: #000;
+  font-family: "proxima-extraBold";
+}.carousel-caption img{
+  width: 30px;
+    margin-top: -15px;
+}
+.carousel-caption p {
+  font-size: 7px;
+  letter-spacing: 0.9px;
+  line-height: 13px;
+  padding-top: 0px;
+  color: #000;
+  font-family: "proxima-regular";
+}
+.carousel-caption button {
+  padding-top: 0px;
+  width: 120px;
+}
+  .circleBottom {
+    display: none;
+  }
+  .charlene-picture img {
+    width: 100%;
+    margin-right: 0px !important;
+  }
+  .sign-up-banner-1 {
+    font-size: 20px;
+    line-height: 30px !important;
+    margin-top: 18px;
+    width: 100%;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "lato";
+    font-weight: 400;
+  }
+  .youCanTrust {
+    text-transform: uppercase;
+    word-spacing: 3px;
+    margin-bottom: 0px !important;
+  }
+  .overflow-hidden div .fadirepo {
+    letter-spacing: 5px;
+    margin-left: 87px !important;
+    margin-top: 18px;
+  }
+  .main-image-text .smallScreen {
+    width: 30px;
+    margin-top: 0px !important;
+  }
+  .main-image-text button {
+    width: 120px;
+  }
+  .accordion-group {
+    width: 100% !important;
+  }
+  .font-23 {
+    font-size: 17px;
+  }
+  .commitment-picture {
+    width: 100% !important;
+    padding-right: 0px !important;
+    margin-top: 0px !important;
+  }
+  .commitment {
+    margin-right: 0px;
+    margin-top: 65px;
+    font-size: 15px;
+    letter-spacing: 0.52px;
+    line-height: 20px;
+    width: 100% !important;
+  }
+  .commitmentTwo {
+    float: right;
+    width: 90% !important;
+    margin-right: 33px;
+    margin-top: 20px;
+  }
+  .ourCommitment-p-width {
+    line-height: 34px;
+    font-size: 15px !important;
+    letter-spacing: 1.15px;
+    width: 100%;
+    font-family: "lato";
+  }
+  .wePlan {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .smallCircleFour {
+    position: relative;
+    background: #a0cd4f;
+    width: 40px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 40px;
+    top: 21px;
+    right: 15px !important;
+  }
+  .smallCircleTwo {
+    position: relative;
+    background: #a0cd4f;
+    width: 40px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 40px;
+    right: 20px !important;
+  }
+  .smallCircleOne {
+    position: absolute;
+    background: #a0cd4f;
+    width: 40px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 40px;
+    bottom: 51px;
+    right: 338px;
+  }
+  .smallCircleThree {
+    position: relative;
+    background: #a0cd4f;
+    width: 40px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 40px;
+    right: 12px !important;
+  }
+  .smallCircleOne {
+    position: relative;
+    background: #a0cd4f;
+    width: 40px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 40px;
+    right: 19px;
+  }
+  .font-42 {
+    font-size: 36px;
+  }
+  .full-picture {
+    margin-right: 30px !important;
+  }
+  .dif-bg {
+    height: auto;
+    padding-top: 0px !important;
+  }
+  .W-guidance {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+  .main-image-text {
+    position: absolute;
+    top: 40px;
+    left: 9%;
+  }
+  /* .check-box{
+    margin-top: .5rem;
+  } */
+  .stay-connected {
+    margin-left: 0px !important;
+  }
+  .trust {
+    font-size: 12px;
+  }
+  .W-guidance-paragraph {
+    font-size: 7px;
+    width: 100%;
+    line-height: 10px;
+    margin-top: 0px !important;
+  }
+  .advisor {
+    margin-top: -20px !important;
+    font-size: 6px;
+    padding: 6px 10px;
+  }
+  /* .join {
+    margin-top: 0px !important;
+    font-size: 8px;
+  } */
+  .what {
+    font-size: 8px;
+  }
+  .main-intro {
+    background: #fafafa;
+    position: absolute;
+    padding: 17px;
+    top: 60px;
+    left: 7%;
+    height: 210px;
+    width: 190px;
+  }
+  .main-intro .what {
+    font-size: 11px;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  .intro-gudifie {
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 10px;
+    padding-left: 0px;
+    padding-top: 0px;
+    width: auto;
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+  }
+  .intro-gudifie-2 {
+    font-size: 8px;
+    color: #495057;
+    line-height: 10px;
+    width: auto;
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+  .mainIntroBorder {
+    height: 2px;
+    background: #a0cd4f;
+    width: 40px;
+    margin-bottom: 6px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .intro-gudifie-3 {
+    font-size: 7px;
+    font-weight: 500;
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+  }
+  .intro-gudifie-4 {
+    font-size: 6px;
+    color: #495057;
+  }
+  .main-bg-image {
+    position: absolute;
+    left: 63%;
+    height: 293px;
+    top: 71px;
+    width: 131px;
+  }
+  .whatIsGuidefi {
+    margin-top: 0px;
+  }
+  .howGudefiworks p {
+    width: auto;
+  }
+  .main-image {
+    position: absolute;
+    left: 29%;
+    top: 92px;
+    width: 250px;
+    height: 192px;
+  }
+  .main-intro-height {
+    height: 300px;
+  }
+  .no-padding {
+    padding-left: 0px !important;
+  }
+  .process-padding {
+    padding-left: 23px;
+  }
+  .horizontal-line::before {
+    display: none;
+  }
+  .main-intro-1 {
+    background: #fafafa;
+    position: relative;
+    width: 47%;
+    padding: 25px;
+    bottom: 490px;
+    left: 7%;
+  }
+
+  .main-image-1 {
+    position: relative;
+    bottom: 140px;
+    left: 18%;
+  }
+  .intro-gudifie-3 {
+    font-size: 6px;
+    font-weight: 500;
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+  }
+  .intro-gudifie-4 {
+    font-size: 5px;
+    color: #495057;
+  }
+  .intro-heading {
+    font-size: 8px;
+  }
+  .btn-join {
+    background-color: #a0cd4f;
+    border: #a0cd4f;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 6px;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+  }
+  .main-bg-image-1 {
+    position: relative;
+    left: 62%;
+    bottom: 140px;
+  }
+  .join-height {
+    height: 280px;
+  }
+  .app-margin {
+    margin-left: 10%;
+    margin-top: 34px;
+  }
+  .sign-in-positon {
+    position: absolute;
+    left: 4%;
+  }
+  .news-letter {
+    background-color: #321c41;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 13px;
+    border-radius: 60px;
+  }
+  .small-margin {
+    margin-top: 20px;
+  }
+  .hidden {
+    display: none;
+  }
+  .charlene-picture {
+    text-align: center;
+  }
+  .charlene-picture .float-right {
+    float: none !important;
+  }
+  .font-44 {
+    font-size: 25px;
+  }
+  .sign-up-banner {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .about-us-p-width {
+    width: 100%;
+  }
+  .btn-download {
+    background-color: #a0cd4f;
+    border: #a0cd4f;
+    color: #fff;
+    border-radius: 40px;
+    width: 150px;
+    height: 34px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .follow-us {
+    float: none !important;
+    text-align: center;
+  }
+  .follow-us .float-left {
+    float: none !important;
+  }
+  .follow-us .float-right {
+    float: none !important;
+  }
+  .contact-us {
+    text-align: center !important;
+  }
+  .contact-us .float-left {
+    float: none !important;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 600px) {
+  .gdi-app {
+    margin-top: 0px;
+  }
+  .W-guidance {
+    font-size: 13px;
+  }
+  .main-image-text {
+    position: absolute;
+    top: 50px;
+    left: 9%;
+  }
+  .trust {
+    font-size: 12px;
+  }
+  .W-guidance-paragraph {
+    font-size: 8px;
+    margin-top: 25px !important;
+    line-height: 30px;
+  }
+  .advisor {
+    margin-top: 0px !important;
+    font-size: 7px;
+  }
+  .join {
+    margin-top: 0px !important;
+    font-size: 8px;
+  }
+  .what {
+    font-size: 8px;
+  }
+  .main-intro {
+    background: #fafafa;
+    position: absolute;
+    padding: 25px;
+    top: 50px;
+    left: 15%;
+  }
+  .graphic-padding {
+    margin-left: 77px;
+  }
+  .intro-gudifie {
+    font-size: 7px;
+    font-weight: 500;
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+  }
+  .intro-gudifie-2 {
+    font-size: 6px;
+    color: #495057;
+  }
+  .intro-gudifie-3 {
+    font-size: 7px;
+    font-weight: 500;
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+  }
+  .intro-gudifie-4 {
+    font-size: 6px;
+    color: #495057;
+  }
+  .main-bg-image {
+    position: absolute;
+    left: 57%;
+    top: -25px;
+  }
+  .main-image {
+    position: absolute;
+    left: 35%;
+    top: 92px;
+  }
+  .main-intro-height {
+    height: 300px;
+  }
+  .no-padding {
+    padding-left: 0px !important;
+  }
+  .process-padding {
+    padding-left: 43px;
+  }
+  .horizontal-line::before {
+    display: none;
+  }
+  .main-intro-1 {
+    background: #fafafa;
+    position: relative;
+    width: 37%;
+    padding: 25px;
+    bottom: 490px;
+    left: 10%;
+  }
+
+  .main-image-1 {
+    position: relative;
+    bottom: 140px;
+    left: 12%;
+  }
+  .intro-gudifie-3 {
+    font-size: 8px;
+    font-weight: 500;
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+  }
+  .intro-gudifie-4 {
+    font-size: 6px;
+    color: #495057;
+  }
+  .intro-heading {
+    font-size: 12px;
+  }
+  .btn-join {
+    background-color: #a0cd4f;
+    border: #a0cd4f;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 6px;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+  }
+  .main-bg-image-1 {
+    position: relative;
+    left: 55%;
+    bottom: 140px;
+  }
+  .join-height {
+    height: 280px;
+  }
+  .app-margin {
+    margin-left: 10%;
+    margin-top: 34px;
+  }
+  .sign-in-positon {
+    position: absolute;
+    left: 4%;
+  }
+  .news-letter {
+    background-color: #321c41;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 13px;
+    border-radius: 60px;
+  }
+  .small-margin {
+    margin-top: 20px;
+  }
+  .hidden {
+    display: none;
+  }
+  .charlene-picture {
+    text-align: center;
+  }
+  .charlene-picture .float-right {
+    float: none !important;
+  }
+  .font-44 {
+    font-size: 25px;
+  }
+  .sign-up-banner {
+    font-size: 16px;
+  }
+  .about-us-p-width {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 699px) {
+  .main-image-text {
+    position: absolute;
+    bottom: 0px;
+    left: 4%;
+    top: 20px;
+  }
+  .carousel-caption h2 {
+    font-size: 40px;
+    line-height: 10px;
+    color: #000;
+    font-family: "proxima-light";
+}
+.carousel-caption h1 {
+  font-size: 40px;
+  letter-spacing: 1.04px;
+  line-height: 63px;
+  color: #000;
+  font-family: "proxima-extraBold";
+}
+.carousel-caption p {
+  font-size: 13px;
+  letter-spacing: 0.9px;
+  line-height: 20px;
+  padding-top: 15px;
+  color: #000;
+  font-family: "proxima-regular";
+}
+.carousel-caption button {
+  padding-top: 0px;
+  width: 30%;
+}
+.carousel-caption {
+  position: absolute;
+  right: 25%;
+  bottom: 0px;
+  top: 25px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 118px;
+  left: -16%;
+  text-align: center;
+}
+.whatIsGuidefii .card {
+  padding: 0px 0px;
+  top: 20%;
+  right: 26%;
+  background-color: #fafafa;
+  height: fit-content;
+  max-width: 58%;
+}
+.card-title {
+  font-size: 21px;
+  letter-spacing: 0.76px;
+  line-height: 12px;
+  font-family: "proxima-semiBold";
+  padding-top: 13px;
+}
+.financialWelness {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "lato-regular";
+}
+.whatIsGuidefii .card .card-body .card-text {
+  font-size: 11px;
+  line-height: 16px;
+  margin-top: 17px;
+  font-family: "lato-regular";
+  color: #495057;
+}
+.first-arrow{
+  margin-top: 100px;
+}
+.whatIsGuidefii {
+  background-image: url(../images/Mask-Group.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  margin-top: 133px;
+  padding-bottom: 220px;
+  height: 450px;
+  width: 80%;
+  margin: 15px 20%;
+}
+  .commitment-picture {
+    padding-right: 0px !important;
+    margin-right: 0px !important;
+  }
+  .col-sm-10 div {
+    padding-left: 45px;
+  }
+  .sign-up-banner-1 {
+    font-size: 26px;
+    line-height: 39px !important;
+    margin-top: 18px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "lato";
+    line-height: 39px;
+    font-weight: 400;
+  }
+  .dif-bg {
+    height: auto;
+    padding-top: 26px !important;
+  }
+  .inverted-text {
+    position: absolute;
+    transform: rotate(90deg);
+    left: 0px;
+    top: 130px;
+    font-size: 10px;
+    color: #b6b6b6;
+  }
+  .inverted-logos {
+    position: absolute;
+    top: 445px;
+    left: 25px;
+  }
+  .charlene-picture img {
+    float: none !important;
+  }
+  .charlene-picture {
+    text-align: center;
+  }
+  .circle {
+    display: none;
+  }
+  .guidefi-network {
+    width: 328px !important;
+    height: 328px !important;
+  }
+  .main-image {
+    position: absolute;
+    left: 23%;
+    height: 389px;
+    top: 92px;
+    width: 490px;
+  }
+  .contact-us div {
+    margin-left: 10px;
+  }
+  .horizontal-line::before {
+    display: none !important;
+  }
+  .howGudefiworks h5 {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .howGudefiworks p {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    line-height: 34px;
+  }
+  .main-intro-height {
+    height: 600px;
+  }
+  .whatIsGuidefi {
+    margin-top: 40px;
+  }
+  .main-image-text button {
+    margin-top: 0px;
+  }
+  .W-guidance {
+    font-size: 40px;
+  }
+  .W-guidance-paragraph {
+    font-size: 13px;
+    margin-top: 20px !important;
+    line-height: 23px;
+  }
+  .main-image-text button {
+    width: 180px;
+  }
+  .youCanTrust {
+    font-size: 40px;
+    text-transform: uppercase;
+    word-spacing: 10px;
+  }
+  .intro-gudifie-2 {
+    margin-top: 0px;
+    width: auto;
+    font-size: 11px;
+    padding-left: 0px;
+    line-height: 16px;
+    color: #8f9498;
+  }
+  .mainIntroBorder {
+    height: 2px;
+    background: #a0cd4f;
+    width: 40px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .intro-gudifie {
+    font-size: 14px;
+    font-weight: 500;
+    width: auto;
+    padding-top: 0px;
+    padding-left: 0px;
+    line-height: 16px;
+  }
+  .main-intro .what {
+    font-size: 21px;
+    padding-left: 0px;
+    padding-top: 15px;
+  }
+  .main-bg-image {
+    position: absolute;
+    left: 58%;
+    width: 271px;
+    height: 615px;
+    top: 39px;
+  }
+  .main-intro {
+    background: #fafafa;
+    position: absolute;
+    padding: 25px;
+    top: 40px;
+    height: 386px;
+    width: 260px;
+    left: 4%;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 767px) {
+  .main-image-text {
+    position: absolute;
+    bottom: 0px;
+    left: 4%;
+    top: 20px;
+  }
+  .carousel-caption h2 {
+    font-size: 40px;
+    line-height: 10px;
+    color: #000;
+    font-family: "proxima-light";
+}
+.carousel-caption h1 {
+  font-size: 40px;
+  letter-spacing: 1.04px;
+  line-height: 63px;
+  color: #000;
+  font-family: "proxima-extraBold";
+}
+.carousel-caption p {
+  font-size: 13px;
+  letter-spacing: 0.9px;
+  line-height: 20px;
+  padding-top: 15px;
+  color: #000;
+  font-family: "proxima-regular";
+}
+.carousel-caption button {
+  padding-top: 0px;
+  width: 30%;
+}
+.carousel-caption {
+  position: absolute;
+  right: 25%;
+  bottom: 0px;
+  top: 70px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 118px;
+  left: -16%;
+  text-align: center;
+}
+.whatIsGuidefii .card {
+  padding: 0px 0px;
+  top: 20%;
+  right: 17%;
+  background-color: #fafafa;
+  height: fit-content;
+  max-width: 50%;
+}
+.card-title {
+  font-size: 21px;
+  letter-spacing: 0.76px;
+  line-height: 12px;
+  font-family: "proxima-semiBold";
+  padding-top: 13px;
+}
+.financialWelness {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "lato-regular";
+}
+.whatIsGuidefii .card .card-body .card-text {
+  font-size: 11px;
+  line-height: 16px;
+  margin-top: 17px;
+  font-family: "lato-regular";
+  color: #495057;
+}
+.first-arrow{
+  margin-top: 100px;
+}
+.whatIsGuidefii {
+  background-image: url(../images/Mask-Group.png);
+  background-size: 91%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  margin-top: 133px;
+  padding-bottom: 220px;
+  height: 450px;
+  width: 80%;
+  margin: 15px 17%;
+}
+  .overflow-hidden {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .commitment {
+    margin-right: 100px;
+    margin-top: 65px;
+    font-size: 26px;
+    letter-spacing: 0.52px;
+    line-height: 32px;
+    width: 75% !important;
+  }
+  .commitmentTwo {
+    float: right;
+    width: 71%;
+    margin-right: 126px;
+    margin-top: 17px;
+  }
+  .commitment-picture {
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+  }
+  .sign-up-banner-1 {
+    width: auto;
+    font-size: 20px;
+    padding-right: 11px;
+  }
+  .circle {
+    display: none;
+  }
+  .dif-bg {
+    height: auto;
+    padding-top: 10px !important;
+  }
+  .charlene-picture {
+    text-align: center;
+  }
+  .inverted-text {
+    position: absolute;
+    transform: rotate(90deg);
+    left: 10px;
+    top: 130px;
+    font-size: 10px;
+    color: #b6b6b6;
+  }
+  .inverted-logos {
+    position: absolute;
+    top: 445px;
+    left: 35px;
+  }
+  .charlene-picture img {
+    float: none !important;
+  }
+  .guidefi-network {
+    width: 328px !important;
+    height: 328px !important;
+  }
+  .main-image {
+    position: absolute;
+    left: 23%;
+    height: 389px;
+    top: 92px;
+    width: 550px;
+  }
+  .contact-us div {
+    margin-left: 10px;
+  }
+  .horizontal-line::before {
+    display: none !important;
+  }
+  .howGudefiworks h5 {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .howGudefiworks p {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    line-height: 34px;
+  }
+  .main-intro-height {
+    height: 600px;
+  }
+  .whatIsGuidefi {
+    margin-top: 40px;
+  }
+  .main-image-text button {
+    margin-top: 0px;
+  }
+  .W-guidance {
+    font-size: 40px;
+  }
+  .W-guidance-paragraph {
+    font-size: 13px;
+    margin-top: 20px !important;
+    line-height: 30px;
+  }
+  .main-image-text button {
+    width: 180px;
+  }
+  .youCanTrust {
+    font-size: 40px;
+    text-transform: uppercase;
+    word-spacing: 10px;
+  }
+  .intro-gudifie-2 {
+    margin-top: 0px;
+    width: auto;
+    font-size: 11px;
+    padding-left: 0px;
+    line-height: 16px;
+    color: #8f9498;
+  }
+  .mainIntroBorder {
+    height: 2px;
+    background: #a0cd4f;
+    width: 40px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .intro-gudifie {
+    font-size: 14px;
+    font-weight: 500;
+    width: auto;
+    padding-top: 0px;
+    padding-left: 0px;
+    line-height: 16px;
+  }
+  .main-intro .what {
+    font-size: 21px;
+    padding-left: 0px;
+    padding-top: 15px;
+  }
+  .main-bg-image {
+    position: absolute;
+    left: 62%;
+    width: 271px;
+    height: 615px;
+    top: 39px;
+  }
+  .main-intro {
+    background: #fafafa;
+    position: absolute;
+    padding: 25px;
+    top: 40px;
+    height: 386px;
+    width: 37.5%;
+    left: 7%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+  .gdi-app {
+    margin-top: 0px;
+  }
+  .dif-bg {
+    height: auto;
+    padding-top: 50px !important;
+  }
+  .carousel-caption h2 {
+    font-size: 40px;
+    line-height: 10px;
+    color: #000;
+    font-family: "proxima-light";
+}
+.carousel-caption h1 {
+  font-size: 40px;
+  letter-spacing: 1.04px;
+  line-height: 63px;
+  color: #000;
+  font-family: "proxima-extraBold";
+}
+.carousel-caption p {
+  font-size: 13px;
+  letter-spacing: 0.9px;
+  line-height: 20px;
+  padding-top: 15px;
+  color: #000;
+  font-family: "proxima-regular";
+}
+.carousel-caption button {
+  padding-top: 0px;
+  width: 30%;
+}
+.carousel-caption {
+  position: absolute;
+  right: 25%;
+  bottom: 0px;
+  top: 70px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 118px;
+  left: -16%;
+  text-align: center;
+}
+.whatIsGuidefii .card {
+  padding: 0px 0px;
+  top: 20%;
+  right: 17%;
+  background-color: #fafafa;
+  height: fit-content;
+  max-width: 50%;
+}
+.card-title {
+  font-size: 21px;
+  letter-spacing: 0.76px;
+  line-height: 12px;
+  font-family: "proxima-semiBold";
+  padding-top: 13px;
+}
+.financialWelness {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "lato-regular";
+}
+.whatIsGuidefii .card .card-body .card-text {
+  font-size: 11px;
+  line-height: 16px;
+  margin-top: 17px;
+  font-family: "lato-regular";
+  color: #495057;
+}
+.first-arrow{
+  margin-top: 100px;
+}
+.whatIsGuidefii {
+  background-image: url(../images/Mask-Group.png);
+  background-size: 91%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  margin-top: 133px;
+  padding-bottom: 220px;
+  height: 450px;
+  width: 80%;
+  margin: 15px 17%;
+}
+  .sign-up-banner-1 {
+    font-size: 18px;
+    line-height: 32px !important;
+    margin-top: 20px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "lato";
+    font-weight: 400;
+  }
+  .faq_picture {
+    margin-right: 0px !important;
+  }
+  .inverted-text {
+    position: absolute;
+    transform: rotate(90deg);
+    left: 0px;
+    top: 130px;
+    font-size: 10px;
+    color: #b6b6b6;
+  }
+  .charlene-picture img {
+    width: 90% !important;
+    height: auto;
+  }
+  .inverted-logos-1 {
+    position: absolute;
+    top: 373px;
+    left: 43px;
+  }
+  .circle {
+    width: 800px;
+    height: 800px;
+    transform: rotate(241deg);
+    position: absolute;
+    z-index: -1;
+    bottom: 1250px;
+    left: 0%;
+    border-radius: 50%;
+    border: 10px solid #f8fbf3;
+    border-bottom: 0;
+    background: #f8fbf3;
+  }
+  .rest-devices-answer {
+    display: none;
+  }
+  .main-image-text button {
+    width: 180px;
+  }
+  .youCanTrust {
+    font-size: 40px;
+    text-transform: uppercase;
+    word-spacing: 10px;
+  }
+  .W-guidance {
+    font-size: 40px;
+  }
+  .W-guidance-paragraph {
+    font-size: 13px;
+    margin-top: 20px !important;
+    line-height: 30px;
+  }
+  .advisor {
+    margin-top: 2px !important;
+    margin-bottom: 54px;
+  }
+  .inverted-text-two {
+    position: absolute;
+    transform: rotate(90deg);
+    left: 32px;
+    top: 91px;
+    font-size: 10px;
+    color: #b6b6b6;
+  }
+  .inverted-logos {
+    position: absolute;
+    top: 420px;
+    left: 25px;
+  }
+  .tablet-answer {
+    display: block !important;
+  }
+  .process-padding {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .font-23 {
+    font-size: 14px;
+  }
+  .font-42 {
+    font-size: 35px;
+  }
+  .smallCircleFour {
+    position: relative;
+    background: #a0cd4f;
+    width: 40px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 40px;
+    right: 15px;
+  }
+  .smallCircleTwo {
+    position: relative;
+    background: #a0cd4f;
+    width: 40px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 40px;
+    right: 15px;
+  }
+  .overflow-hidden div h1 {
+    font-size: 30px;
+  }
+  .smallCircleThree {
+    position: relative;
+    background: #a0cd4f;
+    width: 40px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 40px;
+    right: 15px;
+  }
+  .smallCircleOne {
+    position: relative;
+    background: #a0cd4f;
+    width: 40px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 40px;
+    right: 15px;
+  }
+  .commitment-picture {
+    width: 85% !important;
+    padding-right: 0px !important;
+    margin-right: 0px !important;
+  }
+  .commitment {
+    margin-right: 0px;
+    margin-top: 20px;
+    width: 88% !important;
+    font-size: 18px;
+  }
+  .commitmentTwo {
+    float: right;
+    width: 80%;
+    margin-right: 29px;
+    margin-top: 17px;
+  }
+  .commitmentTwo::after {
+    display: inline-block;
+    content: "";
+    border-top: 0.2rem solid #a0cd4f;
+    width: 1rem;
+    margin: 0px -108px;
+    transform: translateY(-3.5rem);
+  }
+
+  .padding_lead {
+    padding-left: 0px !important;
+  }
+
+  .accordion-inner {
+    color: #737373;
+    font: 18px !important;
+    font-size: 14px !important;
+  }
+
+  .main-image-text {
+    position: absolute;
+    bottom: 0px;
+    left: 4%;
+    top: 20px;
+  }
+  .main-intro {
+    background: #fafafa;
+    position: absolute;
+    padding: 25px;
+    top: 40px;
+    height: 386px;
+    width: 37.5%;
+    left: 7%;
+  }
+  .first-arrow {
+    margin: 0px 0px !important;
+  }
+  .guidefi-network {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .graphic-font {
+    font-size: 16px;
+  }
+  .below-green {
+    font-size: 12px;
+    color: #737373;
+  }
+  .main-image {
+    position: absolute;
+    left: 23%;
+    height: 389px;
+    top: 92px;
+    width: 550px;
+  }
+  .howGudefiworks p {
+    width: 214px;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .main-intro .what {
+    font-size: 21px;
+    padding-left: 0px;
+    padding-top: 15px;
+  }
+  .intro-gudifie {
+    font-size: 14px;
+    font-weight: 500;
+    width: auto;
+    padding-top: 0px;
+    padding-left: 0px;
+    line-height: 16px;
+  }
+  .mainIntroBorder {
+    height: 2px;
+    background: #a0cd4f;
+    width: 40px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .intro-gudifie-2 {
+    margin-top: 0px;
+    width: auto;
+    font-size: 11px;
+    padding-left: 0px;
+    line-height: 16px;
+    color: #8f9498;
+  }
+  .main-bg-image {
+    position: absolute;
+    left: 62%;
+    width: 271px;
+    height: 615px;
+    top: 39px;
+  }
+  .main-intro-height {
+    height: 525px;
+  }
+  .graphic-padding {
+    padding-left: 0px !important;
+  }
+  .horizontal-line::before {
+    display: inline-block;
+    content: "";
+    border-top: 0.1rem solid black;
+    width: 6rem;
+    margin-left: -100px;
+    /* margin: 0 1rem; */
+    transform: translateY(-0.2rem);
+  }
+  .main-image-1 {
+    position: relative;
+    bottom: 34px;
+    /* top: -36px; */
+    left: 23%;
+  }
+  .main-bg-image-1 {
+    position: relative;
+    left: 66%;
+    height: 515px;
+    /* top: -30px; */
+    bottom: 30px;
+  }
+  .main-intro-1 {
+    background: #fafafa;
+    position: relative;
+    width: 53%;
+    padding: 25px;
+    bottom: 490px;
+    left: 5%;
+  }
+  .join-height {
+    height: 600px;
+  }
+  .app-margin {
+    margin-left: 20%;
+    margin-top: 60px;
+  }
+  #navbarText .nav-margin li a {
+    padding-bottom: 13px;
+    font-size: 11px;
+  }
+  .font-44 {
+    font-size: 30px;
+  }
+  .about-us-p-width {
+    width: 100%;
+    font-size: 18px;
+  }
+  .ourCommitment-p-width {
+    line-height: 34px;
+    font-size: 15px !important;
+    letter-spacing: 1.15px;
+    width: 100%;
+    font-family: "lato";
+  }
+  .border-bottom .contact-us {
+    padding-right: 0px !important;
+  }
+  .border-bottom .contact-us div .float-left {
+    float: none !important;
+  }
+  .border-bottom .contact-us div p i {
+    margin-left: 0px !important;
+  }
+  .follow-us .float-left {
+    float: none !important;
+  }
+
+  .padding_lead .col-md-7 div p {
+    font-size: 13px !important;
+  }
+  .padding_lead .col-md-5 div p {
+    font-size: 13px !important;
+  }
+  .follow-us p a i {
+    margin-left: 0px !important;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .sidebar {
+    position: fixed;
+    top: 90px;
+  }
+  .sidebar .nav.sub-menu {
+    max-height: none;
+  }
+  .sidebar .sidebar-content-wrapper {
+    height: calc(100vh - (18px + 18px));
+    overflow: auto;
+    position: relative;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1399px){
+.carousel-inner{
+  padding-left: 7%;
+}
+}
+@media only screen and (min-width: 1000px) and (max-width: 1100px) {
+  .gdi-app {
+    margin-top: 0px;
+  }
+  .carousel-caption h2 {
+    font-size: 40px;
+    line-height: 10px;
+    color: #000;
+    font-family: "proxima-light";
+}
+.carousel-caption h1 {
+  font-size: 40px;
+  letter-spacing: 1.04px;
+  line-height: 63px;
+  color: #000;
+  font-family: "proxima-extraBold";
+}
+.carousel-caption p {
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  line-height: 29px;
+  padding-top: 15px;
+  color: #000;
+  font-family: "proxima-regular";
+}
+.carousel-caption button {
+  width: 25%;
+  padding-top: 0px;
+}
+.carousel-caption {
+  position: absolute;
+  right: 25%;
+  bottom: 0px;
+  top: 120px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 118px;
+  left: -20%;
+  text-align: center;
+}
+.whatIsGuidefii .card {
+  padding: 0px 10px;
+  top: 15%;
+  background-color: #fafafa;
+  height: fit-content;
+  max-width: 43%;
+}
+.whatIsGuidefii {
+  background-image: url(../images/Mask-Group.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  margin-top: 133px;
+  padding-bottom: 220px;
+  height: 500px;
+  width: 80%;
+  margin: 15px auto;
+}
+.card-title {
+  font-size: 25px;
+  letter-spacing: 0.76px;
+  line-height: 46px;
+  font-family: "proxima-semiBold";
+  padding-top: 13px;
+}
+.financialWelness {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "lato-regular";
+}
+.whatIsGuidefii .card .card-body .card-text {
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 17px;
+  font-family: "lato-regular";
+  color: #495057;
+}
+  .faq_picture {
+    margin-right: 0px !important;
+  }
+  .commitment-picture {
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+    width: 455px;
+    height: auto;
+  }
+  .inverted-text {
+    position: absolute;
+    transform: rotate(90deg);
+    left: -15px;
+    top: 130px;
+    font-size: 10px;
+    color: #b6b6b6;
+  }
+  .inverted-logos {
+    position: absolute;
+    top: 445px;
+    left: 10px;
+  }
+  .main-image-text button {
+    width: 250px;
+  }
+  .W-guidance {
+    font-size: 40px;
+  }
+  .main-image {
+    position: absolute;
+    left: 29%;
+    width: 550px;
+    top: 92px;
+    height: auto;
+  }
+  .youCanTrust {
+    font-size: 40px;
+    text-transform: uppercase;
+    word-spacing: 10px;
+  }
+  .smallCircleFour {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+  }
+  .smallCircleTwo {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+  }
+  .smallCircleOne {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+  }
+  .smallCircleThree {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+  }
+  .commitmentTwo {
+    float: right;
+    width: 67%;
+    margin-right: 129px;
+    margin-top: 45px;
+  }
+  .commitment {
+    margin-right: 0px;
+    margin-top: 65px;
+    font-size: 26px;
+    letter-spacing: 0.52px;
+    line-height: 32px;
+    width: 94% !important;
+  }
+  .font-23 {
+    font-size: 17px;
+  }
+  .font-42 {
+    font-size: 39px;
+  }
+  .main-image-text {
+    position: absolute;
+    bottom: 20px;
+    left: 9%;
+  }
+  .main-image-text button {
+    margin-top: 30px;
+  }
+  .main-intro {
+    background: #fafafa;
+    position: absolute;
+    padding: 30px;
+    top: 63px;
+    width: 29%;
+    height: 375px;
+    left: 14%;
+  }
+  .main-intro .what {
+    font-size: 20px;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  .intro-gudifie {
+    font-size: 15px;
+    line-height: 16px;
+    width: auto;
+    font-weight: 500;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  .mainIntroBorder {
+    height: 2px;
+    background: #a0cd4f;
+    width: 40px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .intro-gudifie-2 {
+    font-size: 12px;
+    color: #8f9498;
+    width: auto;
+    margin-top: 0px;
+    padding-left: 0px;
+    line-height: 17px;
+  }
+  .guidefi-network {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .largeScreenMargins .col-md-3 div .process-padding {
+    width: 100%;
+  }
+  .horizontal-line::before {
+    display: inline-block;
+    content: "";
+    border-top: 0.1rem solid black;
+    width: 10rem;
+    margin-left: -148px;
+    /* margin: 0 1rem; */
+    transform: translateY(-0.2rem);
+  }
+  .main-bg-image {
+    position: absolute;
+    left: 41%;
+    height: 350px;
+    top: 128px;
+  }
+  .howGudefiworks p {
+    width: 288px;
+  }
+  .main-intro-height {
+    height: 550px;
+  }
+  .graphic-padding {
+    padding-left: 0px !important;
+  }
+  .main-bg-image-1 {
+    position: relative;
+    left: 56%;
+    height: 515px;
+    /* top: -30px; */
+    bottom: 30px;
+  }
+  .main-image-1 {
+    position: relative;
+    bottom: 34px;
+    /* top: -36px; */
+    left: 13%;
+  }
+  .main-intro-1 {
+    background: #fafafa;
+    position: relative;
+    width: 39%;
+    padding: 25px;
+    bottom: 490px;
+    left: 10%;
+  }
+  .app-margin {
+    margin-left: 42%;
+    margin-top: 102px;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .main-image-text {
+    position: absolute;
+    bottom: 72px;
+    left: 9%;
+  }
+  .first-arrow{
+    margin-top: 120px;
+  }
+  .leadershipSection p{
+    padding-right: 100px;
+  }
+  .educationSection p{
+    padding-right: 70px;
+  }
+  .investorsSection p{
+    padding-right: 35px;
+  }
+  .whatIsGuidefii .card .card-body .card-text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 17px;
+    font-family: "lato-regular";
+    color: #495057;
+}
+.financialWelness {
+  font-size: 23px;
+  line-height: 31px;
+  font-family: "lato-regular";
+}
+.card-title {
+  font-size: 38px;
+  letter-spacing: 0.76px;
+  line-height: 46px;
+  font-family: "proxima-semiBold";
+  padding-top: 13px;
+}
+  .carousel-caption {
+    position: absolute;
+    right: 25%;
+    bottom: 0px;
+    top: 200px;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 118px;
+    left: auto;
+    text-align: center;
+}
+.whatIsGuidefii .card {
+  padding: 10px 25px;
+  top: 15%;
+  background-color: #fafafa;
+  height: fit-content;
+  max-width: 43%;
+}
+/* .whatIsGuidefii .card {
+  padding: 10px 36px;
+  top: 15%;
+  left: 7%;
+  background-color: #fafafa;
+  height: fit-content;
+  max-width: 37%;
+}*/
+.whatIsGuidefii {
+  margin-top: 67px;
+}
+  /* .whatIsGuidefii .card .card-body {
+    padding: 53px 63px;
+  } */
+  .whatIsGuidefii div .fourPeople {
+    position: relative;
+    right: 12%;
+    padding-top: 73px;
+    z-index: -1;
+}
+  .ourCommitmentText .inverted-text-three {
+    position: absolute;
+    transform: rotate(90deg);
+    left: 44px;
+    top: 70px;
+    font-size: 10px;
+    color: #b6b6b6;
+  }
+  .ourCommitmentLogo {
+    position: absolute !important;
+    top: 358px !important;
+    left: 57.5px !important;
+  }
+  .commitment-picture {
+    width: 557px;
+    height: 572px;
+  }
+  .inverted-text-two {
+    position: absolute;
+    transform: rotate(90deg);
+    left: 14px;
+    top: 95px;
+    font-size: 10px;
+    color: #b6b6b6;
+  }
+  .faq_picture {
+    width: 72% !important;
+  }
+  .inverted-logos-1 {
+    position: absolute;
+    top: 380px;
+    left: 25px;
+  }
+  .accordion-inner {
+    width: 79%;
+  }
+  .main-image-text button {
+    margin-top: 77px;
+  }
+  .W-guidance-paragraph {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    line-height: 29px;
+  }
+  .main-bg-image {
+    position: absolute;
+    left: 56%;
+    height: 652px;
+    width: 582px;
+    top: 180px;
+  }
+  .main-intro-height {
+    height: 917px;
+  }
+  .whatIsGuidefi {
+    margin-top: 114px;
+  }
+  .main-intro .what {
+    font-size: 38px;
+    padding-left: 60px;
+    padding-top: 65px;
+  }
+  .main-intro {
+    background: #fafafa;
+    position: absolute;
+    top: 20px;
+    left: 7%;
+    width: 502px;
+    height: 709px;
+  }
+  .main-image {
+    position: absolute;
+    left: 21%;
+    top: 92px;
+    width: 1069px;
+    height: 709px;
+  }
+  .mainIntroBorder {
+    height: 2px;
+    background: #a0cd4f;
+    width: 40px;
+    margin-top: 45px;
+    margin-left: 60px;
+  }
+
+  .intro-gudifie {
+    font-size: 23px;
+    line-height: 31px;
+    padding-left: 60px;
+    padding-top: 20px;
+    width: 405px;
+  }
+  .intro-gudifie-2 {
+    font-size: 18px;
+    margin-top: 28px;
+    padding-left: 60px;
+    color: #8f9498;
+    line-height: 30px;
+    width: 403px;
+  }
+  .howGudefiworks h5 {
+    font-size: 26px;
+  }
+  .howGudefiworks p {
+    font-size: 20px;
+    width: 422px;
+    line-height: 34px;
+  }
+  .horizontal-line::before {
+    display: inline-block;
+    content: "";
+    border-top: 0.1rem solid #4a2a5f;
+    width: 12rem;
+    transform: rotate(180deg) translateY(4px) translateX(20px);
+  }
+  .matchProcess div p {
+    font-size: 20px;
+  }
+  .sign-up-banner {
+    font-size: 26px;
+    letter-spacing: 0.52px;
+    line-height: 34px;
+  }
+  .btn-download {
+    font-size: 21px;
+    margin-top: 10px;
+    height: 50px;
+    width: 258px;
+    border-radius: 40px;
+  }
+  .btn-advisor {
+    font-size: 18px;
+  }
+  .smallCircleFour {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+    right: 30px;
+  }
+  .smallCircleTwo {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+    right: 36px;
+  }
+  .smallCircleThree {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+    right: 28px;
+  }
+  .smallCircleOne {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+    right: 33px;
+  }
+  .about-us-p-width-1 {
+    line-height: 34px;
+    font-size: 18px;
+    width: 96%;
+    font-family: "lato";
+  }
+  .about-us-p-width {
+    width: 94%;
+    font-weight: 600;
+    font-size: 23px;
+  }
+  .inverted-logos {
+    position: absolute;
+    top: 425px;
+    left: 80px;
+  }
+  .inverted-text {
+    position: absolute;
+    transform: rotate(90deg);
+    left: 55px;
+    top: 125px;
+    font-size: 10px;
+    color: #b6b6b6;
+  }
+  .circleBottom {
+    width: 1000px;
+    border-radius: 50%;
+    height: 1000px;
+    background: #f8fbf3;
+    position: absolute;
+    z-index: -1;
+    top: 556px;
+    right: 250px;
+  }
+  .circle {
+    width: 1000px;
+    height: 1000px;
+    transform: rotate(241deg);
+    position: absolute;
+    z-index: -1;
+    bottom: 446px;
+    left: 9%;
+    border-radius: 50%;
+    border: 10px solid #f8fbf3;
+    border-bottom: 0;
+    background: #f8fbf3;
+  }
+  .font-12 {
+    font-size: 14px;
+  }
+  .commitment {
+    margin-right: 242px;
+    margin-top: 65px;
+    font-size: 19px;
+    width: 50% !important;
+  }
+  .commitmentTwo {
+    float: right;
+    width: 40%;
+    margin-right: 312px;
+    margin-top: 18px;
+  }
+}
+@media only screen and (min-width: 1601px) and (max-width: 1800px) {
+  .navbar-brand .logo {
+    margin-left: -130px;
+  }
+  .leadershipSection p{
+    padding-right: 130px;
+  }
+  .whatIsGuidefii{
+    margin-top: 140px !important;
+  }
+  .educationSection p{
+    padding-right: 100px;
+  }
+  .investorsSection p{
+    padding-right: 100px;
+  }
+  .faqCircleBig .circleTwo{
+    width: 1000px;
+    height: 1000px;
+    transform: rotate(241deg);
+    position: absolute;
+    z-index: -1;
+    bottom: 0px;
+    left: 1%;
+    border-radius: 50%;
+    border: 10px solid #f8fbf3;
+    border-bottom: 0;
+    background: #f8fbf3;
+}
+  .whatIsGuidefii .card {
+    padding: 15px 57px;
+    top: 0%;
+    background-color: #fafafa;
+    height: fit-content;
+    max-width: 43%;
+}
+.card-title {
+  font-size: 38px;
+  letter-spacing: 0.76px;
+  line-height: 46px;
+  font-family: "proxima-semiBold";
+  padding-top: 13px;
+}
+.financialWelness {
+  font-size: 23px;
+  line-height: 31px;
+  font-family: "lato-regular";
+}
+.whatIsGuidefii .card .card-body .card-text {
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 17px;
+  font-family: "lato-regular";
+  color: #495057;
+}
+  .carousel-caption {
+    position: absolute;
+    right: 25%;
+    bottom: 0px;
+    top: 217px;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 118px;
+    left: auto;
+    text-align: center;
+}
+  .card-title {
+    padding-top: 9px;
+  }
+  .financialWelness {
+    padding-top: 15px;
+  }
+  .whatIsGuidefii .card .card-body .card-text {
+    margin-top: 13px;
+  }
+  .whatIsGuidefii div .fourPeople {
+    position: relative;
+    right: 12%;
+    padding-top: 75px;
+    z-index: -1;
+  }
+  .accordion-inner {
+    width: 79%;
+  }
+  .main-image-text button {
+    margin-top: 78px;
+  }
+  .commitment-picture {
+    width: 510px;
+    height: 525px;
+  }
+  .faq_picture {
+    width: 64% !important;
+  }
+  .inverted-text-two {
+    position: absolute;
+    transform: rotate(90deg);
+    left: 144px;
+    top: 103px;
+    font-size: 10px;
+    color: #b6b6b6;
+  }
+  .inverted-logos-1 {
+    position: absolute;
+    top: 380px;
+    left: 153px;
+  }
+  .accordion {
+    width: 85%;
+  }
+  .circleTwo {
+    width: 1000px;
+    height: 1000px;
+    transform: rotate(241deg);
+    position: absolute;
+    z-index: -1;
+    bottom: -212px;
+    left: 10%;
+    border-radius: 50%;
+    border: 10px solid #f8fbf3;
+    border-bottom: 0;
+    background: #f8fbf3;
+  }
+  .main-bg-image {
+    position: absolute;
+    left: 56.5%;
+    height: 652px;
+    width: 582px;
+    top: 183px;
+  }
+  .whatIsGuidefi {
+    margin-top: 100px;
+  }
+  .largeScreenMargins {
+    margin: 0px 30px;
+  }
+  .howGudefiworks p {
+    width: 486px;
+    margin-left: 20px;
+    font-size: 23px;
+    line-height: 34px;
+  }
+  .howGudefiworks h5 {
+    margin-left: 20px;
+  }
+  .W-guidance-paragraph {
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.9px;
+  }
+  .navbar-collapse {
+    margin-right: -150px;
+  }
+  .main-image-text {
+    position: absolute;
+    bottom: 138px;
+    left: 9%;
+  }
+  .main-image {
+    position: absolute;
+    left: 25%;
+    top: 92px;
+    width: 1069px;
+    height: 709px;
+  }
+  .main-intro {
+    background: #fafafa;
+    position: absolute;
+    top: 20px;
+    left: 12%;
+    width: 502px;
+    height: 709px;
+  }
+  .main-intro-height {
+    height: 866px;
+  }
+  .mainIntroBorder {
+    height: 2px;
+    background: #a0cd4f;
+    width: 40px;
+    margin-top: 45px;
+    margin-left: 60px;
+  }
+  .main-intro .what {
+    font-size: 38px;
+    padding-left: 60px;
+    padding-top: 72px;
+  }
+  .intro-gudifie {
+    font-size: 23px;
+    line-height: 31px;
+    padding-left: 60px;
+    padding-top: 20px;
+    width: 395px;
+  }
+  .intro-gudifie-2 {
+    font-size: 18px;
+    margin-top: 28px;
+    padding-left: 60px;
+    color: #8f9498;
+    line-height: 30px;
+    width: 403px;
+  }
+  .first-arrow {
+    margin-bottom: 70px !important;
+    margin-top: 125px;
+  }
+  .howGudefiworks h5 {
+    font-size: 26px;
+  }
+  .horizontal-line::before {
+    display: inline-block;
+    content: "";
+    border-top: 0.1rem solid #4a2a5f;
+    width: 14rem;
+    margin-right: -24px;
+    transform: rotate(180deg) translateY(4px) translateX(42px);
+  }
+  .matchProcess div p {
+    font-size: 20px;
+  }
+  .sign-up-banner {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .btn-download {
+    font-size: 22px;
+    height: 50px;
+    width: 258px;
+    border-radius: 40px;
+    margin-top: 10px;
+  }
+  .btn-advisor {
+    font-size: 19px;
+  }
+  .smallCircleFour {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+    right: 25px;
+  }
+  .smallCircleTwo {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+    right: 35px;
+  }
+  .smallCircleThree {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+    right: 27px;
+  }
+  .smallCircleOne {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+    right: 34px;
+  }
+  .about-us-p-width-1 {
+    line-height: 34px;
+    font-size: 18px;
+    width: 85%;
+    font-family: "lato";
+  }
+  .about-us-p-width {
+    line-height: 34px;
+    font-size: 23px;
+    letter-spacing: 1.15px;
+    width: 85%;
+    font-weight: 600;
+    font-family: "lato";
+  }
+  .inverted-text {
+    position: absolute;
+    transform: rotate(90deg);
+    left: 140px;
+    top: 125px;
+    font-size: 10px;
+    color: #b6b6b6;
+  }
+  .inverted-logos {
+    position: absolute;
+    top: 415px;
+    left: 165px;
+  }
+  .circleBottom {
+    width: 1000px;
+    border-radius: 50%;
+    height: 1000px;
+    background: #f8fbf3;
+    position: absolute;
+    z-index: -1;
+    top: 555px;
+    right: 250px;
+  }
+  .circle {
+    width: 1000px;
+    height: 1000px;
+    transform: rotate(241deg);
+    position: absolute;
+    z-index: -1;
+    bottom: 500px;
+    left: 10%;
+    border-radius: 50%;
+    border: 10px solid #f8fbf3;
+    border-bottom: 0;
+    background: #f8fbf3;
+  }
+  .font-12 {
+    font-size: 16px;
+  }
+  .commitment {
+    margin-right: 150px;
+    margin-top: 65px;
+    font-size: 20px;
+    width: 50% !important;
+  }
+  .commitmentTwo {
+    float: right;
+    width: 40%;
+    margin-right: 228px;
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 1801px) and (max-width: 2000px) {
+  .navbar-brand .logo {
+    margin-left: -170px;
+  }
+  .leadershipSection p{
+    padding-right: 160px;
+  }
+  .whatIsGuidefii .card {
+    /* left: 12%; */
+    background-color: #fafafa;
+    height: fit-content;
+    max-width: 43%;
+    padding: 35px 77px;
+    top: -15%;
+}
+.educationSection p{
+  padding-right: 120px;
+}
+.investorsSection p{
+  padding-right: 120px;
+}
+.faqCircleBig .circleTwo{
+  width: 1200px;
+  height: 1200px;
+  transform: rotate(241deg);
+  position: absolute;
+  z-index: -1;
+  bottom: 0px;
+  left: 10%;
+  border-radius: 50%;
+  border: 10px solid #f8fbf3;
+  border-bottom: 0;
+  background: #f8fbf3;
+}
+.whatIsGuidefii .card .card-body .card-text {
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 17px;
+  font-family: "lato-regular";
+  color: #495057;
+}
+.financialWelness {
+  font-size: 23px;
+  line-height: 31px;
+  font-family: "lato-regular";
+}
+.card-title {
+  font-size: 38px;
+  letter-spacing: 0.76px;
+  line-height: 46px;
+  font-family: "proxima-semiBold";
+  padding-top: 13px;
+}
+.whatIsGuidefii {
+  background-image: url(../images/Mask-Group.png);
+  background-size: 74%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  margin-top: 205px;
+  padding-bottom: 277px;
+}
+.carousel-caption {
+  position: absolute;
+  right: 25%;
+  bottom: 0px;
+  top: 250px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 118px;
+  left: auto;
+  text-align: center;
+}
+.whatIsGuidefii div .fourPeople {
+  position: relative;
+  right: 6%;
+  padding-top: 77px;
+  z-index: -1;
+}
+  .inverted-logos-1 {
+    position: absolute;
+    top: 378px;
+    left: 173px;
+  }
+  .fourPeople{
+    width: 1069px !important;
+  }
+  .commitment-picture {
+    width: 557px;
+    height: 572px;
+  }
+  .faqCircle {
+    right: 415px;
+    width: 500px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    background: #f8fbf3;
+    height: 500px;
+    top: 554px;
+  }
+  .faq_picture {
+    width: 60% !important;
+  }
+  .circleBottom {
+    width: 814px;
+    border-radius: 50%;
+    height: 1000px;
+    background: #f8fbf3;
+    position: absolute;
+    z-index: -1;
+    top: 540px;
+    right: 450px;
+  }
+  .accordion {
+    width: 85%;
+  }
+  .circleTwo {
+    width: 1000px;
+    height: 1000px;
+    transform: rotate(241deg);
+    position: absolute;
+    z-index: -1;
+    bottom: -212px;
+    left: 18%;
+    border-radius: 50%;
+    border: 10px solid #f8fbf3;
+    border-bottom: 0;
+    background: #f8fbf3;
+  }
+  .inverted-text-two {
+    position: absolute;
+    transform: rotate(90deg);
+    left: 164px;
+    top: 100px;
+    font-size: 10px;
+    color: #b6b6b6;
+  }
+  .inverted-text {
+    position: absolute;
+    transform: rotate(90deg);
+    left: 149px;
+    top: 135px;
+    font-size: 10px;
+    color: #b6b6b6;
+  }
+  .largeScreenMargins {
+    margin: 0px 80px;
+  }
+  .inverted-logos {
+    position: absolute;
+    top: 430px;
+    left: 172.5px;
+  }
+  .navbar-collapse {
+    margin-right: -250px;
+  }
+  .main-image-text {
+    position: absolute;
+    bottom: 175px;
+    left: 9%;
+  }
+  .whatIsGuidefi {
+    margin-top: 100px;
+  }
+  .main-bg-image {
+    position: absolute;
+    left: 1045px;
+    height: 652px;
+    width: 582px;
+    top: 185px;
+  }
+  .main-intro {
+    background: #fafafa;
+    position: absolute;
+    top: 32px;
+    left: 16.5%;
+    width: 502px;
+    height: 709px;
+  }
+  .main-intro .what {
+    font-size: 38px;
+    padding-top: 45px;
+    padding-left: 61px;
+  }
+  .mainIntroBorder {
+    height: 2px;
+    background: #a0cd4f;
+    width: 40px;
+    margin-top: 45px;
+    margin-left: 61px;
+  }
+  .accordion-inner {
+    color: #737373;
+    width: 76%;
+  }
+  .intro-gudifie {
+    font-size: 23px;
+    line-height: 31px;
+    padding-left: 61px;
+    padding-top: 20px;
+    width: 395px;
+  }
+  .intro-gudifie-2 {
+    font-size: 18px;
+    margin-top: 28px;
+    padding-left: 61px;
+    color: #8f9498;
+    line-height: 30px;
+    width: 403px;
+  }
+  .main-image-text button {
+    margin-top: 77px;
+  }
+  .first-arrow {
+    margin-bottom: 70px !important;
+    margin-top: 130px;
+  }
+  .howGudefiworks h5 {
+    font-size: 28px;
+  }
+  .howGudefiworks p {
+    font-size: 20px;
+    margin-left: 60px !important;
+  }
+  .main-intro-height {
+    height: 864px;
+  }
+  .howGudefiworks h5 {
+    margin-left: 60px !important;
+    line-height: 37px;
+  }
+  .horizontal-line::before {
+    display: inline-block;
+    content: "";
+    border-top: 0.1rem solid #4a2a5f;
+    margin-left: -235px;
+    width: 14rem;
+    transform: rotate(180deg) translateY(5px) translateX(18px);
+  }
+  .howGudefiworks p {
+    width: 422px;
+    line-height: 34px;
+  }
+  .matchProcess div p {
+    font-size: 24px;
+    font-family: "lato";
+  }
+  .sign-up-banner {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .btn-download {
+    font-size: 23px;
+  }
+  .btn-advisor {
+    font-size: 20px;
+  }
+  .W-guidance-paragraph {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.9px;
+  }
+  .smallCircleFour {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+    right: 32px;
+    top: 24px;
+  }
+  .main-image {
+    position: absolute;
+    left: 29%;
+    width: 1069px;
+    height: 709px;
+    top: 92px;
+  }
+  .smallCircleTwo {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+    top: 24px;
+    right: 39px;
+  }
+  .smallCircleThree {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+    right: 29px;
+    top: 25px;
+  }
+  .smallCircleOne {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+    right: 35px;
+    top: 24px;
+  }
+  .circle {
+    width: 1000px;
+    height: 1000px;
+    transform: rotate(241deg);
+    position: absolute;
+    z-index: -1;
+    bottom: 500px;
+    left: 10%;
+    border-radius: 50%;
+    border: 10px solid #f8fbf3;
+    border-bottom: 0;
+    background: #f8fbf3;
+  }
+  .about-us-p-width {
+    font-size: 23px;
+    font-family: "lato";
+    width: 80%;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  .about-us-p-width-1 {
+    line-height: 34px;
+    font-size: 18px;
+    width: 80%;
+    font-family: "lato";
+  }
+  .font-12 {
+    font-size: 18px;
+  }
+  .commitment {
+    margin-right: 162px;
+    margin-top: 65px;
+    font-size: 27px;
+    width: 51% !important;
+  }
+  .commitmentTwo {
+    float: right;
+    width: 42%;
+    margin-right: 237px;
+    margin-top: 15px;
+  }
+  .inverted-logos-2 {
+    position: absolute;
+    top: 358px;
+    left: 175.5px;
+  }
+  .inverted-text-three {
+    position: absolute;
+    transform: rotate(90deg);
+    left: 164px;
+    top: 70px;
+    font-size: 10px;
+    color: #b6b6b6;
+  }
+}
+@media only screen and (min-width: 2001px) {
+  .main-image-text {
+    position: absolute;
+    bottom: 180px;
+    left: 9%;
+  }
+  .first-arrow{
+    margin-top: 100px;
+  }
+  .faqCircleBig .circleTwo{
+    width: 1200px;
+    height: 1200px;
+    transform: rotate(241deg);
+    position: absolute;
+    z-index: -1;
+    bottom: 0px;
+    left: 10%;
+    border-radius: 50%;
+    border: 10px solid #f8fbf3;
+    border-bottom: 0;
+    background: #f8fbf3;
+  }
+  .whatIsGuidefii {
+    background-image: url(../images/Mask-Group.png);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    margin-top: 215px;
+    padding-bottom: 195px;
+}
+  .fourPeople{
+    width: 1069px;
+  }
+  .whatIsGuidefii .card {
+    padding: 50px 103px;
+    top: -15%;
+    background-color: #fafafa;
+    height: fit-content;
+    max-width: 43%;
+}
+
+.whatIsGuidefii div .fourPeople {
+  position: relative;
+  right: 0%;
+  left: 5%;
+  padding-top: 81px;
+  z-index: -1;
+}
+.card-title {
+  font-size: 38px;
+  letter-spacing: 0.76px;
+  line-height: 46px;
+  font-family: "proxima-semiBold";
+  padding-top: 13px;
+}
+.financialWelness {
+  font-size: 23px;
+  line-height: 31px;
+  font-family: "lato-regular";
+}
+.whatIsGuidefii .card .card-body .card-text {
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 17px;
+  font-family: "lato-regular";
+  color: #495057;
+}
+.carousel-caption {
+  position: absolute;
+  right: 25%;
+  /* bottom: 174px; */
+  top: 250px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 118px;
+  left: auto;
+  text-align: center;
+}
+.carousel-caption button{
+  padding-top: 80px;
+}
+  .commitment-picture {
+    width: 557px;
+    height: 572px;
+  }
+  .faqCircle {
+    right: 423px;
+    width: 500px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    background: #f8fbf3;
+    height: 500px;
+    top: 523px;
+  }
+  .faq_picture {
+    width: 52% !important;
+  }
+  .accordion-inner {
+    width: 72%;
+  }
+  .main-image-text button {
+    padding-top: 80px;
+  }
+  .accordion {
+    width: 80%;
+  }
+  .howGudefiworks p {
+    line-height: 34px;
+    margin-left: 70px;
+    width: 100%;
+    font-size: 22px;
+  }
+  .howGudefiworks h5 {
+    line-height: 35px;
+    margin-left: 70px;
+  }
+  .inverted-text-two {
+    position: absolute;
+    transform: rotate(90deg);
+    left: 213px;
+    top: 94px;
+    font-size: 10px;
+    color: #b6b6b6;
+  }
+  .inverted-logos-1 {
+    position: absolute;
+    top: 365px;
+    left: 223px;
+  }
+  .circleTwo {
+    width: 1000px;
+    height: 1000px;
+    transform: rotate(241deg);
+    position: absolute;
+    z-index: -1;
+    bottom: -212px;
+    left: 34%;
+    border-radius: 50%;
+    border: 10px solid #f8fbf3;
+    border-bottom: 0;
+    background: #f8fbf3;
+  }
+  .inverted-text {
+    position: absolute;
+    transform: rotate(90deg);
+    left: 200px;
+    top: 128px;
+    font-size: 10px;
+    color: #b6b6b6;
+  }
+  .inverted-logos {
+    position: absolute;
+    top: 420px;
+    left: 223px;
+  }
+  .main-intro {
+    background: #fafafa;
+    position: absolute;
+    top: 26px;
+    left: 15.5%;
+    width: 502px;
+    height: 709px;
+  }
+  .largeScreenMargins {
+    margin: 0px 90px;
+  }
+
+  .main-intro .what {
+    font-size: 38px;
+    margin-left: 15px;
+  }
+  .mainIntroBorder {
+    height: 2px;
+    background: #a0cd4f;
+    width: 40px;
+    margin-left: 78px;
+    margin-top: 40px;
+  }
+  .intro-gudifie {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-left: 15px;
+  }
+  .main-bg-image {
+    position: absolute;
+    left: 52%;
+    height: 652px;
+    width: 582px;
+    top: 180px;
+  }
+  .main-intro-height {
+    height: 720px;
+  }
+  .intro-gudifie-2 {
+    font-size: 18px;
+    margin-top: 29px;
+    color: #8f9498;
+    line-height: 30px;
+    margin-left: 15px;
+  }
+  .whatIsGuidefi {
+    padding-top: 115px;
+  }
+  .howGudefiworks h5 {
+    font-size: 30px;
+  }
+
+  .horizontal-line::before {
+    display: inline-block;
+    content: "";
+    border-top: 0.1rem solid #4a2a5f;
+    width: 13rem;
+    transform: rotate(180deg) translateY(5px) translateX(55px);
+  }
+  .matchProcess div p {
+    font-size: 24px;
+  }
+  .sign-up-banner {
+    font-size: 30px;
+    letter-spacing: 0.52px;
+    line-height: 34px;
+  }
+  .btn-download {
+    font-size: 23px;
+    width: 258px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 40px;
+  }
+  .btn-advisor {
+    font-size: 20px;
+  }
+  .main-image {
+    position: absolute;
+    left: 26%;
+    width: 1069px;
+    top: 92px;
+    height: 709px;
+  }
+  .W-guidance-paragraph {
+    font-size: 20px;
+    letter-spacing: 0.9px;
+    line-height: 30px;
+  }
+  .navbar-brand .logo {
+    margin-left: -236px;
+  }
+  .navbar-collapse {
+    margin-right: -250px;
+  }
+  .smallCircleFour {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+  }
+  .smallCircleTwo {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+  }
+  .smallCircleThree {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+  }
+  .smallCircleOne {
+    position: relative;
+    background: #a0cd4f;
+    width: 61px;
+    border-radius: 50%;
+    z-index: -1;
+    height: 59px;
+  }
+  .circle {
+    width: 1000px;
+    height: 1000px;
+    transform: rotate(241deg);
+    position: absolute;
+    z-index: -1;
+    bottom: 500px;
+    left: 9%;
+    border-radius: 50%;
+    border: 10px solid #f8fbf3;
+    border-bottom: 0;
+    background: #f8fbf3;
+  }
+  .circleBottom {
+    width: 1000px;
+    border-radius: 50%;
+    height: 1000px;
+    background: #f8fbf3;
+    position: absolute;
+    z-index: -1;
+    top: 540px;
+    right: 430px;
+  }
+  .about-us-p-width {
+    line-height: 34px;
+    font-size: 23px;
+    letter-spacing: 1.15px;
+    width: 70%;
+    font-weight: 600;
+    font-family: "lato";
+  }
+  .font-12 {
+    font-size: 18px;
+  }
+  .about-us-p-width-1 {
+    line-height: 34px;
+    font-size: 18px;
+    width: 70%;
+    font-family: "lato";
+  }
+  .commitment {
+    margin-right: 113px;
+    margin-top: 65px;
+    font-size: 26px;
+    width: 50% !important;
+    letter-spacing: 0.52px;
+    line-height: 32px;
+  }
+  .commitmentTwo {
+    float: right;
+    width: 40%;
+    margin-right: 208px;
+    margin-top: 20px;
+  }
+}

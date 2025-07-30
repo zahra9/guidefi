@@ -1,0 +1,388 @@
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../fonts/Montserrat/Montserrat-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../fonts/Montserrat/Montserrat-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../fonts/Montserrat/Montserrat-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../fonts/Montserrat/Montserrat-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: initial;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+}
+code {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  font-weight: 400;
+  /* left: 250px; */
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+}
+
+.flex-row, .email-wrapper .mail-view .message-body .attachments-sections ul li, .navbar .navbar-menu-wrapper .navbar-nav {
+  flex-direction: row !important;
+}
+
+.d-flex, .loader-demo-box, .list-wrapper ul li, .email-wrapper .mail-sidebar .menu-bar .profile-list-item a, .email-wrapper .mail-sidebar .menu-bar .profile-list-item a .user, .email-wrapper .mail-list-container .mail-list .details, .email-wrapper .mail-view .message-body .attachments-sections ul li .thumb, .email-wrapper .mail-view .message-body .attachments-sections ul li .details .buttons, .lightGallery .image-tile .demo-gallery-poster, .swal2-modal, .navbar .navbar-menu-wrapper .navbar-nav, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item {
+  display: flex !important;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+.navbar .navbar-menu-wrapper {
+  background: #ddf2f8;
+  transition: width 0.25s ease;
+  -webkit-transition: width 0.25s ease;
+  -moz-transition: width 0.25s ease;
+  -ms-transition: width 0.25s ease;
+  color: #9a9a9a;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  width: 100%;
+  /* width: calc(100% - 250px); */
+  height: 106px;
+}
+
+.navbar .navbar-menu-wrapper .navbar-toggler {
+  border: 0;
+  color: inherit;
+  font-size: 1.125rem;
+  padding: 0;
+}
+
+button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+
+.align-self-center, .navbar .navbar-menu-wrapper .navbar-nav.navbar-nav-right {
+  align-self: center !important;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.navbar .navbar-brand-wrapper {
+  margin: 0px 22px;
+  transition: width 0.25s ease, background 0.25s ease;
+  -webkit-transition: width 0.25s ease, background 0.25s ease;
+  -moz-transition: width 0.25s ease, background 0.25s ease;
+  -ms-transition: width 0.25s ease, background 0.25s ease;
+}
+
+.align-items-center, .loader-demo-box, .list-wrapper ul li, .email-wrapper .mail-view .message-body .attachments-sections ul li .thumb, .email-wrapper .mail-view .message-body .attachments-sections ul li .details .buttons, .navbar .navbar-menu-wrapper .navbar-nav, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item, .navbar .navbar-menu-wrapper .navbar-nav.navbar-nav-right .nav-item {
+  align-items: center !important;
+}
+
+.justify-content-center, .email-wrapper .mail-view .message-body .attachments-sections ul li .thumb {
+  justify-content: center !important;
+}
+
+.navbar .navbar-brand-wrapper .navbar-brand {
+  color: #27367f;
+  font-size: 1.5rem;
+  margin-right: 0;
+  padding: .25rem 0;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.navbar .navbar-brand-wrapper .navbar-brand.brand-logo-mini {
+  display: none;
+}
+
+.navbar .navbar-brand-wrapper .brand-logo-mini {
+  padding-left: 0;
+  text-align: center;
+}
+
+.align-self-center, .navbar .navbar-menu-wrapper .navbar-nav.navbar-nav-right {
+  align-self: center !important;
+}
+
+.align-items-stretch, .email-wrapper .mail-view .message-body .attachments-sections ul li, .navbar .navbar-menu-wrapper .navbar-nav.navbar-nav-right {
+  align-items: stretch !important;
+}
+
+.flex-row, .email-wrapper .mail-view .message-body .attachments-sections ul li, .navbar .navbar-menu-wrapper .navbar-nav {
+  flex-direction: row !important;
+}
+
+.align-items-center, .loader-demo-box, .list-wrapper ul li, .email-wrapper .mail-view .message-body .attachments-sections ul li .thumb, .email-wrapper .mail-view .message-body .attachments-sections ul li .details .buttons, .navbar .navbar-menu-wrapper .navbar-nav, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item, .navbar .navbar-menu-wrapper .navbar-nav.navbar-nav-right .nav-item {
+  align-items: center !important;
+}
+
+.navbar .navbar-menu-wrapper .navbar-nav.navbar-nav-right .nav-item {
+  display: flex;
+}
+
+.align-items-center, .loader-demo-box, .list-wrapper ul li, .email-wrapper .mail-view .message-body .attachments-sections ul li .thumb, .email-wrapper .mail-view .message-body .attachments-sections ul li .details .buttons, .navbar .navbar-menu-wrapper .navbar-nav, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item, .navbar .navbar-menu-wrapper .navbar-nav.navbar-nav-right .nav-item {
+  align-items: center !important;
+}
+
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
+  color: inherit;
+  font-size: 1rem;
+}
+
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search .form-control.hidden, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search .hidden.asColorPicker-input, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search .dataTables_wrapper select.hidden, .dataTables_wrapper .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search select.hidden, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search .jsgrid .jsgrid-table .jsgrid-filter-row input.hidden[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search input.hidden[type=text], .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search .jsgrid .jsgrid-table .jsgrid-filter-row select.hidden, .jsgrid .jsgrid-table .jsgrid-filter-row .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search select.hidden, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search .jsgrid .jsgrid-table .jsgrid-filter-row input.hidden[type=number], .jsgrid .jsgrid-table .jsgrid-filter-row .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search input.hidden[type=number], .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search .select2-container--default .hidden.select2-selection--single, .select2-container--default .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search .hidden.select2-selection--single, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search .select2-container--default .select2-selection--single .hidden.select2-search__field, .select2-container--default .select2-selection--single .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search .hidden.select2-search__field, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search .hidden.typeahead, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search .hidden.tt-query, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search .hidden.tt-hint {
+  display: none;
+}
+
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .count-indicator {
+  position: relative;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown {
+  position: absolute;
+  font-size: 0.9rem;
+  margin-top: 0;
+  right: 0;
+  left: auto;
+  top: 100%;
+}
+
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu {
+  border: none;
+  -webkit-box-shadow: 0px 3px 21px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 3px 21px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 21px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdownAnimation, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu {
+  animation-name: dropdownAnimation;
+  -webkit-animation-duration: 0.25s;
+  -moz-animation-duration: 0.25s;
+  -ms-animation-duration: 0.25s;
+  -o-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.dropdown .dropdown-menu {
+  margin-top: .75rem;
+  font-size: 0.875rem;
+  border-radius: 0;
+}
+
+.dropdown-header {
+  display: block;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .count-indicator .count {
+  position: absolute;
+  left: 60%;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background: #d24571;
+  top: -2px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: left;
+  list-style: none;
+  background-color: #1f1f23;
+  background-clip: padding-box;
+  border: 1px solid rgba(101, 103, 119, 0.21);
+  border-radius: 0.25rem;
+}
+
+.preview-list .preview-item .preview-thumbnail img, .preview-list .preview-item .preview-thumbnail .preview-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+}
+
+.preview-list .preview-item .preview-thumbnail {
+  color: #ffffff;
+  position: relative;
+}
+
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item {
+  margin-bottom: 0;
+  padding: .65rem 1.5rem;
+  cursor: pointer;
+}
+
+.preview-list .preview-item .preview-item-content {
+  line-height: 1;
+  padding-left: 15px;
+}
+
+.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: rgba(112, 120, 137, 0.3);
+}
+
+.bg-gradient-success, .settings-panel .color-tiles .tiles.success {
+  background: linear-gradient(to bottom right, #389466, #42b883);
+}
+
+.bg-gradient-warning, .settings-panel .color-tiles .tiles.warning {
+  background: linear-gradient(to bottom right, #da8115, #ef952e);
+}
+
+.bg-gradient-info, .settings-panel .color-tiles .tiles.info {
+  background: linear-gradient(to bottom right, #18879d, #52b1c6);
+}
+
+.preview-list .preview-item .preview-thumbnail .preview-icon {
+  padding: 6px;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.text-primary {
+  color: #f16857 !important;
+}
+
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item {
+  margin-bottom: 0;
+  padding: .65rem 1.5rem;
+  cursor: pointer;
+}
+
+.btn, .fc button, .ajax-upload-dragdrop .ajax-file-upload, .swal2-modal .swal2-buttonswrapper .swal2-styled, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-confirm, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-cancel, .wizard>.actions a, .btn-group.open .dropdown-toggle, .fc .open.fc-button-group .dropdown-toggle, .btn:active, .fc button:active, .ajax-upload-dragdrop .ajax-file-upload:active, .swal2-modal .swal2-buttonswrapper .swal2-styled:active, .wizard>.actions a:active, .btn:focus, .fc button:focus, .ajax-upload-dragdrop .ajax-file-upload:focus, .swal2-modal .swal2-buttonswrapper .swal2-styled:focus, .wizard>.actions a:focus, .btn:hover, .fc button:hover, .ajax-upload-dragdrop .ajax-file-upload:hover, .swal2-modal .swal2-buttonswrapper .swal2-styled:hover, .wizard>.actions a:hover, .btn:visited, .fc button:visited, .ajax-upload-dragdrop .ajax-file-upload:visited, .swal2-modal .swal2-buttonswrapper .swal2-styled:visited, .wizard>.actions a:visited, a, a:active, a:checked, a:focus, a:hover, a:visited, body, button, button:active, button:hover, button:visited, div, input, input:active, input:focus, input:hover, input:visited, select, select:active, select:focus, select:visited, textarea, textarea:active, textarea:focus, textarea:hover, textarea:visited {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item i {
+  font-size: 15px;
+}
+
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+.sidebar .nav .nav-item .nav-link i.menu-icon {
+  font-size: 1.1rem;
+  line-height: 1;
+  font-size: 14px;
+  margin-right: 0.6rem;
+  color: #000;
+}
+
+.sidebar .sidebar-content-wrapper {
+    height: calc(100vh - (18px + 18px));
+    overflow: auto;
+    position: relative;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+@media (min-width: 576px){
+.d-sm-flex {
+    display: flex !important;
+}
+}
+
+@media (min-width: 992px){
+.navbar .navbar-menu-wrapper .navbar-nav.navbar-nav-right {
+    margin-left: auto;
+}
+}

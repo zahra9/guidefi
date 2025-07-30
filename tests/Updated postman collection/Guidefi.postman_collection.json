@@ -1,0 +1,4287 @@
+{
+	"info": {
+		"_postman_id": "b5f3e08d-acc4-4876-aec9-6ed3adbe8e5d",
+		"name": "Guidefi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Reset password email",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVhMGY2MTcxOGQ0YTQ0Y2YwNGY2OWFiMmE2YmUyMzM3ZmNhYjAxM2MzMmZhYWY5MDQ4ZjcxZTNkZDJiYzUyNzY4YmUyMzc0YTQ2MzFmNTgwIn0.eyJhdWQiOiIxIiwianRpIjoiZWEwZjYxNzE4ZDRhNDRjZjA0ZjY5YWIyYTZiZTIzMzdmY2FiMDEzYzMyZmFhZjkwNDhmNzFlM2RkMmJjNTI3NjhiZTIzNzRhNDYzMWY1ODAiLCJpYXQiOjE1Nzc4NTk2MjMsIm5iZiI6MTU3Nzg1OTYyMywiZXhwIjoxNjA5NDgyMDIzLCJzdWIiOiIxNjMiLCJzY29wZXMiOltdfQ.VH1Ypc6S5JqV5ozty_J3yiI-zdpU-O2IoRuNCYGRm3Ir1YHnluLDlBaY2wykqWmYEu3xT9J2ADUM2V4SENwR0FodOU5LB4Qf1xuCTpvFP7UAUqNSCrhuJWD310esmR63q2Xaf5d-8hB-m-U5p8d3vJQ6I7jwrfiakj630bgJJGPnRW5leTcrOsl341778RiRRNelZ25P0It_GxVZR2PJk5yIsXiexixfoqedWpPa1O0UIY7AS_4l6CRxjhmhy2lHHafycLs3PkOgmumvKitqThm8rwdidEosoepYi_ovXVaMKcLpUElQpIBH1iOWrp7AHlQ8yvpSnFDbGmnOAKCrfeJOWEqC3mP6Qn0okgr-7GExYCk89CFsiORrxSubAtiGOJgVmqRUWadqnqiE6JkCS-TXTUkXuLRG4xKiSL30g4x161Z_3FakM1lDrfKzK80ndE1d0w-ozLDzdR3Ed3SGL38JxQgg-kvf9DOmQ6JXyYydTBggGsN0pgfLtwzcDfwrv9FO8BOuYZeUXhy5Z1IgSDXLWjd5kazyBWxtSBp9gzeVIdAd_3pv8RTPII6gPH7Wo1flCjOeChlyrKHNxG9FzZl033EeoCD_ybW9jczCLj_UFxy50tDpABL1nWxxKrVz8vZ_njeSBoRzvBsEVZhWPhuKYPCNRDGjPNMQrfDqz1o",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "psmith@paulettesimone.com",
+									"type": "text"
+								},
+								{
+									"key": "isTherapist",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}auth/recovery",
+							"host": [
+								"{{base_url}}auth"
+							],
+							"path": [
+								"recovery"
+							],
+							"query": [
+								{
+									"key": "feedback_id",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update new password confirm",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVhMGY2MTcxOGQ0YTQ0Y2YwNGY2OWFiMmE2YmUyMzM3ZmNhYjAxM2MzMmZhYWY5MDQ4ZjcxZTNkZDJiYzUyNzY4YmUyMzc0YTQ2MzFmNTgwIn0.eyJhdWQiOiIxIiwianRpIjoiZWEwZjYxNzE4ZDRhNDRjZjA0ZjY5YWIyYTZiZTIzMzdmY2FiMDEzYzMyZmFhZjkwNDhmNzFlM2RkMmJjNTI3NjhiZTIzNzRhNDYzMWY1ODAiLCJpYXQiOjE1Nzc4NTk2MjMsIm5iZiI6MTU3Nzg1OTYyMywiZXhwIjoxNjA5NDgyMDIzLCJzdWIiOiIxNjMiLCJzY29wZXMiOltdfQ.VH1Ypc6S5JqV5ozty_J3yiI-zdpU-O2IoRuNCYGRm3Ir1YHnluLDlBaY2wykqWmYEu3xT9J2ADUM2V4SENwR0FodOU5LB4Qf1xuCTpvFP7UAUqNSCrhuJWD310esmR63q2Xaf5d-8hB-m-U5p8d3vJQ6I7jwrfiakj630bgJJGPnRW5leTcrOsl341778RiRRNelZ25P0It_GxVZR2PJk5yIsXiexixfoqedWpPa1O0UIY7AS_4l6CRxjhmhy2lHHafycLs3PkOgmumvKitqThm8rwdidEosoepYi_ovXVaMKcLpUElQpIBH1iOWrp7AHlQ8yvpSnFDbGmnOAKCrfeJOWEqC3mP6Qn0okgr-7GExYCk89CFsiORrxSubAtiGOJgVmqRUWadqnqiE6JkCS-TXTUkXuLRG4xKiSL30g4x161Z_3FakM1lDrfKzK80ndE1d0w-ozLDzdR3Ed3SGL38JxQgg-kvf9DOmQ6JXyYydTBggGsN0pgfLtwzcDfwrv9FO8BOuYZeUXhy5Z1IgSDXLWjd5kazyBWxtSBp9gzeVIdAd_3pv8RTPII6gPH7Wo1flCjOeChlyrKHNxG9FzZl033EeoCD_ybW9jczCLj_UFxy50tDpABL1nWxxKrVz8vZ_njeSBoRzvBsEVZhWPhuKYPCNRDGjPNMQrfDqz1o",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "password",
+									"value": "1234456",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/resetCustom/bS5hYmR1bGxhaEB0cmFuc2RhdGEuYml6fDIwMjAtMDEtMTUgMDc6MjE6MDl8MjEwOHxjbGllbnQ=",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"resetCustom",
+								"bS5hYmR1bGxhaEB0cmFuc2RhdGEuYml6fDIwMjAtMDEtMTUgMDc6MjE6MDl8MjEwOHxjbGllbnQ="
+							],
+							"query": [
+								{
+									"key": "feedback_id",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"fahad.transdata+100@gmail.com\",\n  \"password\":  \"123456\",\n  \"grant_type\": \"password\",\n  \"isAdvisor\": \"0\",\n  \"isClient\": \"1\",\n  \"client_secret\": \"gM81oD36ThpmXixxtKpqRP2cSIyuR7zdu8OGKJL6\",\n  \"client_id\": \"1\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}auth/login",
+							"host": [
+								"{{base_url}}auth"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login without ssl",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"peacenease@gmail.com\",\n  \"password\":  \"123456\",\n  \"grant_type\": \"password\",\n  \"isTherapist\": \"1\",\n  \"isClient\": \"0\",\n  \"client_secret\": \"6oeEaVsOquvn2Nmslv2MnMyzK0QaYjNVFPRLwuAA\",\n  \"client_id\": \"4\"\n}"
+						},
+						"url": {
+							"raw": "https://api.ayanatherapy.com/api/auth/login",
+							"protocol": "https",
+							"host": [
+								"api",
+								"ayanatherapy",
+								"com"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Asif\",\n  \"email\": \"asifhussain.eventcart@gmail.com\",\n  \"password\": \"123456\",\n  \"role\": \"advisor\",\n  \"remember_me\": true,\n  \"client_secret\": \"6oeEaVsOquvn2Nmslv2MnMyzK0QaYjNVFPRLwuAA\",\n  \"client_id\": \"4\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}auth/register",
+							"host": [
+								"{{base_url}}auth"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile Username Therapist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImZlNTMzNzczMGJlYmEwMDRmY2EyOWIyZGU0N2NlZWEyMjJjYmVhNzM5OGE1MzRiNDE3NzA3OTkxZjQxYmVhN2I5Yjk3NjgyN2Q1YmM3ZGQ0In0.eyJhdWQiOiIzIiwianRpIjoiZmU1MzM3NzMwYmViYTAwNGZjYTI5YjJkZTQ3Y2VlYTIyMmNiZWE3Mzk4YTUzNGI0MTc3MDc5OTFmNDFiZWE3YjliOTc2ODI3ZDViYzdkZDQiLCJpYXQiOjE2MDA5NDU2NTUsIm5iZiI6MTYwMDk0NTY1NSwiZXhwIjoxNjMyNDgxNjU1LCJzdWIiOiIzOSIsInNjb3BlcyI6W119.EGDpoGiQX-Ye1ADBM_VSesWXASfYTN_uGBt-iOimhGOgpIRvtUha6-ko6zGwoGynSol1K7LCEUM5Ibbev7L3HfaB-t8uYKIF1jioR29W-q0SH3riczHH6V1dSvlFltLunHmWUDpKDu1HwVTaBGwGOZmIWLFPOoFqKL8j36tY_SYwZeXaM8qv7beoHIKfnTJp2QxbL11Nwaodvro4kz2bz2iwDbfUdrZ25MrxkUYxrCn-bWzt-besvI6vlDtLD8KR7ug80o009kGbH8pBAs07bn1Z5IRU21xsmWTP2NQQEIz6OG-EyNLutjTosTSbR4QzOhi8FXov09RXVEHGvE4-SuZoaKX9IAJiQAnNvLIExK7818y7igRHaDaDlNKSjRRIJQRwZSRvqWlUR58egZEECBu-Lid2BvjzCW8f-kEJfWhLzy8PAHAlWruLD50xmC9WV3Rmp7eF9Xyyf_zmNNEJgMtPgKGCX96IwxXdMUnpav3NCdIq2gNJC_3ALtrmIThkSRmP-vAr0nGB2SY10_NgqPkOAYWx5kIge7peXKGYhp2pik5QPJVS2wEfyeHOgpD0rehTkoBY6JEkvuvY56LY-R-ipN0qiuOdBB545W3T0T6ZKi5q7QlkbGuSgdGc3sy3J2C4Flk6t5pStJnIDP3NswpHQoLL2WPBrWeiKUZm-_Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Fahad User",
+									"type": "text"
+								},
+								{
+									"key": "income_level",
+									"value": "$103k/year",
+									"type": "text"
+								},
+								{
+									"key": "investment_level",
+									"value": "$103k/year",
+									"type": "text"
+								},
+								{
+									"key": "assets",
+									"value": "$103k/year",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}update-profile",
+							"host": [
+								"{{base_url}}update-profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update  availability",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjQ3ODk5YTYyMjc5YTQzNmU3ZTIzYjI2YjQ0YWQ4ODhiYjBkMGM1NTExODBlMzU3N2E5N2E1YWJiZGRkNmVhM2UyZTk3NDU2ZTk1ZGFjMTYxIn0.eyJhdWQiOiIxIiwianRpIjoiNDc4OTlhNjIyNzlhNDM2ZTdlMjNiMjZiNDRhZDg4OGJiMGQwYzU1MTE4MGUzNTc3YTk3YTVhYmJkZGQ2ZWEzZTJlOTc0NTZlOTVkYWMxNjEiLCJpYXQiOjE1OTI5OTgzODYsIm5iZiI6MTU5Mjk5ODM4NiwiZXhwIjoxNjI0NTM0Mzg2LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.JIuUg6DxEm_sU5B5ANF_xDaj53N516RNb-oa6jds-PSP-UivDyloh8HxwlSe4bfVxkuPb2yFQSkhaTENNOWzk0W9NOdUIh1r2rTY4K9mvYubXu7Urs99uACEcX7y_k_YlhfDHAn6awHg-wxTGi4P-h_6duheIiusIxTAYfZ3Z-nM38nMpKuj0bBWAZYepw5Wz6P8_GkfqI2XSy_jUDbYVRO3HzvbDhG3W77KXCx1kS7XZK5IGyLKzU6KhIRHV_oVNsXydLb4ybj-cNramLg01iji0nmfFR_0d4CFDcTDNFwsHOH-5LQ8r65unXZj1wTsih6tCw-23ZnLl1VZVoO8PB0A-Cfb6w0zFea__0dQUagNp1Yo2BxdJZMOrX1wxsyps9CuZquL6tp-KbCx1xRbyf3wDto2X_v7W-p4rfVK1NbpZ8LFbhHl8PqzupOx7HefJPJ9siqK1AOKoob3c9Kdor-UG_XXUgIquesZRxo6Mm3TJZPTLA2UFKsCS_xCG0zUJ-TmnKQxsd4Tjb6E5A6t7ROqnr0u8SsMxnrag_jI82w2RW9bG2vzffPpOjG_ynqVfJv_pBkz1ZQ-HZgeZSDTtQrr6sfqUe8LxCx4zNK8EhfGRKQ-Bb1Egx8cfrf0WJGUUN67B27zGtvxKwRvIwNF7AU2pRvppc2v3wPyJ6s3xgs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "appointment_availability",
+									"value": "1",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}update-availability",
+							"host": [
+								"{{base_url}}update-availability"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Client Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImI0NTEzZTFlYjBiM2M2ZWYyNTU2NDUwOGQyZTM3ZWJkNTJlMDdmMmNiOGYyNGY0ZThiYWUyNzlkOTIzZjUyZTM5NjY4Yjg3NWM0ZTdjZjRmIn0.eyJhdWQiOiIzIiwianRpIjoiYjQ1MTNlMWViMGIzYzZlZjI1NTY0NTA4ZDJlMzdlYmQ1MmUwN2YyY2I4ZjI0ZjRlOGJhZTI3OWQ5MjNmNTJlMzk2NjhiODc1YzRlN2NmNGYiLCJpYXQiOjE2MDEzNjIyOTUsIm5iZiI6MTYwMTM2MjI5NSwiZXhwIjoxNjMyODk4Mjk1LCJzdWIiOiI0NSIsInNjb3BlcyI6W119.vX9BEmN3L3Zh3Yv0RkEXMLjCBRt7rcIoRowzYphEHYCIFquPN3aW9_DNZ6y-qdekLcPQgCDBx3uD7NFC97T9y3X99HT71p8OZXCiPy7zMiYK_L5oFkjU9_t8mZqnWhKnOYfyMJWL8wyQWk8ALbak6m8swBuZFQeRzId8h48jgeF1IJxVwBStVkC3FpFob5ORY_00zpMB5hbHw2rsG1YkRtgV5nqzRrT9KMWHiumAxzWCGlHLxlKJfiUXKlJN-Z6-uMVCDY4ZKW-tbR_76ThqRRaaBeH8XJV-UMsvyaN3l8dN88DBAliTqqH7aVsrjnYIsKk8RpjZM2PHz-qk2QZr7Gh-9i3Pd8PDuc2YzK6N8legtnzLZGZbPEXQ69SUNa27UKEyKZ9ZHBb-Olux44FcqiVqhlrq2c50gIMlak_D_sRxwRnkPmhc-JqfLTI8n6Aod_M8OegtFA0UihUOV08AnY9JzmNtPcD-gayK3jpf3ZZ24Mr8FNnnbzQQhagDifCOB2Ruig8HggTmyExYcGLcxnrIdFnCp7wuNj86SGECrm3IrT1SEmINZTUwOLixNpXoGSMgM3WmHqFDm24haEsGiZVZ2AdpHbDl-qk5hK3raQUIAQY_6qTk62HN78PlO1QVXrXaJc0OUee7nH1oTOFRWpvJKcjWfdm6RV9x3k2zAkQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}client-profile?user_id=39",
+							"host": [
+								"{{base_url}}client-profile"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "39"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Advisor Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImNhZTFjYTMyMzc1NDAzZjk5NmM1ZDZlM2FiNzNkYzIzN2NlZDZiOTJlMDliYTkyYjI3YmY4ZjZjZmQyN2I2YTg4ZjVmMzVmMTNhNGZlYmFkIn0.eyJhdWQiOiIzIiwianRpIjoiY2FlMWNhMzIzNzU0MDNmOTk2YzVkNmUzYWI3M2RjMjM3Y2VkNmI5MmUwOWJhOTJiMjdiZjhmNmNmZDI3YjZhODhmNWYzNWYxM2E0ZmViYWQiLCJpYXQiOjE2MDEzNjU2NTgsIm5iZiI6MTYwMTM2NTY1OCwiZXhwIjoxNjMyOTAxNjU3LCJzdWIiOiIzOSIsInNjb3BlcyI6W119.TknrB2Ja0MrmSA6-nYJQXTrS8_q1wgvhp1S2jwG9FineW9d0JxclygSrw-t90eRnDcgdztei-pN_YMmdqa8fRokkNLROzpY9BRxXS5wT7RhzUlI2kgHVMhh6rnxrl_sFBvyIbGEm5DNNhqb8ljxCFnxx59bpdWa7hnLao473WVFzQpnJGu_twRbVsykidYBRHWOQj1yCrEwwhfuqwO-QxYAo8W_Ae1YQcqIDM86bMEIYXEwu7k5z2KAhFJ3Acp5eGeOMnjZAucidpnTK6d9K4yW-ZCt0zGnFbMGZiTtEcoY6YKsiC4stWVKe1WcHRjIKtFHvtx2wXMl1s89EH0E1EJagcEhiNJcqVmbsXaw2RjbX8L305uSlSI-ZI-Dfl-pKA_1hKK5e7BMdYRj0Rb5Fb0ICXXPfIei_JC9ZvnZQq7uwwm9Zw_zgxywZc0nb6D--H7lqLwJ4f9BXv8Y9eNG2q6xqE8eAIR4kkLH_s2YupQRUocVRQ9VqdqC9qYNhFGTgOogxyOaGbzpUnd0cxV5cg0F6yTMFlqtTay4pQt2JozWypQYUPrv3hVLwjXj-j3LhBte7ho0o_C-j387n_MQe_W9zP-zjAZLVGLWWyCdXHHKlZv6ulkBGiOS9utwJdXgiqFzjxRtylWTTw3f2PoOW67u1Ct2vHST0Bx9tfO5aoZ4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}advisor_profile?user_id=45",
+							"host": [
+								"{{base_url}}advisor_profile"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "45"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Resend Activation Email",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjQ4YWExYTEzZGJhODQ2ODVmOTJjNjg4OGU5NTdiMzJlZmJhOTkwYTJjMWJmNTI2YTdlNTY2NGIzYjYxYTliZGUyMDU2ZTU0YjdiYzM5MmJhIn0.eyJhdWQiOiIxIiwianRpIjoiNDhhYTFhMTNkYmE4NDY4NWY5MmM2ODg4ZTk1N2IzMmVmYmE5OTBhMmMxYmY1MjZhN2U1NjY0YjNiNjFhOWJkZTIwNTZlNTRiN2JjMzkyYmEiLCJpYXQiOjE1OTE2MzkyMDAsIm5iZiI6MTU5MTYzOTIwMCwiZXhwIjoxNjIzMTc1MjAwLCJzdWIiOiIyNjczIiwic2NvcGVzIjpbXX0.fygdNeaKPPkX3cNx3-lbHhx6uzhmnhYzFjBv4jBpIMCNm-q7JJtosvhOzM3GbdTY6iujbjf7C7FOB4FK3C1LqAs6z4GomIomiNHFAk96gok19fMuRAis-wSWUDjk00DSyZ0Cr7OveQ1xZ6a_ZcbBNAh7diezpWJujhmP84wGMDerE6DYh1NsSWM0iSXoeqssVHCgG6KwkXfFxYBt0ZH-fHiUhHQ_dXFD9-hFE0A02j5KtmxrbsQoRSoOO4uSyqaomNxjW8a-5mNvintdkuYBb5fYKzEsrfe_ke4beo7JIqr3md3IzeBePBbAoKQy4HB6giVIMzIbHd_QydUU7Pq2M-Fil7bM4wsWaDZFDNzMFeUjkFfVt0XBFjoL4cjywTD2ActkE-ZPd3kAITFWtLpBgcSMLGSqaqsyVf5YOeGSbPHlbibf0KNnNOxRw4BOPbibKjwI6uRoo4GWOrQW5kQrrcaXrk-kesChEYztQmH9xIHbF4_nFiFJtIjvQSk-vdiOOvVTlHnvEY4ZAbPuaotjiQD3x-UyfP69ADYd8V1qa8twhoayTQyy0UyDEi_TRm0qUmlqrCLw3My0GkpG-czIRwIPLk7oCESllmiSKJ5Cwggx_DAXdAuYjm1zXCsb7Ycr0h4C7MLg-jSkSCLH8S0l0KCLIcGSTuTwCt5Gn8-hlYU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}resendActivationEmail",
+							"host": [
+								"{{base_url}}resendActivationEmail"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Appointments",
+			"item": [
+				{
+					"name": "Save Appointment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVjZmRmNmVjYzkxODRkNWYwNTBmZmFlMGI1NGJmNTA2ZmVkZTEwZjg5NTZkNWE3NzNmOGMwOTAwODlkMjNlNWQ4OGVmYTRhMWY4MzlmMDJiIn0.eyJhdWQiOiIxIiwianRpIjoiZWNmZGY2ZWNjOTE4NGQ1ZjA1MGZmYWUwYjU0YmY1MDZmZWRlMTBmODk1NmQ1YTc3M2Y4YzA5MDA4OWQyM2U1ZDg4ZWZhNGExZjgzOWYwMmIiLCJpYXQiOjE1OTMxODkyMDgsIm5iZiI6MTU5MzE4OTIwOCwiZXhwIjoxNjI0NzI1MjA4LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.ZTC4DGQ01M84TX5b9yebJ0AHaVvpu2v7NbpVutEl4Ck9LTpiG0Aay5JuDac11FBpq1SApADTi6C3nw9kujEnE8NTV5ywJnpNqkUiSbNnBSaChOnggZIaYkSTy58wEke1SuZr5v5O5iMNaAk14lOUVAuqDSRw8j7PU9hx_aC7HmPTwFC_jIZhoBpczVdSyKd2-2AWbZ_HNMKylikwA4dORFlzQQyAgvGXP5ZVSCFloSTODwmdB-Hr7S19B0-YNDCUQoO8hRenlt4Q3LW3HzUXH6B0_VwYih_3lA9WTpHZO0oUbm007Ib98-oorBt4QkZ0Lw4N4JCtZxUn9YxvMEvTKwmAy8yrZn49hNV9khHn4krEkIXFG1MqEhPcfCLLrRqw4-BdlNa6W1jAsFyb406eYPmJjS_z_GLGKFUrF6307X4gtPFYZTZSiIky27nVHhnsBSmm05VuNP9w1iQvUUfzuKwBC4VV3LouiAuatea0ae-Yt1HxgtlTsHra1IeTu56FEsCd2x9cnIjAWrwF1I2JNR4QydXHFpt-FesLi96Hb7CTdNV_v1IBZyhRrXIqFZwBJHdV0LeWh48CXDcchNnmRgpDm6Lx5e3vpLQHGihjCZ4wqKN-xBte6Z8UjUxbgHlj4COsv32NO8uVeJ4gzCcxj1677YJXe0fpT5qggxi-9ao",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "therapist_id",
+									"value": "47",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Video",
+									"type": "text"
+								},
+								{
+									"key": "timeslot_number",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "appointment_date",
+									"value": "2020-06-26",
+									"type": "text"
+								},
+								{
+									"key": "start_time",
+									"value": "22:00",
+									"type": "text"
+								},
+								{
+									"key": "end_time",
+									"value": "22:30",
+									"type": "text"
+								},
+								{
+									"key": "timezone",
+									"value": "Asia/Karachi",
+									"type": "text"
+								},
+								{
+									"key": "appointment_day",
+									"value": "tuesday",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								},
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}save-appointment",
+							"host": [
+								"{{base_url}}save-appointment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Appointments",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImRiZWNmNjQwYWQ2NjBiMmI0YjA5MTE1NzVhNjUwNTIwZDUyY2YxOTBlOTRlYjhjYWU4MjQzMmQzZDNmZjdhYTYxOThjYzU5MzkzMmFhNDYwIn0.eyJhdWQiOiIxIiwianRpIjoiZGJlY2Y2NDBhZDY2MGIyYjRiMDkxMTU3NWE2NTA1MjBkNTJjZjE5MGU5NGViOGNhZTgyNDMyZDNkM2ZmN2FhNjE5OGNjNTkzOTMyYWE0NjAiLCJpYXQiOjE1OTMxNjU0MzksIm5iZiI6MTU5MzE2NTQzOSwiZXhwIjoxNjI0NzAxNDM5LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.v-joqNpT0LxYg0no6wPsxzyEHGRiGNyA7Q_itsnKzDRi-x4j1pxLk8pf2dxF8xLkr6Hn_z_291_bQ10AMouDCMQwyOW7NZTkj39RptfONLyIt_DOJp2u8Bmp1B6ZrwMmGIVc34X_bqlRUKct7CSbMC08N6F23FEu4uewjIDGiVwCC_o9NbdgpnK9TXSY9HfarJ17DcuXp_8o-s8tY1kG_HRNEC5x3H9umoptbH-kfa1HLFHpGXZmI-RItlrpaJ4rwJSIi3rEQA32juBG-ax8LPLfd1vApc2qXRovCy2pHfnOPy30Cr5uqDQAuVH-G9du95WW0lc8MlTuWAjX0xK2pox2bVs8aHeEAu_PFkaxjcvotmHIDDLxLZ0awiQ-_HD9gboPGx_K31_pkCf_oSCYgGICGTC3evcF__WQnHhID3lBJ6CwbxNUSEg5VJdLiCA4Sx6xhCmCoxB1yiLt6B5tyHDW79Kb2TseR-C774xj2dtSEb4estQXTZA8oGsMJd9kRdkijFEF08iOmn6O8BG-UYyRGQyBHSBF-QNsHn6XwPXfhqCUAUhW7M-fvt7SXR3W6ECP-xmk8HJCIFHKBLK1jQfK-0_4Nj796UF6YbCD_z9NadiQOsayJJLBiLOfZFRgHqDW1buF9qL7r7Qzu1U8cjKMaZIDQeXjDstW0SH1VLM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{base_url}}get-client-appointments?timezone=Asia/Karachi",
+							"host": [
+								"{{base_url}}get-client-appointments"
+							],
+							"query": [
+								{
+									"key": "timezone",
+									"value": "Asia/Karachi"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get time slots client",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImRiZWNmNjQwYWQ2NjBiMmI0YjA5MTE1NzVhNjUwNTIwZDUyY2YxOTBlOTRlYjhjYWU4MjQzMmQzZDNmZjdhYTYxOThjYzU5MzkzMmFhNDYwIn0.eyJhdWQiOiIxIiwianRpIjoiZGJlY2Y2NDBhZDY2MGIyYjRiMDkxMTU3NWE2NTA1MjBkNTJjZjE5MGU5NGViOGNhZTgyNDMyZDNkM2ZmN2FhNjE5OGNjNTkzOTMyYWE0NjAiLCJpYXQiOjE1OTMxNjU0MzksIm5iZiI6MTU5MzE2NTQzOSwiZXhwIjoxNjI0NzAxNDM5LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.v-joqNpT0LxYg0no6wPsxzyEHGRiGNyA7Q_itsnKzDRi-x4j1pxLk8pf2dxF8xLkr6Hn_z_291_bQ10AMouDCMQwyOW7NZTkj39RptfONLyIt_DOJp2u8Bmp1B6ZrwMmGIVc34X_bqlRUKct7CSbMC08N6F23FEu4uewjIDGiVwCC_o9NbdgpnK9TXSY9HfarJ17DcuXp_8o-s8tY1kG_HRNEC5x3H9umoptbH-kfa1HLFHpGXZmI-RItlrpaJ4rwJSIi3rEQA32juBG-ax8LPLfd1vApc2qXRovCy2pHfnOPy30Cr5uqDQAuVH-G9du95WW0lc8MlTuWAjX0xK2pox2bVs8aHeEAu_PFkaxjcvotmHIDDLxLZ0awiQ-_HD9gboPGx_K31_pkCf_oSCYgGICGTC3evcF__WQnHhID3lBJ6CwbxNUSEg5VJdLiCA4Sx6xhCmCoxB1yiLt6B5tyHDW79Kb2TseR-C774xj2dtSEb4estQXTZA8oGsMJd9kRdkijFEF08iOmn6O8BG-UYyRGQyBHSBF-QNsHn6XwPXfhqCUAUhW7M-fvt7SXR3W6ECP-xmk8HJCIFHKBLK1jQfK-0_4Nj796UF6YbCD_z9NadiQOsayJJLBiLOfZFRgHqDW1buF9qL7r7Qzu1U8cjKMaZIDQeXjDstW0SH1VLM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}get-therapist-time-slots?therapist_id=47&timezone=Asia/Karachi&date=2020-06-25",
+							"host": [
+								"{{base_url}}get-therapist-time-slots"
+							],
+							"query": [
+								{
+									"key": "therapist_id",
+									"value": "47"
+								},
+								{
+									"key": "timezone",
+									"value": "Asia/Karachi"
+								},
+								{
+									"key": "date",
+									"value": "2020-06-25"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Appointments Theapist",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVjOTExZWVmMGU0MTk3NmQzNTU1ZmMzY2Y4ZjA3ODFhMGJjMzE3Y2I3OWU1ZWNhOGVhNzZiNTg1YTU3YzBhYjE1NGM5YTZkNTgxOWFmNTA3In0.eyJhdWQiOiIxIiwianRpIjoiZWM5MTFlZWYwZTQxOTc2ZDM1NTVmYzNjZjhmMDc4MWEwYmMzMTdjYjc5ZTVlY2E4ZWE3NmI1ODVhNTdjMGFiMTU0YzlhNmQ1ODE5YWY1MDciLCJpYXQiOjE1OTMxODc0NDQsIm5iZiI6MTU5MzE4NzQ0NCwiZXhwIjoxNjI0NzIzNDQ0LCJzdWIiOiI5NCIsInNjb3BlcyI6W119.qFaWcmiIAdfjuoQ5xQqYEwjKOS-8KGUpbCqKHJxDD5oFrGEV0XIyeQlBpdKgSt1yRxHWPW06ayy6A5iX5N6v8rwLVxPMoN-KO5s9mlp56Uw3viFfkPkA8G9JpUcfZrLeTESPtUfuPecU_o2hStGBVvdX9lPpRJHpRXrLRIJoB4YmwsTkrvVwiYzqET3sAtVHMebMyNd6nd-9uW_Ruip6feUPGX61wQBEn0Cx5mcxScUiDPXOzg2rJNBz70wHhHTwgIEi2MILNYaaPSoP0wSzCUvCJm1pVpTJ16-e7lRfoPv_BkzghkKlujeuYlFiXVcPNg81DHui2q6vBdPYwCophY93hijIVrX6hTbJHMgNW7_wQ0s4PxLRRo0v45gfiWj2xn-lD_9oA63RddwIh62E_o1Cs5ih6yG0Il5KItcydS0uqmTkRQFE7aXmZDktfPUxUivBI-YRH4m15AKrkfRG9UqpjqA9ftMI5hfWLaimUl56OyVXksIqIpwMOUoiOp3ZpCWvMROfWjNWxf9pT7dUK5sc5uqxRqyWKn8xjvanu05W1v27FDDQCQpbsh5v2P3QnkwuRWczkR0Ee3EdOdGeUDwYecxgZYAbkV4adBjcdnk9F4b233eByvxGSv2f5zjySBgdbw9w2m8ZRvdkMxDjryVpeFvdje-JosgkvZWysec",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{base_url}}get-therapist-appointments?timezone=Asia/Karachi",
+							"host": [
+								"{{base_url}}get-therapist-appointments"
+							],
+							"query": [
+								{
+									"key": "timezone",
+									"value": "Asia/Karachi"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Appointment Type",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjgyYWMzOTU5NTYzZjVjMjUxZTU2OTgyZDliZjRhYzIzNzFlY2QzMmQzMjNhYjgwNjc2ZDAzMTE4ODUyYmZhZDMyNDJkM2FiNTczMDIxNTI4In0.eyJhdWQiOiIxIiwianRpIjoiODJhYzM5NTk1NjNmNWMyNTFlNTY5ODJkOWJmNGFjMjM3MWVjZDMyZDMyM2FiODA2NzZkMDMxMTg4NTJiZmFkMzI0MmQzYWI1NzMwMjE1MjgiLCJpYXQiOjE1ODk0NTY4MjUsIm5iZiI6MTU4OTQ1NjgyNSwiZXhwIjoxNjIwOTkyODI1LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.cFUjt69TMPCISEr7u6Fw7JEBLFywnAMrVr3Ige_RT5CJHrcbFhKB3RJSmmxSZ3Zd3dzBxC6BG4PtPMwPc_dBwGlRDtsuxjM2Rq14h7EcSM748g4VZZhHjFff0uk33bd3_buLKLycbzqZk73hCaO5AFVJzZnwcZ9dQQhtYDulC3EiFoA1rCt4xMYeWTIaOeVzN112EZw-uMRvtWp4DcvZbB_GC19Eua-jGkSyfs2PxZJi-bp7yCqIJWGLqivjD8OSaZKYLHfFmjBhKeaPfY6duK2EF4PJbCfyyJfQ9oacvZ5w3DoO54-gDQJPyyOzy52bMErlcN3uKMLkvdSkPgXergdFohUKv8szrKjBEoMUGQpNLRYywQmlB05QXxH0uVJ3i85FxRn2SRVaM6ANrlBXJeny-zXaT0JiOj_Nn5vCxpGVxt71Na2ORocwVPl_tXzJZzjk76XPgcSkzNvnNDVFcBsurs_gjDKms2KfW4od926a_mupb_lg19uUjlZAy32R7XavXQXCm4Ns_orfMMz8b6Y_JdHZs0FirBJaNjvs80FOfDnINUwvSE0cukjiObRuyxNJCYwd6dWwoIi51GpyaglNC7PhRSXhEqx36fhjuk8oCpWkVfX3HqljWR9WDLqNS-AnozyAQOipop2JI1M7TAhoAugLmcEvzQiSoaFpROE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "appointment_id",
+									"value": "105",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Video",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}change-appointment-type",
+							"host": [
+								"{{base_url}}change-appointment-type"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel AppointMent",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVkMzQxYTY3M2ZkOWYxMTJkOWVlNTE1ZDA3MTZmM2ZlYzEzMGU5NDg4NDUwZGRlMjU3YjJkNzJmNTVjM2RmYmU5NWE3YzAwYzIzMDk0NTlhIn0.eyJhdWQiOiIxIiwianRpIjoiNWQzNDFhNjczZmQ5ZjExMmQ5ZWU1MTVkMDcxNmYzZmVjMTMwZTk0ODg0NTBkZGUyNTdiMmQ3MmY1NWMzZGZiZTk1YTdjMDBjMjMwOTQ1OWEiLCJpYXQiOjE1OTIyMzMzNzksIm5iZiI6MTU5MjIzMzM3OSwiZXhwIjoxNjIzNzY5Mzc5LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.M0D-VVxTyC6A-GTbncL4lQWfm-4jzoSfQI2xz1rPZ6Em6A25AIP9cZsST9b7vpyXYSfPIRD1wsnNo4yVQTrMI3iaBkwbpN8mnluZeleEEp0vsgTp5lxba-exA-oFKEtZFwEFvy3k9GyC7UoZa0_OotJr_qNaRLDUCcr3mus9dijzfMsVWO6U2Xl52wC65gTlr0uNIArx_EFZ0F3OdrKxrRuRhj8_CULZCcgD3_I4Yja6vZ9Qn3-h7etm0qdwjX_CfCJ0a5ex-y_pXV06f8HIr9wyPQSYla0Z6M-dEPxW3AAsuma2q2OjjksXAUuIu8bZDhPvYPOCtsCzqh98phsCF33WMfKFDzgXKPLCYXVmAUW4zdoqUfIOeHBcOTQ0h4tuzpGG0wWxJBXRnmp6MWpTi2tAekdfF21QNl0Ci3ontkmSDSK2CTOzdVkliCjSUF4UuAHLSXRTUA4v8w0KQ5-iFaOWUcZ_pk7pk3xyEROBDFnGWHSuZv8rMxjUxuw-p58RaU0q9wSnEkb73fKD5pmjaxYExBwgYr9VEAH9EP0nDNzC_5QE_-epU3u_Y6SneRqBphvvrtYuMcuwrV8VmxPxOt-k6i8wuz9RCJCWI5r6VHhF68H8H2wtO9VLYbiUx_6HcRPwgpGV2e87DSKvacKCz8Sxa40PC53HP5tspJQaddg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "appointment_id",
+									"value": "250",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}cancel-appointment",
+							"host": [
+								"{{base_url}}cancel-appointment"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Therapist",
+			"item": [
+				{
+					"name": "Get Therapists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ3MzI3OTFmYzM2MzYwYTVmMjUwNDI2NDQwNmZiZGExOGQ3NjI3NTkxZWU2NWRiZWVhY2IyNTkyMjYxOTU5MGRmOGJkN2Q1ODk4ODk1MTIzIn0.eyJhdWQiOiIxIiwianRpIjoiZDczMjc5MWZjMzYzNjBhNWYyNTA0MjY0NDA2ZmJkYTE4ZDc2Mjc1OTFlZTY1ZGJlZWFjYjI1OTIyNjE5NTkwZGY4YmQ3ZDU4OTg4OTUxMjMiLCJpYXQiOjE1OTM3Nzc4MTQsIm5iZiI6MTU5Mzc3NzgxNCwiZXhwIjoxNjI1MzEzODE0LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.FYlN33ZTSulNxKaVJvKKXEYnBAazsAYKd9hIT5hfrZPMOFH0tSCpUdxAkuokO9IrUWwlDArk6qLWSIjxTM3p9JHwvNzJML6ycBct5zR0_VbTYhDiTR1spD82ZDWtgBepSXDRl8Gbs7aRauEs1BUpksGhMLW1q1evJT227AweRnjXNRfQQz36Z4t5Bt2nJdR7hzuIJ6OU7cu0QhPFqEl4owPWEmFFgaGHxV432-j7GSbOCE_WUdrvvb5u1nO-6OKZSgo4QtrnQd6dlv2naZVSVtdsg3WUVa-hFlLX-ORxvyYuJJYzmknQe1Xazm09GJ3H4ujbXsck2-kOkZe6zUhJuQY74vf0ROhLPVaVxUDe57tZF2FAyJUMR8-ddiGZ84LintHaJxvhnHV4J-UV9P1YBMu036M091_3dU-8IMFbAiDqZl8HoZ_Z1flfeZAyqsPThLGPEB-iTXdjIanAQvlexqxPrlhp4c4odGfk8bCaaH6V-sdRBzqDrop7wpuM2jg5f_J97AbF_szb6PJyDHlpZd6PbVN-Kdw1y4CCR34byC1jSxFsqsAsQhg1lQGs2cURvkP68Rm6NHY289xbwNSlgVO36ePHDRXpUCJeSUZ_CQyr0b0v40HFGEcU1Bq7_UxJh-am29rF8SdbXOLA09FrZ4-C_gEsqd65Xkw751x1RZg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}get-matched-therapist",
+							"host": [
+								"{{base_url}}get-matched-therapist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Clients",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjYzMjY4YjMxMGFlYmNkNTAyOWM5NmM0NzQyYTg4OTNhYjljOGZkNTJkZWJhNzA4N2IzOGY1MjlhYTZlNDcyMDlkMWZlNDJlMWI5NjY1MzkwIn0.eyJhdWQiOiIxIiwianRpIjoiNjMyNjhiMzEwYWViY2Q1MDI5Yzk2YzQ3NDJhODg5M2FiOWM4ZmQ1MmRlYmE3MDg3YjM4ZjUyOWFhNmU0NzIwOWQxZmU0MmUxYjk2NjUzOTAiLCJpYXQiOjE1ODk5NTM0NjQsIm5iZiI6MTU4OTk1MzQ2NCwiZXhwIjoxNjIxNDg5NDY0LCJzdWIiOiIxMDciLCJzY29wZXMiOltdfQ.iLfZDn9xbKFuLRSOpPSx5hL8qDpEr7yEMy5elLt61bzkCrycK2eTqsYerNeGfhLWzuymW2mDdDQ37K6Nn353bUnX7jCJ5kHvLoYHSskyIP0qnW3ADQyKfrvdvE8E8N_GlLe79q0i80_CwYTDckyLRIcQkKxSvesP0gIC335DE2cl2XYhfwm_hx0WDBuvJEyvcaR6ZoFkARr3t9IfUG9obFHOshjgRD1raS2nh-iRuJsb-WFUaikAUOdNczymXKmmV8NEZvsJ9xaC6UPlM-xb_fwZg2CH9j3H1O6cAHJIS6XZf-4z32OT7jEot9J0Rvc-EfdbQ0OcVsvYGqNJS6jAQwQf0W0XTMrC90TTVNsR7Mt8KUgCn7JyDA5nonp3wHu1wA2yegxP9_YErojWsFHCQ83T8nKdDJbGo4X0EcDssWb4fKdW_HcP1Pg7WP_u8c7D35HbrAcBom06hnWsKu9BK8aYWLEq7KT520veP9tLzsgWKSAmnvN3zJVcUBPzpGrHCL-jTrp3YWhuPrIGVmp9nxrg5IGh9BYPScjfuA7mrmZZx0oIK-tTqEoOySqyBF03k4uVy7HpK4t4WA4s0eka9PIyqtryx2ZM7EXRCTHUa7alVwS0n4t02T_UMTFmC_f30XOyyAQGSlqkwLnd7vASFuruFdg6yuRuD-4QzBENLCI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}get-clients",
+							"host": [
+								"{{base_url}}get-clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Therapist Availability",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjFjM2JhYzZiYzlmMzVmOWIxYjRhYTRjNTlhZDhlMDU5ZDRkMjEzMzRiMGY4YzkzMzA0MGY0MmQ4ZTg5ZTRiZjhkN2Q5ZTFlMTNjM2Y2OGI4In0.eyJhdWQiOiIxIiwianRpIjoiMWMzYmFjNmJjOWYzNWY5YjFiNGFhNGM1OWFkOGUwNTlkNGQyMTMzNGIwZjhjOTMzMDQwZjQyZDhlODllNGJmOGQ3ZDllMWUxM2MzZjY4YjgiLCJpYXQiOjE1OTE3ODYwNTAsIm5iZiI6MTU5MTc4NjA1MCwiZXhwIjoxNjIzMzIyMDUwLCJzdWIiOiI4NiIsInNjb3BlcyI6W119.d6NGjsXXsJPFhIC3U9RYVnjY3gyKk__ZIKXJPorIUsNbWfPMD0xy-jCOAI5Y4qlomG0p8CPqkliTBijHnMqVRqSYkgKSBL1jX2Tvgmo_z2c2CaX-YVv7CWO757QDN6K4MgEO-QGLEok-4idOA68YH_RX4WEZljO1UdA0PP_7OHAubkfAH3loxFx1CBVGwtd1zfPfdgxQCiZOv0_hS4B64WnCFbcteF5jAOvfY_NZfyRsj_9ZaCQU8FLfezkQ4QqrL0VI0p46YgqPDKlg729M4NavWr1QgpWLA_0DQLQWuqC2h4t1xlTGlPXOqDkEa3gPq0QQjWWBrTtkhqSV3IiigJG0eVR7pBPjhowppmRmrEuo4GtlnprOyTTVHiltDDSa9q43QMN967hWrIgM8wcIXaqQGaoobGPIZV9267cz9XooPApBZIW8GuaHqEzYNbEEMoHi2ZkOTgMKFqwdpaIE0LSGdNxLSFfU2W6wTcitsBn0U5kSZU3KKbaFUxOO39pZcp3dhToCp6PuQAYjVJ_7gJeKZERkCnV60S11IeFkSZc5IJhm2KfbdQXcgU0O9_AnJAJyI_NCkvcKBaKnlu94nmMClv1rVFgJjJJHuQ_x-X2O9NYvXonVsNbls2T6ygKzEs8IcvFOXtmNjgLRvW44tw9HZpvoiClBWU2pVd8VYd0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}get-therapist-time-slots?therapist_id=47&date=13-06-2020&timezone=Asia/Karachi",
+							"host": [
+								"{{base_url}}get-therapist-time-slots"
+							],
+							"query": [
+								{
+									"key": "therapist_id",
+									"value": "47"
+								},
+								{
+									"key": "date",
+									"value": "13-06-2020"
+								},
+								{
+									"key": "timezone",
+									"value": "Asia/Karachi"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Selected Therapist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjkwNzlhYmY1ZjVmMzI4YTVmMTRhMWMxZDdlMTg0Y2VkY2U1NTU2YmFmZGE5Y2IwZjkwMzU3ZWRjNGQ4YTQ5NmZjZDllYjI2NzM0YjJkMmU5In0.eyJhdWQiOiIxIiwianRpIjoiOTA3OWFiZjVmNWYzMjhhNWYxNGExYzFkN2UxODRjZWRjZTU1NTZiYWZkYTljYjBmOTAzNTdlZGM0ZDhhNDk2ZmNkOWViMjY3MzRiMmQyZTkiLCJpYXQiOjE1OTU1MTg5NzQsIm5iZiI6MTU5NTUxODk3NCwiZXhwIjoxNjI3MDU0OTc0LCJzdWIiOiI5NiIsInNjb3BlcyI6W119.UPxopBuFkKB41l1qeX89QyBYb5NSA2KJ69WGiCS_zwBATTTEfTWBvtTYPftsck9DYnD3-8t8lCvhfz4NirfMuF_GBjqTdB3jB_Ny5KSgh6DMw4N5GcSwAPXQc6vM2VI8XkGkFA-yR88MvDDFBBveQImIPUu4tcCJTIlnN_VZn2dsJeEFmaG5Elt0BB4MyPmpoezZgKXMpzzJt49yz1gspd-8dNKrYekhQRvf3417T0SIM4OX4V6OHAHwaWuODS60Pa45VQ24_lcEz4ph-CBsbUNQnGeeV5bmfBDHVI3obYW6n0-7O-CbgdX__l0n_jQf9rf7gbNj1cAem4-XhdRWfB823-XbBYTvnmOmCgxaaPDfx2_R2FmYTBe_5N99fi4ujV3UObDd_25qBAa33inrQGGtvx1p-4N_WrU88RqBhdiEf5zpZPrvcCQOTf_tBQKcjHIWupXeNrl3kWWS_epSdKirSYrjZgHV3Dkzu19xW6V5D-mIY4geMyzW2eyd3rm9c11_3d_mOir_vcf0tQBfXg8JUPJIsLIGzc-QMe3j2wGLiELawUmbYNqxvkTBeKP_GY4V8DerD2szKAI8IkKEMiURvGgwP6U20nawG5EHDRIx6tpZOBHdDUD4nkqG-kdBQhp9QnxTRmMiPkmiFNTVZ5yEUPXdd7sUSMB3srST_rQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "therapist_id",
+									"value": "47",
+									"type": "text"
+								},
+								{
+									"key": "package_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "card_no",
+									"value": "4242424242424242",
+									"type": "text"
+								},
+								{
+									"key": "expiry_month",
+									"value": "11",
+									"type": "text"
+								},
+								{
+									"key": "expiry_year",
+									"value": "2021",
+									"type": "text"
+								},
+								{
+									"key": "cvc",
+									"value": "344",
+									"type": "text"
+								},
+								{
+									"key": "isCorporateUser",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}save-selected-therapist",
+							"host": [
+								"{{base_url}}save-selected-therapist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Selected Therapist",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Baraer Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "therapist_id",
+									"value": "11",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}get-selected-therapist",
+							"host": [
+								"{{base_url}}get-selected-therapist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Selected therapist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNkYTQwMDRkOGE4YTNmOTk0MGExYWRkYmQ0YWNmZjljYTFjMjc3YmQwN2EzN2M0YmY0ZTliZmI3ZDhjYzJlNjhkNDg2ZTdhNDU4ZTFkOGIyIn0.eyJhdWQiOiIxIiwianRpIjoiM2RhNDAwNGQ4YThhM2Y5OTQwYTFhZGRiZDRhY2ZmOWNhMWMyNzdiZDA3YTM3YzRiZjRlOWJmYjdkOGNjMmU2OGQ0ODZlN2E0NThlMWQ4YjIiLCJpYXQiOjE1ODk1MjUwNzEsIm5iZiI6MTU4OTUyNTA3MSwiZXhwIjoxNjIxMDYxMDcxLCJzdWIiOiI4NiIsInNjb3BlcyI6W119.ZodBmXsrUtYv4UzZ1roN5p59g-9dOR9qy8-6-ZIdKlyPrcnNGdzHbboDExVDIe2nclzwJWBeQs5TCqDMjZwrGI1VOL8NLn3ygFrLEt-evjQFFQPsmu75MDS4SlbLCLPVKiMjGJYxPMDaWBK0JkoPCOohgOATQwCgIn9HsCrmTCAs0ByBSLtGL2t_a2LnFkpSXJQizPro4khO71Slsz8FfNg0WlrQ0ZNA3x-CW50pRfrGqGrXCkykRGo-swZ-ZFMpvSIYDVjyp8_T0FE6Ez6t3qzqGYX7xH0AplNQ6_V4EDY_JxYK-QyOEL-NxygpAmoi_9ZviLp_5TVGg6Q7xtgy3dWcL15ojp2Dy9MarQsOUMhNr3SCZ8Aluvad53lqzjEoMqLXt8PRuiwAYv1YLcce9hM_8FcTzCYXzM7YQaCfjnQ_4l4rTqprqkl4yPT27MihvS_4RRZ9bmFDLS4xfeHashyCJdx9FF6Kv0om8IyQUcwlPsqz-pb96qNHPkPa5bUDyjXCAWHqAUPTf1V9z91LW9j_Qw0nDlQ47QtEu5aPogyCl5sMVnuBDhVEFv8GPXq8FSR-EEdc2vpR_agkUpNwzL2CUOyb-7X6Bp88HfMGjdjMsOFDOP-yGOEDb0LQ0gOqGnTlqepPq0nV7qPUfR6_meNJbXbJeHTzuDA58x_aZRs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "therapist_id",
+									"value": "53",
+									"type": "text"
+								},
+								{
+									"key": "shared_journals",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "shared_feedbacks",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}change-selected-therapist",
+							"host": [
+								"{{base_url}}change-selected-therapist"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Subscriptions",
+			"item": [
+				{
+					"name": "Save And Update Subscription Plan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Baraer Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "plan_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}save-subscription-plans",
+							"host": [
+								"{{base_url}}save-subscription-plans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Subscription Plans",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Baraer Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}get-subscription-plans",
+							"host": [
+								"{{base_url}}get-subscription-plans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Current Subscribed Plan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjBhNzRlZDM0N2VjNGI4NDMwMjgzNTkyZGVhY2M3YTE2ZTJlY2RkNTVjZmZlN2I1ZjBhZmJmMTQ0ZDE1YWZkZTk3ZTUzODQ4ZWE0YzQ1NzgzIn0.eyJhdWQiOiIxIiwianRpIjoiMGE3NGVkMzQ3ZWM0Yjg0MzAyODM1OTJkZWFjYzdhMTZlMmVjZGQ1NWNmZmU3YjVmMGFmYmYxNDRkMTVhZmRlOTdlNTM4NDhlYTRjNDU3ODMiLCJpYXQiOjE1OTU1MDE0OTEsIm5iZiI6MTU5NTUwMTQ5MSwiZXhwIjoxNjI3MDM3NDkxLCJzdWIiOiI4NiIsInNjb3BlcyI6W119.kPFsWvo1sUiqkg-1hLQrR_umImO7X4pnJ9dDSv5JjV_NYkrlS5Yex2JSj-H6cYoUltfzNy5_le4d3ByAptNu5NHUTKonbq6LlqfhW06LJ4upTvvYn_9A9aF-cANAn5pIXOnSOlfaIg-6B0lzg2oEiLg7OeNAIQ_xVNBDxqvhwfYki1-bHTTwe57j9dsAKhM-MF-h6DrqTLocl-wJqPRCq9SsUzwCVMn5cYpFsrcumH8HxxGUMdC7VIltFJczPvJ8FbXFWT5DzVLxLl6mJexEsRGb0r4HlrQq9yPZSmWuWun1GVOJZNch-pMY4GeV4O4QnGR9deOXcCbzuyjbvGI5DZEjAXLT86wTGQ0t0bg1MXAGj6PW_lYFP5ayAo2UZxJiHcaLkjLOyuMulyENF4E54NZZXZIf7p5R4s9LXklpGnwdOtJRY7HNa7AlsRpXghwCt2x2kdtM8tAakioeM0H0Jajbf3T1NApqjg8l4p8yTp3giJqhBZa8dHsr7PuvzpxPU0p5qjp9jqVkeJxNNScgPaJ_IK7dcDTft9ijCLm6UvANRydTcPx3jGDqM_MsSMLtSJodhtv7pDd1QcJDxPKnhUkJ2J1Ywv_4Fykg67DHJDhromgMwm8JQBXxwZNvOFbvdBzKk4YW6i5--mt3ZJxuftDgFj1ElruMWiV0WayHqac",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}get-current-subscribed-plan",
+							"host": [
+								"{{base_url}}get-current-subscribed-plan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get  client Therapist Subscribed Plan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjM3ODJmYjYzNGNiY2M1ZWU3N2IwZDk1NmU1ZGMzMzM2OTgyYWFlYjMxYjg2ZWFhZWIyNWRmN2Y1NmQ0NzIyZmFmOTIxNDJiNTZjYmYyNzQ4In0.eyJhdWQiOiIxIiwianRpIjoiMzc4MmZiNjM0Y2JjYzVlZTc3YjBkOTU2ZTVkYzMzMzY5ODJhYWViMzFiODZlYWFlYjI1ZGY3ZjU2ZDQ3MjJmYWY5MjE0MmI1NmNiZjI3NDgiLCJpYXQiOjE1ODk2MzU4MTksIm5iZiI6MTU4OTYzNTgxOSwiZXhwIjoxNjIxMTcxODE5LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.FTnvIscBnTASEQ5X-C6PVLo52gzDTnZcoysiFANOb42qHeJ9lNFs4fbJuWwjkw6ESi-mFjgFfRy634G5WAtr7x8k6a0RjoXdiqWDTzFwC19c7958VCPrja-TlzA3CwDJC_20XGL1OPpS3IBAh4kToURzQfL5WFNiKNtFJJLF3kAqeOdvOWmWkiiBzjKWJmTr9mPqJTSy-tt4lEgrcLAB72N8TzDJy12AB3MJYCHCSmrimkbqu07Mk7gsOr51qwSg_ymYtynaxvsuJV0kf0QNRyDTKQ_ysjEsKIWYt6IxIOzBx7cLwZN_8JGhFSnsqwL3yFeCaYhTvSpN2k1NSGhgRrQbeH82cvq7jZ-tplitI7FJH7julWwXVSS5KeCEECOsdeq8IMlc6VDS_iLKIP8kNDCVlb5LGoNS29Sf_G10CLV4hetAHA_UVaWR_Ciq25ndtYL4JA_51jDP6l57hEMFeHFFx35nVe6ON0UuCBFFkutYAdTlgsKsFcyGbCPtyal5uv3YngUN3FWHyWP5D8Snti5_-yP5nWybLvVoLEL5DwEZmsuWFZce0-WZ2M9f8YYsPUGi3jaMlUGIkep7TpqGjl24WnWQE2uUHfqq3r-1bkXPHPkkxCul-zlbBK92P8P4Ikz4WEpeKxhNIJ2_GAtCD-KeASCWDW0njN0foQvhWac",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}get-client-subscribed-plan?user_id=86",
+							"host": [
+								"{{base_url}}get-client-subscribed-plan"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "86"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel Subscriptions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVkYjgxZTkwZDU4ZjllOTkzNzJmNjVlMjNhZGY1NjZjOGNhNjI0ZTkyYTMzMzVmMTVlMGQ2NDdlY2U5NmYyNGE0YmYwMDQ4ODM5ZjhjOTI1In0.eyJhdWQiOiIxIiwianRpIjoiZWRiODFlOTBkNThmOWU5OTM3MmY2NWUyM2FkZjU2NmM4Y2E2MjRlOTJhMzMzNWYxNWUwZDY0N2VjZTk2ZjI0YTRiZjAwNDg4MzlmOGM5MjUiLCJpYXQiOjE1OTQ4MjM1NDYsIm5iZiI6MTU5NDgyMzU0NiwiZXhwIjoxNjI2MzU5NTQ2LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.RqMG0eCSFXrAdRmFZnGgicQ6VVJxEG2z5TrV_2zYxU-tS9BBGX6qRE_g7DMCleJjiK5bffZigxnxsqAjpcQUyFaqA7gHTNJzx9d9uYCHQz5tQnGElIMqDWSHq8u0z0ZjxkDNPKFQXsZeYvxYNlPo3bbgBFdlAUUKw3lhoYTXRaE_IR7Ccg7xdyGDG9s4xzneZlQUtEI7O5CBQ25d7ilgzkypt9UYEC0tAAi5holQ56lX326Bz6yS6cKykAsXpsURlr2if7amMV5EZqXNalcAgqE215PwsbiFBb_RxBwfQBhd15bSAe8xDHcSJpzJNgqmHYn9sEpBeEDNpEmtDjaMZ52st2kZPtMUOiPtrcop1w_yqA_9LT-hng8sZa-p8Vp08S-1DopPCb22l5GlNFVl4N80cUJR5gq2NARdsTlXXtQ85js7bOpJy6GpCDtGg8yyu9Fcylmf8F6Xq_YMs5dxRVX6dWRhSuilNZSBAaoBdGPcWpTWZ-V7Dr26zq-t5W4PwpuqDzviubx30nQAJLBejQ4irGEXfIrpsmNgiGh5Kd72g0IuBZO7reVsyuPE1k9RD_VFd8FREYSaFShEQ7LP7RA-h9OwJABrLb2Ylg4dDjR4d_9ZagE7zoooJDokx4kwsI9E05rtnxvf_ubTPH-LMUBSvNhmXEs4NFG01ni7PiY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}cancel-subscription",
+							"host": [
+								"{{base_url}}cancel-subscription"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "FAQ",
+			"item": [
+				{
+					"name": "Get Faq",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdiZmMxY2Y4NWFhNmU5NzE3NWU3MzUyMjhmODI3MWI0ZmUzZWQ5NzE1YmE2ZmZjZTdlNzNiZDMzNTRjOWY5MWY1MzM1MWNlZjlmZDg5NmNhIn0.eyJhdWQiOiIxIiwianRpIjoiN2JmYzFjZjg1YWE2ZTk3MTc1ZTczNTIyOGY4MjcxYjRmZTNlZDk3MTViYTZmZmNlN2U3M2JkMzM1NGM5ZjkxZjUzMzUxY2VmOWZkODk2Y2EiLCJpYXQiOjE1ODk1MzUzMDAsIm5iZiI6MTU4OTUzNTMwMCwiZXhwIjoxNjIxMDcxMzAwLCJzdWIiOiI4NiIsInNjb3BlcyI6W119.f5_sjJ0X6n0xSY08AOY6u22wthRwCn_OD4JrAPvAu6Ddmtrr9MdY_lrhmbtpS4S7UDoV6866BhExnEnCK5DvBS7kU8xoApVXZ-l-ZZ65gIqeyATp3EyPSfx-PXnExjN7j0igwVZSd-FQUJzFgZSryVyFuCVg2VKuSJ1HQrk1Xwwv4cZ8Vv06WX8qiHVEqOPMpHaLzwThY7r0DSr3FJjnyMuXAExf91yTWxuQLCx-bBhyoOHJL1PQMWWoX7erwGjQbKeOXQeHSd8nw875VQYgqQzcqpdqH_gU6ShFBOJKclDgy6Ph2iILGZ3A66gfdAlY47wCrl54lof6W9Q3LxitiV27uyAcayv3PpJh7hUP39RzuWEe5Nd29iglvt-fq6W-TY9110k5G0ZF3bSraMCayJYOQAQ5Io7JetKBDvTb8nH7oi6x5CaQk9xG-XHMa5JRsR3Yioa3eCT6ygilXZX8VOXQu9TolsZp6GMcJy355zKYIgPMtvUg0ZLRn8eNZL8s8WbQmkv0FzKiMcLjo9_h511rcm0HDlfuXV38KDeelkjNjLaQG0B62H7QSOMGoHBh1Ehbvo_t77FBY-EHzcuKnA3rCha9hXAF5ZzcxK9sKL3jpZeDJidu3Y7Ja5CSZHQWsYw6j03rvHkh5y4x74RNB4jjc2CAaDW6zV0TXgmTBbQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}get-faq",
+							"host": [
+								"{{base_url}}get-faq"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Mood",
+			"item": [
+				{
+					"name": "Save client Mood and description",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNkYTQwMDRkOGE4YTNmOTk0MGExYWRkYmQ0YWNmZjljYTFjMjc3YmQwN2EzN2M0YmY0ZTliZmI3ZDhjYzJlNjhkNDg2ZTdhNDU4ZTFkOGIyIn0.eyJhdWQiOiIxIiwianRpIjoiM2RhNDAwNGQ4YThhM2Y5OTQwYTFhZGRiZDRhY2ZmOWNhMWMyNzdiZDA3YTM3YzRiZjRlOWJmYjdkOGNjMmU2OGQ0ODZlN2E0NThlMWQ4YjIiLCJpYXQiOjE1ODk1MjUwNzEsIm5iZiI6MTU4OTUyNTA3MSwiZXhwIjoxNjIxMDYxMDcxLCJzdWIiOiI4NiIsInNjb3BlcyI6W119.ZodBmXsrUtYv4UzZ1roN5p59g-9dOR9qy8-6-ZIdKlyPrcnNGdzHbboDExVDIe2nclzwJWBeQs5TCqDMjZwrGI1VOL8NLn3ygFrLEt-evjQFFQPsmu75MDS4SlbLCLPVKiMjGJYxPMDaWBK0JkoPCOohgOATQwCgIn9HsCrmTCAs0ByBSLtGL2t_a2LnFkpSXJQizPro4khO71Slsz8FfNg0WlrQ0ZNA3x-CW50pRfrGqGrXCkykRGo-swZ-ZFMpvSIYDVjyp8_T0FE6Ez6t3qzqGYX7xH0AplNQ6_V4EDY_JxYK-QyOEL-NxygpAmoi_9ZviLp_5TVGg6Q7xtgy3dWcL15ojp2Dy9MarQsOUMhNr3SCZ8Aluvad53lqzjEoMqLXt8PRuiwAYv1YLcce9hM_8FcTzCYXzM7YQaCfjnQ_4l4rTqprqkl4yPT27MihvS_4RRZ9bmFDLS4xfeHashyCJdx9FF6Kv0om8IyQUcwlPsqz-pb96qNHPkPa5bUDyjXCAWHqAUPTf1V9z91LW9j_Qw0nDlQ47QtEu5aPogyCl5sMVnuBDhVEFv8GPXq8FSR-EEdc2vpR_agkUpNwzL2CUOyb-7X6Bp88HfMGjdjMsOFDOP-yGOEDb0LQ0gOqGnTlqepPq0nV7qPUfR6_meNJbXbJeHTzuDA58x_aZRs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "mood",
+									"value": "Happy",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Savining mood",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Testing",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}save-client-mood",
+							"host": [
+								"{{base_url}}save-client-mood"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update client Mood and description",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Baraer Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "mood_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "mood",
+									"value": "Happy",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "test1",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Testing1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}save-client-mood",
+							"host": [
+								"{{base_url}}save-client-mood"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-client-mood",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVmMDRmY2QzYWUwOWM4MmFmOTYzNmQ1NGI3MGRiYTc3ODYzMjIzOTQ4MzNjZDk2YjczNDcxYzYwNzI5MDAxMGU1MmFlYjhkZmI1ZDAxMWYzIn0.eyJhdWQiOiIxIiwianRpIjoiNWYwNGZjZDNhZTA5YzgyYWY5NjM2ZDU0YjcwZGJhNzc4NjMyMjM5NDgzM2NkOTZiNzM0NzFjNjA3MjkwMDEwZTUyYWViOGRmYjVkMDExZjMiLCJpYXQiOjE1ODk5NTE4NTIsIm5iZiI6MTU4OTk1MTg1MiwiZXhwIjoxNjIxNDg3ODUyLCJzdWIiOiI4NiIsInNjb3BlcyI6W119.jE9-cRp-uK_k8NR5mygGkib0-ROvwXXGYbjPUFJix4Z9ugqYktS30z4_Ah_1_t4AwWzN8oR_f-abso0jhiUPP7ZKBF813GGoiQmNeI45jtppSZhH1jyc-QhWecLUSBVvoq4_w4iQ98mJzRKEom0cF-sCsrYFq62JvQFT5QuFOmnJtLcgXxtWfwChMH1s65KfognNtEM1mLKI2DmUeeADX7TCw7DaMazCoeQdaOOHIiIaq8ZdERoI9-HsQkqss1dHFm3OgG-gWYqEyJ0yujy58J8qkOut0PqQfT6d28J2Zqqq5_nELQnA-D33lx6Utc8-BCmJBv4CZD7uxCUfcqxMn9w835Qf2EVhwmoyYs-Qhi-a6aj9pnQTxJ-6Sq2EFAsMDzfcDDcQY0SNz8GvQ-kYpej-7wbw7PXG427wpiOydcldVpaepFPK7WYA2v0BFEEEoLKCbY0gQf3rKZCe2f2IIfVnEeMssBJIqtFTZzLVEDeMDl8wQQAGAJ9xLWsf2uSmhssshntubQn4DqjqijgNzLqRKVjI3DDkBdsVf5HoM72dmsoVQWofgTboFjXbPVwDCoX5-quju3tLBz8-isc1hiFT57PBYgfY15nA_EZL8paOfoeuJhpy-ajQmQF9cHwHF7vgfKhnbiPWDEwOFmArhkjr0sETdsB5PsjFUyQ2IHM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}get-all-client-mood",
+							"host": [
+								"{{base_url}}get-all-client-mood"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-client-mood",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNkYTQwMDRkOGE4YTNmOTk0MGExYWRkYmQ0YWNmZjljYTFjMjc3YmQwN2EzN2M0YmY0ZTliZmI3ZDhjYzJlNjhkNDg2ZTdhNDU4ZTFkOGIyIn0.eyJhdWQiOiIxIiwianRpIjoiM2RhNDAwNGQ4YThhM2Y5OTQwYTFhZGRiZDRhY2ZmOWNhMWMyNzdiZDA3YTM3YzRiZjRlOWJmYjdkOGNjMmU2OGQ0ODZlN2E0NThlMWQ4YjIiLCJpYXQiOjE1ODk1MjUwNzEsIm5iZiI6MTU4OTUyNTA3MSwiZXhwIjoxNjIxMDYxMDcxLCJzdWIiOiI4NiIsInNjb3BlcyI6W119.ZodBmXsrUtYv4UzZ1roN5p59g-9dOR9qy8-6-ZIdKlyPrcnNGdzHbboDExVDIe2nclzwJWBeQs5TCqDMjZwrGI1VOL8NLn3ygFrLEt-evjQFFQPsmu75MDS4SlbLCLPVKiMjGJYxPMDaWBK0JkoPCOohgOATQwCgIn9HsCrmTCAs0ByBSLtGL2t_a2LnFkpSXJQizPro4khO71Slsz8FfNg0WlrQ0ZNA3x-CW50pRfrGqGrXCkykRGo-swZ-ZFMpvSIYDVjyp8_T0FE6Ez6t3qzqGYX7xH0AplNQ6_V4EDY_JxYK-QyOEL-NxygpAmoi_9ZviLp_5TVGg6Q7xtgy3dWcL15ojp2Dy9MarQsOUMhNr3SCZ8Aluvad53lqzjEoMqLXt8PRuiwAYv1YLcce9hM_8FcTzCYXzM7YQaCfjnQ_4l4rTqprqkl4yPT27MihvS_4RRZ9bmFDLS4xfeHashyCJdx9FF6Kv0om8IyQUcwlPsqz-pb96qNHPkPa5bUDyjXCAWHqAUPTf1V9z91LW9j_Qw0nDlQ47QtEu5aPogyCl5sMVnuBDhVEFv8GPXq8FSR-EEdc2vpR_agkUpNwzL2CUOyb-7X6Bp88HfMGjdjMsOFDOP-yGOEDb0LQ0gOqGnTlqepPq0nV7qPUfR6_meNJbXbJeHTzuDA58x_aZRs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "mood_id",
+									"value": "232",
+									"type": "text"
+								},
+								{
+									"key": "mood",
+									"value": "Happy",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "hiii",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "this is a share",
+									"type": "text"
+								},
+								{
+									"key": "is_shared",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}update-client-mood",
+							"host": [
+								"{{base_url}}update-client-mood"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Notifications",
+			"item": [
+				{
+					"name": "Send Notification",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjBkZjQ1YjQ3YzkwN2MwYWI2ZDFhYjNkYTFjOTQzZjNlYmMxYzA0YjNlMDczMzFiZjE1NTI5OTE4OTExNTQxMzdhMDAxMTI5YTE1ZTAyZjYxIn0.eyJhdWQiOiIxIiwianRpIjoiMGRmNDViNDdjOTA3YzBhYjZkMWFiM2RhMWM5NDNmM2ViYzFjMDRiM2UwNzMzMWJmMTU1Mjk5MTg5MTE1NDEzN2EwMDExMjlhMTVlMDJmNjEiLCJpYXQiOjE1ODg4NDA5MjMsIm5iZiI6MTU4ODg0MDkyMywiZXhwIjoxNjIwMzc2OTIzLCJzdWIiOiI4NiIsInNjb3BlcyI6W119.RYN_J2ki_ZI5hwLAV8_of9pnUnjC1x4IUSqBZ2OexNTnyoviOAVH3n2-I3OOvuXPgrQogZ8JBQ3786KPfDZCK6PB0xRmULZW9zUW31CgCjTOKmOEuWa14NEhfe13mttSpKToCBwndhoSWKYkdD4TIPfxeHJrmbEtG7fM4UuW_c3pT9jvpf896ug4--uIMHtJy4nOOvc9dD5DxiECuzNgBPIRFHykYyfzgLFAgV_o1u1Eu8Yx5w56FpZXeasxYRGXaZqwV28AZL4kXh_bjZ3BC_WDF2kWNem4-Xhb_Gs1955dAh_AWSm_HLoQ0voo7QM2I1vbpZEJlbtKrysckLrYXNhYhhdqDUxpLC4eXPGVD7pegMuY17wiy06Op5tPv_2nT26haBbjRfY4CJg2SXelHPITPm0HkNXjb3szJOyFXF9BZFgNK3oWLWQHnw_TP2lzW_PDZ1gQG8QtaykQhkzb8WBYDi7-N5TuBKBcVhfFQ3eIcavZ6Mqjp316PafqoiQZ59lqBpEMucmu71jcOEKuZ1KWtpI8QO8pe_SGB1FKR9nqJ-wPhAYsDQeX_aRIpEsrYUz6udVh1t6h6O1fWv-0_KCxPNOzFAaeDZTfyRirJdexBw57_XOjy8Jf2Lk7M41YTlyhaWvrbZ8U9eKkzeSG1E1Wyajls51g2fWeDGsc-aE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"this is notification title\",\n\t\"description\": \"This is notification Description.\",\n\t\"user_id\": \"[86,86,86]\",\n\t\"type\":\"appointment\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}test-notification",
+							"host": [
+								"{{base_url}}test-notification"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Questions",
+			"item": [
+				{
+					"name": "Rate Card",
+					"item": [
+						{
+							"name": "get Rate Card",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjRhMmRlNWZlMGZlY2IzMzlhN2U4ZTE2ZjM2NzA1NGIxMGU0ODhlOTI4YTg1OGY2ZjU2OTczYWVkM2M2NGU4YzA4ODZiMzgwNWY4MWQxYzBjIn0.eyJhdWQiOiIxIiwianRpIjoiNGEyZGU1ZmUwZmVjYjMzOWE3ZThlMTZmMzY3MDU0YjEwZTQ4OGU5MjhhODU4ZjZmNTY5NzNhZWQzYzY0ZThjMDg4NmIzODA1ZjgxZDFjMGMiLCJpYXQiOjE1OTczMjc2ODEsIm5iZiI6MTU5NzMyNzY4MSwiZXhwIjoxNjI4ODYzNjgxLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.a6YWKjPP2h2MdkfMPdvSWYKpVnwanj0xCUgPPgb7sKlF0gld3J-7Eb5FKDqey5Dx6Z8G7SK9TFV_nNIcD0ngvO9dl-tyfjSldA26MJUdQ_jGOnadseUgEImz3kXR1NolzmuqQXIZsagoQqebKymcK41iVO9--Zvpp4HnoY8VpOHdwEwIR9SWPIJkgL-WQZhPJ2rtECyhJRafQR1-oynGkmQkVZ6VMt7m80ylVTijjVM5o97P1FyvCFC2wEoN2gz7meNvMB2obZOnUF7OI9i6sRLVV-mqHgVvuqAVtoDteoJrocLS7nQDsHiL_5vYK59-vP1YOiLVciRFZWJZ_wkZCChpEpyc5noPiy30htzRM8JMiCqScaSKX3eONixFJfEk1VCqo0YhJrPe7WLGOBQ-3QwvuiHj0bhOQis4AfnnfoH9YG4H4A_7ThReQr5rpH74IGht9VETi5COGcjABZNZcTt9auC2BthmPksUgaKqV6OMrQIATCE-9_L1dmTpXhJ-9wFkA2Wkf6zcDRgS8YTPrcU2GT8l4f2pN2lbyFOKs70zZT-zUaW9JcPKFYseps4KnCuZF_HSGZMpvr_dvVucbI49U0Z0fOfDpxs7YxRGv8EfG563GPgQwQYMTxyoBYnVgg7VlqAkqWKlQ0ua7sO4AKWJa0mKRjZKMrdNfwZ0wWo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}ratecard-questions",
+									"host": [
+										"{{base_url}}ratecard-questions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Save Question and Rate Card",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImMyMzZkYjg4YjhjN2RjNDdjODViZDFiMmI1MTMxMzJhZTZhM2JiOTQ3Y2JiNmJhMGRmOGE1ZjgwNzljYjk0NzcwOGRkOTMyMTg3OGJjZTU5In0.eyJhdWQiOiIxIiwianRpIjoiYzIzNmRiODhiOGM3ZGM0N2M4NWJkMWIyYjUxMzEzMmFlNmEzYmI5NDdjYmI2YmEwZGY4YTVmODA3OWNiOTQ3NzA4ZGQ5MzIxODc4YmNlNTkiLCJpYXQiOjE1OTcyMzE2ODMsIm5iZiI6MTU5NzIzMTY4MywiZXhwIjoxNjI4NzY3NjgzLCJzdWIiOiI3Iiwic2NvcGVzIjpbXX0.lkzu7-D83sN5P_ENa4IF6M0zwxBtgJ6E4AvVKZvLhOKE8-r9k-2Su0_1Pe8YnLrLzlbFsHmC2sVDB7863_U_52ZfwvfkRCy7xfMFL6x7rG_A-V7knCujaZ-5Qh-R65QYXpzb140jTdo3-f24vGbEQvgpj3AkOrv80LC3uLbO2er_LP-6JiSBqZXfXJq9H4LgMZE6nkFsuE0uPx4ox_Ex3I0R7F9OHouXlN108A1HaX4rnAANhnzToRza36B2TjSdbJF4LJTVfHMfiWtwnAywkhoDwTLXPmaF8SblG4pydcFfME1tSxi__AWeMZJmuVpibxntXjyS9ctutgf4vYkQKvDgqSaND_eUa9u5UDDoKTQDZ27IVq-DoKLlUkS5hc8opciBpg8U-bebj1golfQ05T5bLJejIT_SZxaRzyShtB4WfRTlS78jFw1kWHBO_M-Q3517RYpjXJGy4jhPDW-nYj4jWRiW8wfanxqeQN0xyWvch2F93FOjMp3ragk4OiHo3ow15VCmLyEXqHH1HZo7t47Rp024lWNYoty5wEK3JEKsg19KSU_Gqlc62zxu-qjzqgm_lUqIbmW2o2B-76nsa8414JzpRh5jdsp97LC7UYM1JtCyN-HhELtss0ezJ3aAftjAGGJvObHIKUDDka-t8_Qe2mqWDOuJxoHv1hmrmTM",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"advisor_name\": \"Muhammad Fahad\",\n  \"firm_name\": \"Transdata\",\n\t\"section_id\": 2,\n  \"questions\": [\n    {\n      \"question_id\": 3,\n      \"question_title\": \"This is the question title\",\n      \"inputAnsText\": \"24\",\n      \"options\": []\n    },\n    {\n      \"question_id\": 4,\n      \"question_title\": \"This is the question title\",\n      \"inputAnsText\": \"\",\n      \"options\": [\n        {\n          \"id\": 25,\n          \"title\": \"Single\"\n        }\n      ]\n    },\n    {\n      \"question_id\": 5,\n      \"question_title\": \"This is the question title\",\n      \"inputAnsText\": \"\",\n      \"options\": [\n        {\n          \"id\": 10,\n          \"title\": \"Hispanic, Latinx or Spanish ---> Colombian, Cuban, Dominican, Mexican, Puerto Rican, Salvadoran\"\n        },\n        {\n          \"id\": 10,\n          \"title\": \"Hispanic, Latinx or Spanish ---> Colombian, Cuban, Dominican, Mexican, Puerto Rican, Salvadoran\"\n        },\n        {\n          \"id\": 10,\n          \"title\": \"Hispanic, Latinx or Spanish ---> Colombian, Cuban, Dominican, Mexican, Puerto Rican, Salvadoran\"\n        }\n      ]\n    },\n    {\n      \"question_id\": 6,\n      \"question_title\": \"This is the question title\",\n      \"inputAnsText\": \"\",\n      \"options\": [\n        {\n          \"id\": 36,\n          \"title\": \"Not important at all\"\n        }\n      ]\n    },\n    {\n      \"question_id\": 7,\n      \"question_title\": \"This is the question title\",\n      \"inputAnsText\": \"\",\n      \"options\": [\n        {\n          \"id\": 40,\n          \"title\": \"Transgender Man\"\n        }\n      ]\n    },\n    {\n      \"question_id\": 8,\n      \"question_title\": \"This is the question title\",\n      \"inputAnsText\": \"\",\n      \"options\": [\n        {\n          \"id\": 41,\n          \"title\": \"Not important at all\"\n        }\n      ]\n    },\n    {\n      \"question_id\": 9,\n      \"question_title\": \"This is the question title\",\n      \"inputAnsText\": \"\",\n      \"options\": [\n        {\n          \"id\": 45,\n          \"title\": \"Straight\"\n        }\n      ]\n    },\n    {\n      \"question_id\": 5,\n      \"question_title\": \"This is the question title\",\n      \"inputAnsText\": \"\",\n      \"options\": [\n        {\n          \"id\": 49,\n          \"title\": \"Relatively important\"\n        }\n      ]\n    },\n    {\n      \"question_id\": 7,\n      \"question_title\": \"This is the question title\",\n      \"inputAnsText\": \"\",\n      \"options\": [\n        {\n          \"id\": 53,\n          \"title\": \"Christian\"\n        }\n      ]\n    }\n  ]\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}rate-card",
+									"host": [
+										"{{base_url}}rate-card"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Set Rate card Default",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImMyMzZkYjg4YjhjN2RjNDdjODViZDFiMmI1MTMxMzJhZTZhM2JiOTQ3Y2JiNmJhMGRmOGE1ZjgwNzljYjk0NzcwOGRkOTMyMTg3OGJjZTU5In0.eyJhdWQiOiIxIiwianRpIjoiYzIzNmRiODhiOGM3ZGM0N2M4NWJkMWIyYjUxMzEzMmFlNmEzYmI5NDdjYmI2YmEwZGY4YTVmODA3OWNiOTQ3NzA4ZGQ5MzIxODc4YmNlNTkiLCJpYXQiOjE1OTcyMzE2ODMsIm5iZiI6MTU5NzIzMTY4MywiZXhwIjoxNjI4NzY3NjgzLCJzdWIiOiI3Iiwic2NvcGVzIjpbXX0.lkzu7-D83sN5P_ENa4IF6M0zwxBtgJ6E4AvVKZvLhOKE8-r9k-2Su0_1Pe8YnLrLzlbFsHmC2sVDB7863_U_52ZfwvfkRCy7xfMFL6x7rG_A-V7knCujaZ-5Qh-R65QYXpzb140jTdo3-f24vGbEQvgpj3AkOrv80LC3uLbO2er_LP-6JiSBqZXfXJq9H4LgMZE6nkFsuE0uPx4ox_Ex3I0R7F9OHouXlN108A1HaX4rnAANhnzToRza36B2TjSdbJF4LJTVfHMfiWtwnAywkhoDwTLXPmaF8SblG4pydcFfME1tSxi__AWeMZJmuVpibxntXjyS9ctutgf4vYkQKvDgqSaND_eUa9u5UDDoKTQDZ27IVq-DoKLlUkS5hc8opciBpg8U-bebj1golfQ05T5bLJejIT_SZxaRzyShtB4WfRTlS78jFw1kWHBO_M-Q3517RYpjXJGy4jhPDW-nYj4jWRiW8wfanxqeQN0xyWvch2F93FOjMp3ragk4OiHo3ow15VCmLyEXqHH1HZo7t47Rp024lWNYoty5wEK3JEKsg19KSU_Gqlc62zxu-qjzqgm_lUqIbmW2o2B-76nsa8414JzpRh5jdsp97LC7UYM1JtCyN-HhELtss0ezJ3aAftjAGGJvObHIKUDDka-t8_Qe2mqWDOuJxoHv1hmrmTM",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"rate_card_id\": 1\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}set_default_rate_card",
+									"host": [
+										"{{base_url}}set_default_rate_card"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete a rate card",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImMyMzZkYjg4YjhjN2RjNDdjODViZDFiMmI1MTMxMzJhZTZhM2JiOTQ3Y2JiNmJhMGRmOGE1ZjgwNzljYjk0NzcwOGRkOTMyMTg3OGJjZTU5In0.eyJhdWQiOiIxIiwianRpIjoiYzIzNmRiODhiOGM3ZGM0N2M4NWJkMWIyYjUxMzEzMmFlNmEzYmI5NDdjYmI2YmEwZGY4YTVmODA3OWNiOTQ3NzA4ZGQ5MzIxODc4YmNlNTkiLCJpYXQiOjE1OTcyMzE2ODMsIm5iZiI6MTU5NzIzMTY4MywiZXhwIjoxNjI4NzY3NjgzLCJzdWIiOiI3Iiwic2NvcGVzIjpbXX0.lkzu7-D83sN5P_ENa4IF6M0zwxBtgJ6E4AvVKZvLhOKE8-r9k-2Su0_1Pe8YnLrLzlbFsHmC2sVDB7863_U_52ZfwvfkRCy7xfMFL6x7rG_A-V7knCujaZ-5Qh-R65QYXpzb140jTdo3-f24vGbEQvgpj3AkOrv80LC3uLbO2er_LP-6JiSBqZXfXJq9H4LgMZE6nkFsuE0uPx4ox_Ex3I0R7F9OHouXlN108A1HaX4rnAANhnzToRza36B2TjSdbJF4LJTVfHMfiWtwnAywkhoDwTLXPmaF8SblG4pydcFfME1tSxi__AWeMZJmuVpibxntXjyS9ctutgf4vYkQKvDgqSaND_eUa9u5UDDoKTQDZ27IVq-DoKLlUkS5hc8opciBpg8U-bebj1golfQ05T5bLJejIT_SZxaRzyShtB4WfRTlS78jFw1kWHBO_M-Q3517RYpjXJGy4jhPDW-nYj4jWRiW8wfanxqeQN0xyWvch2F93FOjMp3ragk4OiHo3ow15VCmLyEXqHH1HZo7t47Rp024lWNYoty5wEK3JEKsg19KSU_Gqlc62zxu-qjzqgm_lUqIbmW2o2B-76nsa8414JzpRh5jdsp97LC7UYM1JtCyN-HhELtss0ezJ3aAftjAGGJvObHIKUDDka-t8_Qe2mqWDOuJxoHv1hmrmTM",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"rate_card_id\": 7\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}delete_rate_card",
+									"host": [
+										"{{base_url}}delete_rate_card"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Question",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijk4ODIwZWU3NzNmZjYxNDdiOTRmY2E5MDRjNmQ5NWQ1NjBhOTQxNmY0NWE2NTg5ZTAxNzUzYjA4ZDhkMmJkMzE3ODMxOTYzMzM4YTllNGE4In0.eyJhdWQiOiIxIiwianRpIjoiOTg4MjBlZTc3M2ZmNjE0N2I5NGZjYTkwNGM2ZDk1ZDU2MGE5NDE2ZjQ1YTY1ODllMDE3NTNiMDhkOGQyYmQzMTc4MzE5NjMzMzhhOWU0YTgiLCJpYXQiOjE1OTk3NTE1MjksIm5iZiI6MTU5OTc1MTUyOSwiZXhwIjoxNjMxMjg3NTI5LCJzdWIiOiIxMSIsInNjb3BlcyI6W119.v3ZwcBi6hYqolEYtbsaA2nwLC-qvYfzCMWNaw443_TrG6tkuM4IA_clVuS5QS7ha6kzij0c6apbu4GAxXlSdhXTdm6SoanZdKkXt6zZ6vWRE8uGCxr9YQOtyjP60mFD_OvUCoWuc9AKluV6QTv2-6A3mhYkPHFrk5EUi47LpTh2zgXw4VPHEGwD-ALR2anM0apTyAADaLKjtee_XROSJYVZZ36A0c2E6JvPqhHBFtVH9qHafF_QWBFK7v0xwB1bVjozNyaUUg4mgydpgtExBbEIQcX-LfLndvMH2ARzvLtHvsWfNk70c3lBhT3ZSkiEbK1axflZ28ouqE8yEMXSrcQ8wWPIdc3IUqbiGUDXqIrXdsUxHnUkopOpjn6nblCynyIrOx27hlWT13wI9j4t90VutmHESoqrfno3cvPA5oym5UknZtQ5eZMW_wxPUYpStIFpRCk-OSyP1jbgwsAsS144ONm_9F1SFMUPbowX_5SpBVHrmWP_Uq5MFsEayrFYvNHxLb4bNngA1FZLcr2oXvANfbtdc9ipmDhR4yCjddDQj63IwU8Ux6cTaHwbxNTt02h0SLhEOVT5ebqRMQ9at737mqkLfYAq_0O5HwfXNCxOdbcmvwot5HawZZlVFW699wWjy0yKm4rwoQyVz-MAlXafo7TxG6DA8V9F9bYo3bQw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}question",
+							"host": [
+								"{{base_url}}question"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Question Answer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImMyMzZkYjg4YjhjN2RjNDdjODViZDFiMmI1MTMxMzJhZTZhM2JiOTQ3Y2JiNmJhMGRmOGE1ZjgwNzljYjk0NzcwOGRkOTMyMTg3OGJjZTU5In0.eyJhdWQiOiIxIiwianRpIjoiYzIzNmRiODhiOGM3ZGM0N2M4NWJkMWIyYjUxMzEzMmFlNmEzYmI5NDdjYmI2YmEwZGY4YTVmODA3OWNiOTQ3NzA4ZGQ5MzIxODc4YmNlNTkiLCJpYXQiOjE1OTcyMzE2ODMsIm5iZiI6MTU5NzIzMTY4MywiZXhwIjoxNjI4NzY3NjgzLCJzdWIiOiI3Iiwic2NvcGVzIjpbXX0.lkzu7-D83sN5P_ENa4IF6M0zwxBtgJ6E4AvVKZvLhOKE8-r9k-2Su0_1Pe8YnLrLzlbFsHmC2sVDB7863_U_52ZfwvfkRCy7xfMFL6x7rG_A-V7knCujaZ-5Qh-R65QYXpzb140jTdo3-f24vGbEQvgpj3AkOrv80LC3uLbO2er_LP-6JiSBqZXfXJq9H4LgMZE6nkFsuE0uPx4ox_Ex3I0R7F9OHouXlN108A1HaX4rnAANhnzToRza36B2TjSdbJF4LJTVfHMfiWtwnAywkhoDwTLXPmaF8SblG4pydcFfME1tSxi__AWeMZJmuVpibxntXjyS9ctutgf4vYkQKvDgqSaND_eUa9u5UDDoKTQDZ27IVq-DoKLlUkS5hc8opciBpg8U-bebj1golfQ05T5bLJejIT_SZxaRzyShtB4WfRTlS78jFw1kWHBO_M-Q3517RYpjXJGy4jhPDW-nYj4jWRiW8wfanxqeQN0xyWvch2F93FOjMp3ragk4OiHo3ow15VCmLyEXqHH1HZo7t47Rp024lWNYoty5wEK3JEKsg19KSU_Gqlc62zxu-qjzqgm_lUqIbmW2o2B-76nsa8414JzpRh5jdsp97LC7UYM1JtCyN-HhELtss0ezJ3aAftjAGGJvObHIKUDDka-t8_Qe2mqWDOuJxoHv1hmrmTM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"questions\": [\n    {\n      \"question_id\": 1,\n      \"inputAnsText\": \"\",\n      \"question_title\": \"Gender Identity\",\n      \"options\": [\n        {\n          \"title\": \"Male\",\n          \"id\": 1\n        }\n      ]\n    },\n    {\n      \"question_id\": 2,\n      \"inputAnsText\": \"\",\n      \"options\": [\n        {\n          \"id\": 12,\n          \"title\": \"AR\"\n        },\n        {\n          \"title\": \"AZ\",\n          \"id\": 11\n        }\n      ],\n      \"question_title\": \"Location\"\n    },\n    {\n      \"options\": [\n        {\n          \"id\": 70,\n          \"title\": \"English\"\n        }\n      ],\n      \"question_id\": 3,\n      \"inputAnsText\": \"\",\n      \"question_title\": \"Language\"\n    },\n    {\n      \"inputAnsText\": \"\",\n      \"question_title\": \"Experience Lavel\",\n      \"options\": [],\n      \"question_id\": 5\n    },\n    {\n      \"question_id\": 6,\n      \"question_title\": \"Race\",\n      \"inputAnsText\": \"\",\n      \"options\": [\n        {\n          \"id\": 133,\n          \"title\": \"European, Asian\"\n        }\n      ]\n    },\n    {\n      \"options\": [],\n      \"question_title\": \"Area of expertise\",\n      \"question_id\": 7,\n      \"inputAnsText\": \"\"\n    },\n    {\n      \"options\": {},\n      \"question_id\": 31,\n      \"inputAnsText\": \"http:\\/\\/guidefi.tdemo.biz\\/images\\/40449C30-7A71-4BB9-8D67-8D0F1360A72A.jpeg\",\n      \"question_title\": \"Upload Headshot\"\n    },\n    {\n      \"question_title\": \"Brief Bio And\\/Or Resume\",\n      \"question_id\": 32,\n      \"options\": {},\n      \"inputAnsText\": \"Here we go\"\n    },\n    {\n      \"question_title\": \"Upload Resume\",\n      \"options\": {},\n      \"question_id\": 33,\n      \"inputAnsText\": \"\"\n    }\n  ],\n  \"section\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}answers",
+							"host": [
+								"{{base_url}}answers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Question Answer Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ5M2ZjMGE4YTFlMzg3ZmJlNjZiYWExZDdhZGY3OTFkNDQ3MDlkM2MwZWIzZmQ1ZTYwMTM2ODkzY2IwY2QzNTJjZTRmMjkxYmNhOTMxOTRkIn0.eyJhdWQiOiIxIiwianRpIjoiZDkzZmMwYThhMWUzODdmYmU2NmJhYTFkN2FkZjc5MWQ0NDcwOWQzYzBlYjNmZDVlNjAxMzY4OTNjYjBjZDM1MmNlNGYyOTFiY2E5MzE5NGQiLCJpYXQiOjE1OTM3OTgzODcsIm5iZiI6MTU5Mzc5ODM4NywiZXhwIjoxNjI1MzM0Mzg3LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.J8NSIuw4b101x4RnP-ouSNntNX-QXZBy9dSM3PGA7PNqUJehc_eNx2dzgQzWthItX_O1ubtZwPpHTqu0m8jKaKIBNBV_5jVH05NDAA4tl2EZnYXY4z_aY6eBcWHYnKHiBp1STxIwcFekRQyQI8vtw-K5BbtAX0uQP9IByrCMz1EYO4Z_xny4P8ltDdFXkrmIB41UMzH-hhcrGx27H_1SXmszRlz81n0fFoNhO3GYYx6jTQ15vfkGneJonCh-aub8Dt1OwCl9x7F86QCLLGm2I7qZ65BkY2hMVx5L-ppL486dv9TgrlxnfM8FGNQpjrcL9887fhu0P0I9K3Ju2u6IzeJfQ0lWCTz5W66cSSbddQgSvzmUXsasVLDjFM6SNWJVSvZ3nzoAROPLp8be6lDD1oVYTT_dWOEcKhGB3CwpijetCend5NCXxnVeMhfPm8Ju3bnuBWdMtTJK8KZ9BtZW6F4ra0VQ7GUqZ-z4dFS5XwXMst4Lr9MPqveEIXS7ftbXNsTYTk_eZw0ZeMrUB6guQz2sM1bhBk-QYklzFGAZMO9tWfLg1JQW1Q2eduLVYBT8tEu_JtDzaquVk1D7MqnyKbIcgFHsc6g8h1VWImyfvQQJllCbsZ7874e_OoWRPhNYvCxHvXq4JarmO57LddPiaXIp2_mD6FXxVosk6uPWfEY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"questions\": [\r\n\t{\r\n\t\"question_id\": 1,\r\n\t\"question_title\": \"Testing\",\r\n\t\"inputAnsText\": \"Hello\",\r\n\t\"options\": [\r\n\t\t{\r\n\t\t\"id\": 2,\r\n\t\t\"title\": \"California\"\r\n\t\t}\r\n\t  ]\r\n\t },\r\n\t {\r\n\t\"question_id\": 2,\r\n\t\"question_title\": \"Testing\",\r\n\t\"inputAnsText\": \"Hello\",\r\n\t\"options\": [\r\n\t\t{\r\n\t\t\"id\": 2,\r\n\t\t\"title\": \"California\"\r\n\t\t}\r\n\t  ]\r\n\t }\r\n   ]\r\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}savetimeSlots",
+							"host": [
+								"{{base_url}}savetimeSlots"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Feedback",
+			"item": [
+				{
+					"name": "Share-feedback-with-therapist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdhZjYzZTlkZmUwMDhlZTAzOGE0Y2ZhMmU4MzdjMGY1ZmZhOTAzMjUwNWFkMzU0NzZkZWQwNGFkMzliYjMyOGYxNmUxOWExYmI1NzBjZjNhIn0.eyJhdWQiOiIxIiwianRpIjoiN2FmNjNlOWRmZTAwOGVlMDM4YTRjZmEyZTgzN2MwZjVmZmE5MDMyNTA1YWQzNTQ3NmRlZDA0YWQzOWJiMzI4ZjE2ZTE5YTFiYjU3MGNmM2EiLCJpYXQiOjE1OTEwOTIxMjksIm5iZiI6MTU5MTA5MjEyOSwiZXhwIjoxNjIyNjI4MTI4LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.nFEXu7twyK_vshZZ38iL79jNOtcmWiZiajlr7gJXO7Y6-qp4j-4jprlr2FjgzAgMEFvx9uq-Xg_H3zj480waQq25fl-SJ8TaTOaYLf1eze8sIkCRFvD-nyL0W1sKkFDHDfTM-Y308vinXDWvVFlcZ5iH5gg-4SIIzWhaWjVV_SYN3rERu6gDBzMkZ6X6NPrShQ0hfDT_TfZXLI8AwRLsvOEzeEnqqE-4oNliiO7odwDjPgb4ivPvh8HbrAellp6rM89d7blPjcu2GIjftnsWZ56u399jyjtcLB6bf_G3XtiDWNDwKPsPZgETOZvJQe8i9GiqZHw_ImyI_2FuzSsNEr2xWjbTZfNTFk84UvG7r75-fHLAwIDiS4I8RSpdm9OK2gUA0p3a2kHmCaf7uuw1zyffbNQ4j9f8mN1zK8z81xfJclI41azo328nFzowhkUoy2V1zJgSh8KCgorMWEdoO5iAIX15LgA8J762Y-JJym5iUmD0HForIeYjjyjQ3WaV-eDCVnpVGQxrTfseoOxMTSVjqefB1djL7jzCUpv67dion5H-znAP91-cF0SisP3-Ws-yC7KS0QPgOtAULNFgEqGmGKQIJcCWJWkbxsKdDaWQhrkJw0bYctuVzWylx1pWOaxO40AbpkglVCJMe7woMRYem9omig6MJzrsLkuafEE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "feedback_id",
+									"value": "26",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}share-feedback-with-therapist",
+							"host": [
+								"{{base_url}}share-feedback-with-therapist"
+							],
+							"query": [
+								{
+									"key": "feedback_id",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Share-feedback-with-therapist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjQ3NGUzMGZlZmY0MGIxYjk4NmU5MGE5YmZiNjRmMmE5ZjQzYmNhYzcwYmYyYTA0M2Y3NGI3YTUwZmM2YjE3NGY1NmJiODNkYWNkN2Y4MjViIn0.eyJhdWQiOiIyIiwianRpIjoiNDc0ZTMwZmVmZjQwYjFiOTg2ZTkwYTliZmI2NGYyYTlmNDNiY2FjNzBiZjJhMDQzZjc0YjdhNTBmYzZiMTc0ZjU2YmI4M2RhY2Q3ZjgyNWIiLCJpYXQiOjE1NzQ4NjMzOTcsIm5iZiI6MTU3NDg2MzM5NywiZXhwIjoxNjA2NDg1Nzk3LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.LKTBhBDlSih3bTilZoJNxO85WFStSD_femsAWP9KX3pqUoSHPkxBDIiUU-AAF_M0Knoxkatn17wHESd0N2exfnE4TbAPOJoK_wg1zGOZ2DFYQs5x2Bi4hvxJzGjQIS2PxbRDvm_OuqgOESyB25YR5AXbquzhBQ-yhLrjzMgrQDoUl4nZWds-jLDhGUiKsjVBTXej-kcw3GxBhjlv769p6Z-vQLgrU97mSBhrE2NYJ1XjOn_8ItOgResu4TJrqMJVXCR9iM0msbA5F4Pl9enW7_TcKL6SqHC3NmfBf20Pp-akn-TVDysMLQuFIb0zjq3PxU1OHX_vgBU8rk0Rq-9S6E16i8x9zcYNs26bW0Hj3t7oNeZhUQKrN8Vr8HF7dA7eqm8fH1KVaw3y51THj25jtP5GGNjIlxYZaY7gWWVWJMlnx2w--SZovgXZBhoIamY5c8MO-DThHQRQjR82sOMnRzptJZWnR0-vfwANw048_HDdUb0GJVbErHyXcluoVrWzH8Ex7P_G4mnH-A526Vpwg42niPxbhI5SXiEcNUS0s7bUiEsp0bAzEbeqndbUzo0sx6Wvf286zQumMKtDbOFE2eEbe0blqZF69qTVcPNaIsop0Lmw-w7KdNVtuE3WsRMYv7F8ZzyMBryxgGAkbGnoq8m6_F_QowEFOZDwxce-0N0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "card_no",
+									"value": "5555555555554444",
+									"type": "text"
+								},
+								{
+									"key": "expiry_month",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "expiry_year",
+									"value": "22",
+									"type": "text"
+								},
+								{
+									"key": "cvc",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}change-card",
+							"host": [
+								"{{base_url}}change-card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save-client-feedback",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjM5YmJmMmQzZGM3OGRiM2Y0NTA4OWQzZTRhMWY2N2Y2MzQyY2NiMjNlMjQyZjUyMmVmNTUzMjRjY2ZmYjVlMTcxYjkyMjQ5YzNjMmZhODVmIn0.eyJhdWQiOiIxIiwianRpIjoiMzliYmYyZDNkYzc4ZGIzZjQ1MDg5ZDNlNGExZjY3ZjYzNDJjY2IyM2UyNDJmNTIyZWY1NTMyNGNjZmZiNWUxNzFiOTIyNDljM2MyZmE4NWYiLCJpYXQiOjE1OTEwOTI3MDksIm5iZiI6MTU5MTA5MjcwOSwiZXhwIjoxNjIyNjI4NzA5LCJzdWIiOiIxMDciLCJzY29wZXMiOltdfQ.Z1bcadRIApQ6eU1iYPKpF-7BNhkH3zZJYp6L9UTTF5Kexzvfpw3NDpse5Rm0HXX1Q_BDySj1704zxsK07Lw32IQMMMgeYu6ZuFBDeqfb5Al26TsEL0_DT5Kiq9WtGXjLjHreNcDOGm8Ji2Th-1ZewyJxqhRFw1ooNykyvqW4aaJ5riUilHcWedFl5nqupiDgC-8p9c1na4IyKdHDBTjB44EKh1WKtHgkC_sY4X61foRpz4AH5flg24b-VDuJHFwX0LaZ2dySRe2brXoRnUG9EX87w0uV4cEt_Xl908E05Wv9n8yb0dD-yXW335vVvbgHf-O4Ui-pmUrX5XKGGC1zU_vnRf1jDwlSuZB0rYQJHV7gOVGfT8u6cNfMMjFy5bdOKSJ9wBtwthkvbggNqE4xTK6N8PpNfb80pYmKtF_0rIIoj3hSFIzbvb0kJ_zzPG9LlXRMPlL5FfWO4xJSsYIgjOO6niKdrD3rykjruUCdQvwN5Jvd_Us_-KdUtlCOhTMwa_k7g9o2H8Rj59VRmLL11UMVo2zHm4d1_VaYE5wfY1ov1fVobgKy1ZrWMbad-bd7l_RQlkRvpoQAgtTCJAElaXNxS2PyPkOEfK1wVp283EXGQIuUpY24gtbo2L8qHp8My0n0ipS4CFzrxhKYUDrebRFzAOwbhV_IFt-gYoHFuVw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "feedback",
+									"value": "this is a feedback 67",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "86",
+									"type": "text"
+								},
+								{
+									"key": "is_shared",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}save-client-feedback",
+							"host": [
+								"{{base_url}}save-client-feedback"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-client-feedback",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjM3MWI1MjUxMTZmMzliNDFjNTE0ZDUwYmRlOTFhNTlmNjFmN2UzMGM5ZDg5NDAxYTQyZmMyYzNjZWE3MDEwOWUyYmFlNWExNjIwY2E4MmJjIn0.eyJhdWQiOiIxIiwianRpIjoiMzcxYjUyNTExNmYzOWI0MWM1MTRkNTBiZGU5MWE1OWY2MWY3ZTMwYzlkODk0MDFhNDJmYzJjM2NlYTcwMTA5ZTJiYWU1YTE2MjBjYTgyYmMiLCJpYXQiOjE1OTE5NTYyMzQsIm5iZiI6MTU5MTk1NjIzNCwiZXhwIjoxNjIzNDkyMjM0LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.v5OgiWU4xEnTGSt0PrF7ilQUDrWQyzJ7Pt8j4zK5x-qkYwnoa7bwsYnkrmeZXBHYRN7BxBMxhyMN00u3u03jfeUubP-N-CsDcIL_p-jsP5s6jxOqMr93iaVLr4n8CwG0t-KidZ_6Irr4DlJGIyrCBAgcVT98e9tLRYPVzoXEpHWLXGsiDdUQ8ZwrV7RaaD7Xaytp0JYfWxY_pN95bl9OVXuuvPpfJ1_KSFCi6KcI1VeJflYqLu2CpEdxZj-Vy86QEEIafoxIeKORzfpgGluSZQ4FruTub5LipL2aYjFakWTOOjGNoaxLXSA7ltTNZ489AtAMHg_JqiVWflGtuQDDbibUlwPkgLn0OwLXxH_-l_xQ66jyN7t_nj5yBVXBEuLOuwpGvplDA3yQx8XsH2mBrhtEWYgLqWXjSeWxIgLI5g9P3NZ3nM4BxttPaq9YL4pSlvbREUehNDNYAv6Dtfs2caeRwigbOWhy1Wo3MDNsrvp4Ksz9EabvRatQCUwf5ofiV0adRML-abi7yDdVw618JlzkTVvdZs40UN8to-woBcAVdgXVUdUH1dukKnIopmccGJI3YbYhBOMG1y4sGbbd89c8wSxFCjPhPTt4rXbWoNyQLwl_3err5lPqI5xfB_WcL-2gpWsiQlgJC8Su3PINsFyteCBEjlqqEuznCx4vzU8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}get-client-feedback?timezone=Asia/Karachi",
+							"host": [
+								"{{base_url}}get-client-feedback"
+							],
+							"query": [
+								{
+									"key": "timezone",
+									"value": "Asia/Karachi"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{base_url}}get-shared-feedback-with-therapist?client_id=86",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImEzYzY0NTAzNjEyNDRiNTYwNTMwNmIyYmI5ZWYwNmUwNDk2OWQ3OTg5ODQxNmI4NDM3Nzk4MGU1YmIzNGIxMDkyMGVkZDI2M2Q3OGFkZGUyIn0.eyJhdWQiOiIxIiwianRpIjoiYTNjNjQ1MDM2MTI0NGI1NjA1MzA2YjJiYjllZjA2ZTA0OTY5ZDc5ODk4NDE2Yjg0Mzc3OTgwZTViYjM0YjEwOTIwZWRkMjYzZDc4YWRkZTIiLCJpYXQiOjE1OTE4Nzc4ODYsIm5iZiI6MTU5MTg3Nzg4NiwiZXhwIjoxNjIzNDEzODg2LCJzdWIiOiI5NCIsInNjb3BlcyI6W119.gPWW3vx77s1y1CPvHok1k7AeIBG070UpUNS7YjqAoBtYZ51HtKwkmJDlbtCzi0qtN3-vlC9J_iuPJ-iww2yYoFANdrmnXcxFC5JWOKmMgQhxki-tUUUO0ZABOKrfPI_l_gcyiqYtPcZC6IUXgp7ghkKHZ8JBhaZ8tjQrequgG6M0a7UbJAcAFcxgrYvOKQ-TdQioSO5geVs-OPabtOwIjFtxfkKbQMhs62yPvUffhaee-2E49xhDT1dg8qQVn4BY5RQ63BpCNY3ZB5z1Z956bvrZ7EE-Ppl80ctX6arGlGFimjSPT_6Vg142wzKNAVsefGH7B_jiId9-7mkw-vsscXzzwtgeRZrZxoXbMypHicMsIkXHMI1DVCLbm4HWg29ofzhd3Nf6UubUYxFHH0QUJkSgraRhvc_RnRTpRQnMRKyIRvy2pehjAWDzNXFHlcR0b44eLeWB8sZYizPgaroR09YZkrOcOQH_JFZOYZfGcTFNBCerfuDuDV6XYT1zutIaaBKaa-OxDSHbnY0xQfyyhhucGhEZChSnp22HDDMFkoZm-P_3XBxAE8F-Y5aRqG9ff0UxWpmJq45DUtjxeYnqqCPmTExqesED8yUXbDwAscKJJIgJKAcy3wjqGeORYx5JgzsmCV2BxoMe7mBqx_X4edpmJlwm6AFKldDIIAneQpQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}get-shared-feedback-with-therapist?client_id=121&timezone=Asia/Karachi",
+							"host": [
+								"{{base_url}}get-shared-feedback-with-therapist"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "121"
+								},
+								{
+									"key": "timezone",
+									"value": "Asia/Karachi"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Journals",
+			"item": [
+				{
+					"name": "Share-Journal-with-therapist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImI1MDRmZGY3YWI1Y2ZkYmRiYmI5YjJhODkxYTMxZDI3ZTQyMmViMGNhY2E4ZDQzZWEzM2E1NjFjZWExZWE3MWEyYTcxMjc1NjJmNTMzNmNmIn0.eyJhdWQiOiIxIiwianRpIjoiYjUwNGZkZjdhYjVjZmRiZGJiYjliMmE4OTFhMzFkMjdlNDIyZWIwY2FjYThkNDNlYTMzYTU2MWNlYTFlYTcxYTJhNzEyNzU2MmY1MzM2Y2YiLCJpYXQiOjE1OTI0MTYzNjcsIm5iZiI6MTU5MjQxNjM2NywiZXhwIjoxNjIzOTUyMzY3LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.BBnX8t_58MIr4QNJKlPnWu0k-LcnV7XIuNP9VuQGBrffZk_NkHyUT2ZatSraI83S6l6fWvVansngbwMyUzTsV-NHi9whwFOwObNuyJ5ygdfWd_fK0eMJqGgCo6-RJCuSLwaiRNhkKvI0y_6TENqOouFh3y3qBfgTZ7r6CVotBDhmy-y5dMYiX_ogJhyED-9ZbOEn7w_LnXl-Tb2srneoLpAC3WS45mO2t8qZB9oikts97Z0SHe2pd7RNtuaxI7bIjaiOLVWVT4_gVWIV7WOePdLQWy7Phf1sm6jXFDNy8wOXZJfm2OzYiR31XBkWaTFFAH6WOrDXpBue_z1Yh4b9GxbCiFV2wb7rb0li7BPhgVuXLfTOAra7r9tsaytKHIpDIW8pSCo4boH93_HdryZt_4ihgZKJKr7tGekeAkGwfuXngvzrKWwuT7lppg_jn0lZdBVnC2JOAjPOI7g_jy2rpZfTVx5AXSVTi8GWJgMNd4K7tCPPV0x7WMUWYQLDhx7f0bXmt8tGVHx8BNGNLIyCFpVUOiAAO5A-cTF8NnarY7p1uVu97g9s7F5WQ4ji0QL1_Ct4Wt55Z5H-TBImhFT1LumsanCxgRWvoqqZSoeZJSDI1Etws2RV0iMpQ_EDpsRkzjcOZGjbVey4uy63Omjg-iCnG4Lmfxm8m1Zs6owym_w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "journal_id",
+									"value": "32,35,37,43,52",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}share-journal-with-therapist",
+							"host": [
+								"{{base_url}}share-journal-with-therapist"
+							],
+							"query": [
+								{
+									"key": "feedback_id",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unshare-Journal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImI1MDRmZGY3YWI1Y2ZkYmRiYmI5YjJhODkxYTMxZDI3ZTQyMmViMGNhY2E4ZDQzZWEzM2E1NjFjZWExZWE3MWEyYTcxMjc1NjJmNTMzNmNmIn0.eyJhdWQiOiIxIiwianRpIjoiYjUwNGZkZjdhYjVjZmRiZGJiYjliMmE4OTFhMzFkMjdlNDIyZWIwY2FjYThkNDNlYTMzYTU2MWNlYTFlYTcxYTJhNzEyNzU2MmY1MzM2Y2YiLCJpYXQiOjE1OTI0MTYzNjcsIm5iZiI6MTU5MjQxNjM2NywiZXhwIjoxNjIzOTUyMzY3LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.BBnX8t_58MIr4QNJKlPnWu0k-LcnV7XIuNP9VuQGBrffZk_NkHyUT2ZatSraI83S6l6fWvVansngbwMyUzTsV-NHi9whwFOwObNuyJ5ygdfWd_fK0eMJqGgCo6-RJCuSLwaiRNhkKvI0y_6TENqOouFh3y3qBfgTZ7r6CVotBDhmy-y5dMYiX_ogJhyED-9ZbOEn7w_LnXl-Tb2srneoLpAC3WS45mO2t8qZB9oikts97Z0SHe2pd7RNtuaxI7bIjaiOLVWVT4_gVWIV7WOePdLQWy7Phf1sm6jXFDNy8wOXZJfm2OzYiR31XBkWaTFFAH6WOrDXpBue_z1Yh4b9GxbCiFV2wb7rb0li7BPhgVuXLfTOAra7r9tsaytKHIpDIW8pSCo4boH93_HdryZt_4ihgZKJKr7tGekeAkGwfuXngvzrKWwuT7lppg_jn0lZdBVnC2JOAjPOI7g_jy2rpZfTVx5AXSVTi8GWJgMNd4K7tCPPV0x7WMUWYQLDhx7f0bXmt8tGVHx8BNGNLIyCFpVUOiAAO5A-cTF8NnarY7p1uVu97g9s7F5WQ4ji0QL1_Ct4Wt55Z5H-TBImhFT1LumsanCxgRWvoqqZSoeZJSDI1Etws2RV0iMpQ_EDpsRkzjcOZGjbVey4uy63Omjg-iCnG4Lmfxm8m1Zs6owym_w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "journal_id",
+									"value": "32",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "journal",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}unshare-journal-and-feedback",
+							"host": [
+								"{{base_url}}unshare-journal-and-feedback"
+							],
+							"query": [
+								{
+									"key": "feedback_id",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Share-Journal-with-therapist",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA3YzRjY2Q0ZjgwMDU0YjM0ZjMzMDMwMTc5OTM3ODk5MzIzZTk0ZDVhNzAxODFmZGE1MmRlYzM1OThlOGQ2MmVhZGVjMjExYTcxYzI0YmY4In0.eyJhdWQiOiIxIiwianRpIjoiMDdjNGNjZDRmODAwNTRiMzRmMzMwMzAxNzk5Mzc4OTkzMjNlOTRkNWE3MDE4MWZkYTUyZGVjMzU5OGU4ZDYyZWFkZWMyMTFhNzFjMjRiZjgiLCJpYXQiOjE1OTA2NjYwMjMsIm5iZiI6MTU5MDY2NjAyMywiZXhwIjoxNjIyMjAyMDIzLCJzdWIiOiI4NiIsInNjb3BlcyI6W119.nTd7wpEP2WD5X6cCMwqLii9npnX7yk_cbLybqEJUOhfPK8VCp6COa9qYbx_sfP-Yg1TAiWnNa09VAuX7wFJpLFGRkeLYSlocjUWRSAQnx0_RFot5pEWzeL5yvGL32WzE0qqjsFwVVU7joaSqhgr9mqlBm602TMo9Fpt-O8dCEvxaKuT_DkJH7wTJaURGNCwL4CXilDrj4gCm263LZk2CHfUrNdDiLkrpRNf099EZGYW-d-p04dUWiC8GcFFo-_-qr6GtVeGf0J0Xu1fAtwGXAQXAvSaNq93NFsgNHTEiW8bOXM-2e_wPunNWbs6_m48XNJFt3kKd8iy192nqqtRRjjlcJXg5hipu9C7pts7mXvmUO1ybtN7yER5f55gtswWxCnyYcDxU4k8Zxq6hGnZQQPuCxkLYdI5JhbHeiKyg0Irew_I_1ZvR_kWzCMjCmnrIJg91v9GSSmc5ZdYOcJT24DqErM7iqlVB2PfoKG-iWD3707bi-F23oiDRBl_joz-FJITZJU3rrl36YmKQGd8anfmzsAt2En2qhDDQEioCl86GaXHBRCiUQk3h4SS-nT-n7VHSLGkRzmv-HQI6NkrQfpaa_ZuB2yNyJYRPGyg1gv67hr2gJLjr4PKsIJK2-bYzzEhGxqXYKA47BSERADA8o_sQwvLO0OleSIA5mdhoeas",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "card_no",
+									"value": "5555555555554444",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "expiry_month",
+									"value": "12",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "expiry_year",
+									"value": "22",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "cvc",
+									"value": "123",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "client_id",
+									"value": "86",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}get-shared-journal-with-therapist?client_id=86",
+							"host": [
+								"{{base_url}}get-shared-journal-with-therapist"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "86"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Invoice",
+			"item": [
+				{
+					"name": "Invoices List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImNlYWRiZWY3MWQzMzdjMWUxNmEyODcyMzBkNjExODE5NDk4YTJkZjAyZDgzODExZjgwZGQ4OWU3NzAzZDc2NzFjYjI2ZjNiOTk5ZGMwYzA2In0.eyJhdWQiOiIxIiwianRpIjoiY2VhZGJlZjcxZDMzN2MxZTE2YTI4NzIzMGQ2MTE4MTk0OThhMmRmMDJkODM4MTFmODBkZDg5ZTc3MDNkNzY3MWNiMjZmM2I5OTlkYzBjMDYiLCJpYXQiOjE1OTUwOTAzNzcsIm5iZiI6MTU5NTA5MDM3NywiZXhwIjoxNjI2NjI2Mzc3LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.GdWl_dYJ_NzQKIQ4LVeXq4TsbqYyLBVJOZSyZphU6tIiXcbSh4GS2jXID7gmuWCxaAaRDltMuxUVIYO_celDLdcY1ZmQKG3F-sekYQ-K732YDzJyVy5Kh6UFM-OazfsL0b9Vuacnq1rz5gveTp8ssSgPTocNe6Vn2irxJHDOCbIgmAJTI99e-ikHqrQ8SU_RZby6RQAnT_g-QWo8mkl0HtdEk5GeuWoftAk6RL04rPsve0bhxkNnAeBYGIlPtskz5SQNkY-MIg9mtWRigfjn5yxhABVOqkh2BmDKN-6-dGqMRln98aXymaHboplRRrKDqnyaaw3WG9rKAq_oDTwnPvpSxJk85OgX18cH-DX4e9X-V5VGRkE_hZPRqHUjbXK9Tbgt8JSgfOIe-Z5CLPTev6zCpl7thz_kID3vxCpf_uLSoxzjrFmy39K6YPNpfPn5PRDL5jp6QrhtSjK0IY7DBiDMMtFtmbayBUpL5c6w3I24PiSO1-vNgKVFyLzj_emh0A2ehv_tPMhLdl7uFcHYd41hrgHPRViarA2qLXQ1Opekpqm-mWY_fxPXvxR71k15_aIoEH7EFrH18skxkkMDUWb0dWFKM9I8AxgwXpSNMR8UVtwR3v8eU4Cn4wRdK1_FHa1CgI22fCArsDHzucV96hmH_GS70eKyhh_QS5-K9Ww",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}get-all-invoices",
+							"host": [
+								"{{base_url}}get-all-invoices"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Plan",
+			"item": [
+				{
+					"name": "Change Plan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVmMDRmY2QzYWUwOWM4MmFmOTYzNmQ1NGI3MGRiYTc3ODYzMjIzOTQ4MzNjZDk2YjczNDcxYzYwNzI5MDAxMGU1MmFlYjhkZmI1ZDAxMWYzIn0.eyJhdWQiOiIxIiwianRpIjoiNWYwNGZjZDNhZTA5YzgyYWY5NjM2ZDU0YjcwZGJhNzc4NjMyMjM5NDgzM2NkOTZiNzM0NzFjNjA3MjkwMDEwZTUyYWViOGRmYjVkMDExZjMiLCJpYXQiOjE1ODk5NTE4NTIsIm5iZiI6MTU4OTk1MTg1MiwiZXhwIjoxNjIxNDg3ODUyLCJzdWIiOiI4NiIsInNjb3BlcyI6W119.jE9-cRp-uK_k8NR5mygGkib0-ROvwXXGYbjPUFJix4Z9ugqYktS30z4_Ah_1_t4AwWzN8oR_f-abso0jhiUPP7ZKBF813GGoiQmNeI45jtppSZhH1jyc-QhWecLUSBVvoq4_w4iQ98mJzRKEom0cF-sCsrYFq62JvQFT5QuFOmnJtLcgXxtWfwChMH1s65KfognNtEM1mLKI2DmUeeADX7TCw7DaMazCoeQdaOOHIiIaq8ZdERoI9-HsQkqss1dHFm3OgG-gWYqEyJ0yujy58J8qkOut0PqQfT6d28J2Zqqq5_nELQnA-D33lx6Utc8-BCmJBv4CZD7uxCUfcqxMn9w835Qf2EVhwmoyYs-Qhi-a6aj9pnQTxJ-6Sq2EFAsMDzfcDDcQY0SNz8GvQ-kYpej-7wbw7PXG427wpiOydcldVpaepFPK7WYA2v0BFEEEoLKCbY0gQf3rKZCe2f2IIfVnEeMssBJIqtFTZzLVEDeMDl8wQQAGAJ9xLWsf2uSmhssshntubQn4DqjqijgNzLqRKVjI3DDkBdsVf5HoM72dmsoVQWofgTboFjXbPVwDCoX5-quju3tLBz8-isc1hiFT57PBYgfY15nA_EZL8paOfoeuJhpy-ajQmQF9cHwHF7vgfKhnbiPWDEwOFmArhkjr0sETdsB5PsjFUyQ2IHM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "plan_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}change-plan",
+							"host": [
+								"{{base_url}}change-plan"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Notes",
+			"item": [
+				{
+					"name": "Get Notes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjM3MWI1MjUxMTZmMzliNDFjNTE0ZDUwYmRlOTFhNTlmNjFmN2UzMGM5ZDg5NDAxYTQyZmMyYzNjZWE3MDEwOWUyYmFlNWExNjIwY2E4MmJjIn0.eyJhdWQiOiIxIiwianRpIjoiMzcxYjUyNTExNmYzOWI0MWM1MTRkNTBiZGU5MWE1OWY2MWY3ZTMwYzlkODk0MDFhNDJmYzJjM2NlYTcwMTA5ZTJiYWU1YTE2MjBjYTgyYmMiLCJpYXQiOjE1OTE5NTYyMzQsIm5iZiI6MTU5MTk1NjIzNCwiZXhwIjoxNjIzNDkyMjM0LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.v5OgiWU4xEnTGSt0PrF7ilQUDrWQyzJ7Pt8j4zK5x-qkYwnoa7bwsYnkrmeZXBHYRN7BxBMxhyMN00u3u03jfeUubP-N-CsDcIL_p-jsP5s6jxOqMr93iaVLr4n8CwG0t-KidZ_6Irr4DlJGIyrCBAgcVT98e9tLRYPVzoXEpHWLXGsiDdUQ8ZwrV7RaaD7Xaytp0JYfWxY_pN95bl9OVXuuvPpfJ1_KSFCi6KcI1VeJflYqLu2CpEdxZj-Vy86QEEIafoxIeKORzfpgGluSZQ4FruTub5LipL2aYjFakWTOOjGNoaxLXSA7ltTNZ489AtAMHg_JqiVWflGtuQDDbibUlwPkgLn0OwLXxH_-l_xQ66jyN7t_nj5yBVXBEuLOuwpGvplDA3yQx8XsH2mBrhtEWYgLqWXjSeWxIgLI5g9P3NZ3nM4BxttPaq9YL4pSlvbREUehNDNYAv6Dtfs2caeRwigbOWhy1Wo3MDNsrvp4Ksz9EabvRatQCUwf5ofiV0adRML-abi7yDdVw618JlzkTVvdZs40UN8to-woBcAVdgXVUdUH1dukKnIopmccGJI3YbYhBOMG1y4sGbbd89c8wSxFCjPhPTt4rXbWoNyQLwl_3err5lPqI5xfB_WcL-2gpWsiQlgJC8Su3PINsFyteCBEjlqqEuznCx4vzU8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}get-notes?client_id=86&timezone=PST",
+							"host": [
+								"{{base_url}}get-notes"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "86"
+								},
+								{
+									"key": "timezone",
+									"value": "PST"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Note",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjY2ZDJkYzZhZDhiMTU4NGI3YzA4ZWJhOWNjZTgxNTNmODM2ZTNhNjk1YWM2MTQ0MDQwM2RmZWMzNWU2ZmIxNmE1N2ZiNzhlZGEwYzRkZmY0In0.eyJhdWQiOiIxIiwianRpIjoiNjZkMmRjNmFkOGIxNTg0YjdjMDhlYmE5Y2NlODE1M2Y4MzZlM2E2OTVhYzYxNDQwNDAzZGZlYzM1ZTZmYjE2YTU3ZmI3OGVkYTBjNGRmZjQiLCJpYXQiOjE1OTE5NjQ5NzUsIm5iZiI6MTU5MTk2NDk3NSwiZXhwIjoxNjIzNTAwOTc1LCJzdWIiOiI5NCIsInNjb3BlcyI6W119.ZBBObD-8QT4eOPhG6h9c77GxZBJFr0E79BYGeTEg5sev1gdtmBE4LPDr48yZjK1_DtNG84fkgON6Dt_JcBhal-PhQfNtogLWVowZf1NkkhpzXJNM3BOSiL82zYtvTMVsnMs-iEQRke0H5n8AIj4vsgO6WkrBRboOJpcwk5eXcXm6oMGo7dFeTY6b_eYLfd0MgrtkB8X15-9JfWqj-22eWx9m3ABQQoeYvrDs-poVJMxPseJ8jIp97sPauxUCsBBJy0eEBYHwn2B1oPSA1TNK5NYsq3xvgWgLCh6ZwRwK8D3JdUY4WzbNEK69SIX9tPFoUfpXXVcXLt2c2lYVGtyF84YKdzN6mjedLyTCyt947lZ9YmsohcxWpWh_PgtVg-Q8IhYkOUq9B4cUZ-8JdYMEqRHBK0-NSH1mN7_4cwhHN90zs5tCC3LmHFmHbvjVZeMbC-Jd5mD-D2Ds-vRtDjwsE-NCyf4B37TyRUlOe34DJ1OFeXsYtIvhbv7A0VENUvAEAv78_s4tq2TC84zWpL_QLFF75aF9SCT8k7-Q2DwmwCNm-odPyWVPQfRUqrByYsrdP91H4LAe8o5fqW5l1KrWbbRYdyAhR0x_X1ueD2XQmb6hWROILpjINrDnEaHUkp6f7qH4YVzbT_hZQ_2yXNNAo25T1ZBGx25WY6XJg6qBNDc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "note",
+									"value": "contains different vitamins and fats. 😍",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Mushroom ",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "86",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}save-note",
+							"host": [
+								"{{base_url}}save-note"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "appointments new",
+			"item": [
+				{
+					"name": "Get Tempelate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjllNGRlNjAzZjRjZTkwZThmMzhjMDA5ZjhjNDlhY2YwODIxNDA0N2ViOWJiYzE1YTNmNWJhYjc4YTAzYjI0MTdmNjIzNzFjOThkZGUzMzUzIn0.eyJhdWQiOiIxIiwianRpIjoiOWU0ZGU2MDNmNGNlOTBlOGYzOGMwMDlmOGM0OWFjZjA4MjE0MDQ3ZWI5YmJjMTVhM2Y1YmFiNzhhMDNiMjQxN2Y2MjM3MWM5OGRkZTMzNTMiLCJpYXQiOjE1OTI5MzA2NjgsIm5iZiI6MTU5MjkzMDY2OCwiZXhwIjoxNjI0NDY2NjY4LCJzdWIiOiI5NCIsInNjb3BlcyI6W119.IBQjNSUREY2WvRfQUSqBX2UomvUDY0OKvj5ABWPH7MKYa4QTVTQvMRAIJF5UZV9024v4sNQMu9lp0hBbBYkod3t9UZUfM3NHSbWdkC2rgnLNBGwe1d9Ht_mxxOTrQmEQ9aZ9PAJgFFoZaQWfNH-ng-g9_GZgzgUyOHS7nX0MWNIVtZIhimiMgiqAC9VUWx7xwlEixviEl8LH1Pz9b9agOQnIcC7k12MjJ2rl-zjaGSIBan44HhskLoDeci9U-KxBzz1TRaCSo3C6IONO8sFCPVN3xEUot5yaWON63g3pkBQ1MBmCBKkqqMaq40db4ayGKlEbut3L3lTpvSUfJ3f1IJ55OISkwdb7WHsWu2x9pNK5Nehq_XdR1KXWBRRK-8Nbp4w1qu9_fmY3POs5EwjcT6Pc5DiUROZpu1NZnlVFsCe9a3wJ20L6g_tH1yFTk7INaBPXJxRFvLOmwZPpfnrkZy_-KrfjsC1YK7DhYZ8wq9FrU8saTPnW3I8Ybml0t--qq1s3VIzwC01n_y4zOQi3HzlyWi7HHo_VMhbZVsIA7yj-tqhVOc3MCoyvqlWtbztYgsjd42ee6CzJjmJIpBOB3fhH3N_S5RiPLH3ztdr0V9QT2ZVrAAuAxP27IldXUPamuPHNLU0aGp-0GHZcNFQs7YPZbgwEfxY8r7jIhPhrY48",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}get-timing-temp?day=friday",
+							"host": [
+								"{{base_url}}get-timing-temp"
+							],
+							"query": [
+								{
+									"key": "day",
+									"value": "friday"
+								}
+							]
+						},
+						"description": "This api is to get the tempetale \r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Time Slots",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjMwYTQ1MjY1MzgyNjYzY2UxNTQ1OGFhNjFhMzliNzEwZGRjMDhhOWRjNDY4YTc0NmFlNWUxM2NkMmMxYjI1MDQzYWZlMjNjNzRlMTdlZmYzIn0.eyJhdWQiOiIxIiwianRpIjoiMzBhNDUyNjUzODI2NjNjZTE1NDU4YWE2MWEzOWI3MTBkZGMwOGE5ZGM0NjhhNzQ2YWU1ZTEzY2QyYzFiMjUwNDNhZmUyM2M3NGUxN2VmZjMiLCJpYXQiOjE2MDAwNzczNDIsIm5iZiI6MTYwMDA3NzM0MiwiZXhwIjoxNjMxNjEzMzQyLCJzdWIiOiIxMiIsInNjb3BlcyI6W119.rAFZsiwTRW_KmHxiwXVqh6FRTe0mJMRRt7hlp-azKRw-sMhCmEmk32-c00hSQArlJIG2rYb-7d_Xk2NM2ty6qFOWPdeVpbCjFpSOY7ZDP3R9_lFuQKoxYes5cRkoBObchpcjtGEd8FtRYYpm7fb-Ov9kQCkvP9NCy_5rWPK5Zf9IOFSFQdFGL78jW-lbS7-PdZiMhAJTA_aACMnx0Y8pEzw6OENUOGpQPfFIjdGPj5JZ9rlKgi64ol17IjzEYYsmvX5umubmzHsHJ89Lz2-04U2_K5BEFoHHAWV4HWXaPGNFeFBjwCc67ZGGGtGEUcA8H8YhVNFs9uri-mYqnqtTa0Dnp3R5mPb4OXsGN0fiIu5FMl7sQ5-YNnq6xeuuXIphEtg-UdWJty9e6RPhYoVrcgOZxwGF-4dBlwTYXKykHtb4WS8rdDdKQSJa-hzB8SNj_oTFXLhnvthTMkNWu2m7hY80JjFuTYdTGkjhjSN3vgvi05azfMZA468qakLpUkquHDDFeMgrEe8qQOXtt-gYTp9Bn3vIoB50NuPUFPO_toDjsunfjJvrsLxXtW_megxlKS-P7zORE06AzsKgKxk7kt6Q8W1WvhyYCBoVC5r7v5heNfq-AKkiFUwCoZhWqUd8CBr1tbUCgBRZh8m5BZn9xZpyUNVjF7sC0eLN3lPl2kw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}get-time-slot?timeslot=1&day=monday",
+							"host": [
+								"{{base_url}}get-time-slot"
+							],
+							"query": [
+								{
+									"key": "timeslot",
+									"value": "1"
+								},
+								{
+									"key": "day",
+									"value": "monday"
+								}
+							]
+						},
+						"description": "This api is to get the tempetale \r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Active Time Slots",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjQ3ODk5YTYyMjc5YTQzNmU3ZTIzYjI2YjQ0YWQ4ODhiYjBkMGM1NTExODBlMzU3N2E5N2E1YWJiZGRkNmVhM2UyZTk3NDU2ZTk1ZGFjMTYxIn0.eyJhdWQiOiIxIiwianRpIjoiNDc4OTlhNjIyNzlhNDM2ZTdlMjNiMjZiNDRhZDg4OGJiMGQwYzU1MTE4MGUzNTc3YTk3YTVhYmJkZGQ2ZWEzZTJlOTc0NTZlOTVkYWMxNjEiLCJpYXQiOjE1OTI5OTgzODYsIm5iZiI6MTU5Mjk5ODM4NiwiZXhwIjoxNjI0NTM0Mzg2LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.JIuUg6DxEm_sU5B5ANF_xDaj53N516RNb-oa6jds-PSP-UivDyloh8HxwlSe4bfVxkuPb2yFQSkhaTENNOWzk0W9NOdUIh1r2rTY4K9mvYubXu7Urs99uACEcX7y_k_YlhfDHAn6awHg-wxTGi4P-h_6duheIiusIxTAYfZ3Z-nM38nMpKuj0bBWAZYepw5Wz6P8_GkfqI2XSy_jUDbYVRO3HzvbDhG3W77KXCx1kS7XZK5IGyLKzU6KhIRHV_oVNsXydLb4ybj-cNramLg01iji0nmfFR_0d4CFDcTDNFwsHOH-5LQ8r65unXZj1wTsih6tCw-23ZnLl1VZVoO8PB0A-Cfb6w0zFea__0dQUagNp1Yo2BxdJZMOrX1wxsyps9CuZquL6tp-KbCx1xRbyf3wDto2X_v7W-p4rfVK1NbpZ8LFbhHl8PqzupOx7HefJPJ9siqK1AOKoob3c9Kdor-UG_XXUgIquesZRxo6Mm3TJZPTLA2UFKsCS_xCG0zUJ-TmnKQxsd4Tjb6E5A6t7ROqnr0u8SsMxnrag_jI82w2RW9bG2vzffPpOjG_ynqVfJv_pBkz1ZQ-HZgeZSDTtQrr6sfqUe8LxCx4zNK8EhfGRKQ-Bb1Egx8cfrf0WJGUUN67B27zGtvxKwRvIwNF7AU2pRvppc2v3wPyJ6s3xgs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}get-active-timeslots?day=Tuesday&therapist_id=47",
+							"host": [
+								"{{base_url}}get-active-timeslots"
+							],
+							"query": [
+								{
+									"key": "day",
+									"value": "Tuesday"
+								},
+								{
+									"key": "therapist_id",
+									"value": "47"
+								}
+							]
+						},
+						"description": "This api is to get the tempetale \r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjllNGRlNjAzZjRjZTkwZThmMzhjMDA5ZjhjNDlhY2YwODIxNDA0N2ViOWJiYzE1YTNmNWJhYjc4YTAzYjI0MTdmNjIzNzFjOThkZGUzMzUzIn0.eyJhdWQiOiIxIiwianRpIjoiOWU0ZGU2MDNmNGNlOTBlOGYzOGMwMDlmOGM0OWFjZjA4MjE0MDQ3ZWI5YmJjMTVhM2Y1YmFiNzhhMDNiMjQxN2Y2MjM3MWM5OGRkZTMzNTMiLCJpYXQiOjE1OTI5MzA2NjgsIm5iZiI6MTU5MjkzMDY2OCwiZXhwIjoxNjI0NDY2NjY4LCJzdWIiOiI5NCIsInNjb3BlcyI6W119.IBQjNSUREY2WvRfQUSqBX2UomvUDY0OKvj5ABWPH7MKYa4QTVTQvMRAIJF5UZV9024v4sNQMu9lp0hBbBYkod3t9UZUfM3NHSbWdkC2rgnLNBGwe1d9Ht_mxxOTrQmEQ9aZ9PAJgFFoZaQWfNH-ng-g9_GZgzgUyOHS7nX0MWNIVtZIhimiMgiqAC9VUWx7xwlEixviEl8LH1Pz9b9agOQnIcC7k12MjJ2rl-zjaGSIBan44HhskLoDeci9U-KxBzz1TRaCSo3C6IONO8sFCPVN3xEUot5yaWON63g3pkBQ1MBmCBKkqqMaq40db4ayGKlEbut3L3lTpvSUfJ3f1IJ55OISkwdb7WHsWu2x9pNK5Nehq_XdR1KXWBRRK-8Nbp4w1qu9_fmY3POs5EwjcT6Pc5DiUROZpu1NZnlVFsCe9a3wJ20L6g_tH1yFTk7INaBPXJxRFvLOmwZPpfnrkZy_-KrfjsC1YK7DhYZ8wq9FrU8saTPnW3I8Ybml0t--qq1s3VIzwC01n_y4zOQi3HzlyWi7HHo_VMhbZVsIA7yj-tqhVOc3MCoyvqlWtbztYgsjd42ee6CzJjmJIpBOB3fhH3N_S5RiPLH3ztdr0V9QT2ZVrAAuAxP27IldXUPamuPHNLU0aGp-0GHZcNFQs7YPZbgwEfxY8r7jIhPhrY48",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}savetimeSlots?appointment=1",
+							"host": [
+								"{{base_url}}savetimeSlots"
+							],
+							"query": [
+								{
+									"key": "appointment",
+									"value": "1"
+								}
+							]
+						},
+						"description": "This api is to get the tempetale \r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "updateTherapist Availability",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjU3ZWNjY2M1ODViYTU3Yzg5ZTljNjAyZjMxZjgyYzVlNzZiN2NjYTZkYzI0MDYyNDAxYTMxYzE3Njg5YWIwMWM4ZTA3N2Y3ZDQ0MzYxMzA1In0.eyJhdWQiOiIzIiwianRpIjoiNTdlY2NjYzU4NWJhNTdjODllOWM2MDJmMzFmODJjNWU3NmI3Y2NhNmRjMjQwNjI0MDFhMzFjMTc2ODlhYjAxYzhlMDc3ZjdkNDQzNjEzMDUiLCJpYXQiOjE2MDA2Nzc4NDgsIm5iZiI6MTYwMDY3Nzg0OCwiZXhwIjoxNjMyMjEzODQ4LCJzdWIiOiI0NSIsInNjb3BlcyI6W119.NoPio4xJ2xFmDoBwI0dnxzo49zMOVHRZfA5QKIpgxqC7XKswzyTudLbOFG3Al6UCQJCEo2l0pABKD00oP2P_HbRyU6bo18p8PDESlxTBtk6K7dmq-5WyR-nSr_6X3-C27Y4bKLnP90yz9ev-FNR0Hx4jre0MDqonvF4yUuLnS_lNG_zXHIqqzR1t4oLShwZsNNjtMZZ8Igw2bIstklMk9nwiXM5-JK0WkSze1XNAeRu5hOlxwjaH_zV7bfCORnlNtpvf7BY5nXhUGJpWSFl-Fkke8bJ2B1j0MLeStCJ6BZn3SUUms4gVcLJTgwAmrLpxUZeMnNK3w-qkUAxyHVbZd2gUxW5l4IJIHVpTpQRE8idEijNFRVi5J-KJ2mmTNOx9qqFu6Z0wQOxGw9796t_BTGv2ZOxwfDH55__wU5SMNAINC0H3A1ba7KVnft8OUq-hHxNQwH86I4FODsSD7epr1UMkQjAzimoDuRArO5lBrXxVYmDnqtYp-Ol6WCvcvk1Z86V63hKgQM_pFUzWbKL3NCBrtWlBzAYx_Oz7LOMW6F9_EfKmpAm7ZTU10Hcz_3n_1SiNf2qA-U9rjiuJLplYxiaU3-AlGbZgrbwU0DNmBncs9VM3u2eE1rwVGrlVRM9IyA2euFMv6WXKj8EqVUAxSc0JYD3qXJiViB0XbyWKmzA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"day\":\"Monday\",\r\n\"timezone\": \"Asia/Karachi\",\r\n\"timeslots\": [{\r\n\"start_time\": \"12:00\",\r\n\"end_time\": \"12:30\"\r\n},{\r\n\"start_time\": \"12:30\",\r\n\"end_time\": \"13:00\"\r\n},{\r\n\"start_time\": \"13:00\",\r\n\"end_time\": \"13:30\"\r\n},{\r\n\"start_time\": \"13:30\",\r\n\"end_time\": \"14:00\"\r\n},{\r\n\"start_time\": \"14:00\",\r\n\"end_time\": \"14:30\"\r\n},{\r\n\"start_time\": \"14:30\",\r\n\"end_time\": \"15:00\"\r\n},{\r\n\"start_time\": \"15:00\",\r\n\"end_time\": \"15:30\"\r\n},{\r\n\"start_time\": \"15:30\",\r\n\"end_time\": \"16:00\"\r\n},{\r\n\"start_time\": \"16:00\",\r\n\"end_time\": \"16:30\"\r\n},{\r\n\"start_time\": \"16:30\",\r\n\"end_time\": \"17:00\"\r\n},{\r\n\"start_time\": \"17:00\",\r\n\"end_time\": \"17:30\"\r\n},{\r\n\"start_time\": \"17:30\",\r\n\"end_time\": \"18:00\"\r\n},{\r\n\"start_time\": \"18:00\",\r\n\"end_time\": \"18:30\"\r\n},{\r\n\"start_time\": \"18:30\",\r\n\"end_time\": \"19:00\"\r\n},{\r\n\"start_time\": \"19:00\",\r\n\"end_time\": \"19:30\"\r\n},{\r\n\"start_time\": \"19:30\",\r\n\"end_time\": \"20:00\"\r\n},{\r\n\"start_time\": \"20:00\",\r\n\"end_time\": \"20:30\"\r\n},{\r\n\"start_time\": \"20:30\",\r\n\"end_time\": \"21:00\"\r\n}\r\n]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}save-advisor-availability",
+							"host": [
+								"{{base_url}}save-advisor-availability"
+							]
+						},
+						"description": "This api is to get the tempetale \r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Advisor time slots",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVlMDQ5ZmI0MTc1ZGUyN2M0NjliYjEyZjJhYmUxNTZhODhhNzYyYTEwZjc3MjViOWY2NmI3ZWE3ZjgxMDg2NzlhMjVhOTM2MjBjNzU0NmZjIn0.eyJhdWQiOiIzIiwianRpIjoiNWUwNDlmYjQxNzVkZTI3YzQ2OWJiMTJmMmFiZTE1NmE4OGE3NjJhMTBmNzcyNWI5ZjY2YjdlYTdmODEwODY3OWEyNWE5MzYyMGM3NTQ2ZmMiLCJpYXQiOjE2MDAzOTczMjcsIm5iZiI6MTYwMDM5NzMyNywiZXhwIjoxNjMxOTMzMzI3LCJzdWIiOiIzOSIsInNjb3BlcyI6W119.X112OX8fnNkqodU5Ox6bd2OR_d9jZjv50cFuVFgLG30AOZkCd0CluQYVGbgB_1-Zd0sC6r3f6jYX8wkKIXlUfWb4Ing7lDtGVTbmtQTI0sCihZhRkf72R7lWUnSkwC4NMawQFIcjtIntNvU4vfk9rMltODs_QjaMcq5O_Pmo0egM1tjbqlVQBVQz6FjSl0ypJr3pHakl46eUK8mCuE9UQsBCBiEnfpEPpHNtOzW7P0m5AhnI3Kyp90J-EAF8vYJhHLi4c4FaBzL7ZM3XVJFQMJF_AD8hof7vv3MDPCAZMKuLB7Ctcuogofv2h5SvWDpTS6eW1uniWHJofhtmGJkdFJi5qzMyLUHHpuQL1pbaCvTWxf8y0ubRucQ15HyjFajzfv1pp571NDU0lsQxqW6H_xKBJ03r6ekzh5e66LDqZ9YkOKRG-7taRVQbgr-cV1eWU57NLifGl64Q3rKTCQ-AFOPbqmMJltpFWZ4iYayQrBUr6e304z_yFxy_G8SXny3b5CykphtR6dkaBdEae7tNK9XhQ66n4TH_4NBHoj4f6ONXi6oyOXeYncUCNrRdbvic-4_fKf2PTmG-4kYimwSKuCkYAaINYRhyy2RoC0-F4YUnkd2-8nZapxDWXf3PEArbyNtzPLHPIn-YxawymN3RXT4tmG9EZCKu8fwIVhDhyP4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}get-advisor-time-slots?advisor_id=45&date=09/23/2020&timezone=Asia/Karachi",
+							"host": [
+								"{{base_url}}get-advisor-time-slots"
+							],
+							"query": [
+								{
+									"key": "advisor_id",
+									"value": "45"
+								},
+								{
+									"key": "date",
+									"value": "09/23/2020"
+								},
+								{
+									"key": "timezone",
+									"value": "Asia/Karachi"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get appt timing for both",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImU4ZTg5NjBkOTIzNjYyMjJmZWUxOTFiZDRiZWY4OTY4MzU4NjFjMGFjMDk1YmVkOGNlZTBhYjllMWNlMDcwMTYzNGM0OWRmY2IzMzg5N2E0In0.eyJhdWQiOiIzIiwianRpIjoiZThlODk2MGQ5MjM2NjIyMmZlZTE5MWJkNGJlZjg5NjgzNTg2MWMwYWMwOTViZWQ4Y2VlMGFiOWUxY2UwNzAxNjM0YzQ5ZGZjYjMzODk3YTQiLCJpYXQiOjE2MDA4NjA2NDksIm5iZiI6MTYwMDg2MDY0OSwiZXhwIjoxNjMyMzk2NjQ5LCJzdWIiOiI0NSIsInNjb3BlcyI6W119.rErPYZuIUGKboe775FTuFevk_9UVtNNDYrUex5wl73W3r2Yg36jF-H0huYNclxuB-LjmO4wG9p7ljUhpZ2px0LAdxnV6XqcNafNbRXXg7iT3XK6SFsXrAK6R52Cn89ipvznUz9-__RYdqx-Gy-ClHFXe-7Z3RnR9Newx3uDb1JH8TNfswYBWM_j5OThPvgzxVxcQN4NNLWhfVEY_Z5zKYPdvLffdq-EFKWBSkacpoc3cGPHHGBAsP_r5EWA59wIa6e6QcquDumAyHCsC-Vr_zi_oQOXIvTijnO3-ZV1GHPmKmKy9UQqrrZ8mDgagYBHb0debouc8hPFq1eU-_xHin9Ez_UfSe75v5yVw5Apc7DN9xJKq05V6eAXg5ALl-bpy6TPMy9guLfcmYIisGcZSjP_oppGKFI2AadtfIzhn-ee5xq4m23FCgcJ3Iau0Q4_J1JtWIUvftBVXvCG_RLfMalzZNHFrn1-ebVZkz7KXiq9t1WkNjlKRCrXatHYmayKCAX70is_fXhWu-df2E-MsDad1n5rHGvkrUgaDoW22qBuOqPJdCeWzHyXwBagw_EL1_mkEMZu5m0RwfbjuVEjOXoUhoXtReArCgYrb-7q78Pe65ICRBUbww5jgYfklaCb10_Y7BX8bOw5qtMdwvg7uGEyf5-exXYwXrrtXO9Z4n8g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}get-appt-timing?user=39",
+							"host": [
+								"{{base_url}}get-appt-timing"
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "39"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "one-time",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjU3ZWNjY2M1ODViYTU3Yzg5ZTljNjAyZjMxZjgyYzVlNzZiN2NjYTZkYzI0MDYyNDAxYTMxYzE3Njg5YWIwMWM4ZTA3N2Y3ZDQ0MzYxMzA1In0.eyJhdWQiOiIzIiwianRpIjoiNTdlY2NjYzU4NWJhNTdjODllOWM2MDJmMzFmODJjNWU3NmI3Y2NhNmRjMjQwNjI0MDFhMzFjMTc2ODlhYjAxYzhlMDc3ZjdkNDQzNjEzMDUiLCJpYXQiOjE2MDA2Nzc4NDgsIm5iZiI6MTYwMDY3Nzg0OCwiZXhwIjoxNjMyMjEzODQ4LCJzdWIiOiI0NSIsInNjb3BlcyI6W119.NoPio4xJ2xFmDoBwI0dnxzo49zMOVHRZfA5QKIpgxqC7XKswzyTudLbOFG3Al6UCQJCEo2l0pABKD00oP2P_HbRyU6bo18p8PDESlxTBtk6K7dmq-5WyR-nSr_6X3-C27Y4bKLnP90yz9ev-FNR0Hx4jre0MDqonvF4yUuLnS_lNG_zXHIqqzR1t4oLShwZsNNjtMZZ8Igw2bIstklMk9nwiXM5-JK0WkSze1XNAeRu5hOlxwjaH_zV7bfCORnlNtpvf7BY5nXhUGJpWSFl-Fkke8bJ2B1j0MLeStCJ6BZn3SUUms4gVcLJTgwAmrLpxUZeMnNK3w-qkUAxyHVbZd2gUxW5l4IJIHVpTpQRE8idEijNFRVi5J-KJ2mmTNOx9qqFu6Z0wQOxGw9796t_BTGv2ZOxwfDH55__wU5SMNAINC0H3A1ba7KVnft8OUq-hHxNQwH86I4FODsSD7epr1UMkQjAzimoDuRArO5lBrXxVYmDnqtYp-Ol6WCvcvk1Z86V63hKgQM_pFUzWbKL3NCBrtWlBzAYx_Oz7LOMW6F9_EfKmpAm7ZTU10Hcz_3n_1SiNf2qA-U9rjiuJLplYxiaU3-AlGbZgrbwU0DNmBncs9VM3u2eE1rwVGrlVRM9IyA2euFMv6WXKj8EqVUAxSc0JYD3qXJiViB0XbyWKmzA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}one-time",
+							"host": [
+								"{{base_url}}one-time"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Appointment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImZjZTE3ODU5N2MzMmE3NDM3ODM0NGQyNmFhODhhNTNhZmRlYmE2NGU0MzY0ZjRlYjNhZjY2NzZmMmFlYTUwOTU1YzcyOTYzZWMxNWYyMDliIn0.eyJhdWQiOiIzIiwianRpIjoiZmNlMTc4NTk3YzMyYTc0Mzc4MzQ0ZDI2YWE4OGE1M2FmZGViYTY0ZTQzNjRmNGViM2FmNjY3NmYyYWVhNTA5NTVjNzI5NjNlYzE1ZjIwOWIiLCJpYXQiOjE2MDA2OTUwOTIsIm5iZiI6MTYwMDY5NTA5MiwiZXhwIjoxNjMyMjMxMDkyLCJzdWIiOiIzOSIsInNjb3BlcyI6W119.EK8rRZuYsti8yhZbf3P1ZXwduUTslKRJTVkm7AqexxP2Mk0ZDqdQvdNdQgZn8tPUJ7Kr2lsTAbneL8EmiDPdDCmhgUbJfrA7wG93J0jZJg_oAzPMpfstKUZIcSqSN4JT2FmslV-ZvqJBXrvUOkYtG7opPZj5hOSMmiD6L1kTUbr0eymKbuZJX9S0Ho3MtTzrihWzez73EhbONMHfw05NlhKjTF2_YFY0TOpwHFvcaEimwy6EvZvr29c_8nQG9Lq8TNI28fV3W45JIusjoM7HW4Q3JRbqEi15CClDm1KEgfeyPG4ImV9O0twhNEA1jvs_RkbQl5WdrSBsv-n2XiyPB41E2YiGVCaIAGf3HSTZnGieltrECZXJ44lYqSxvmtC62qjjI6LIOP-r9g3W13xOsdlT6uV7x47AIRaUmv9FKKjbrc46ZutPwyivEra6BDWL5KTvIlcWUBwRiupRNb-QpgnU8k7vEcHN6t74pl74ku9l7Yo1Pbgu69qV2b7ljMqwycSLPi3s8EPYuFDNSniDCCXjdTkHgIAIwI92YQOeghnXlxUEVKrth07sRYEvZg0dlkm7GEoQAxAsn_6NmuMKoHcUS1d7uApj9xWJ1upnlXWNuAbelsU3k6Ip6aBBfE3_1hL2KBdqGT2i9jM3NFlyoHUzZ9LEjdEuXfY2tXWGcnk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "advisor_id",
+									"value": "45",
+									"type": "text"
+								},
+								{
+									"key": "timeslot_number",
+									"value": "41",
+									"type": "text"
+								},
+								{
+									"key": "appointment_date",
+									"value": "2020-09-21",
+									"type": "text"
+								},
+								{
+									"key": "start_time",
+									"value": "18:00",
+									"type": "text"
+								},
+								{
+									"key": "timezone",
+									"value": "Asia/Karachi",
+									"type": "text"
+								},
+								{
+									"key": "appointment_day",
+									"value": "monday",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								},
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}book-appointment",
+							"host": [
+								"{{base_url}}book-appointment"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Cards",
+			"item": [
+				{
+					"name": "Change/Add  Card",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjliZDQ1ZTY2MTYyZjgxZmUzMmVkNTZjNThhZDEzNTNjMzRmZjcyN2ExYmU4NjA0YTI3OWYyMTQxNWUwNjRhODExODBjYWVkZjhkOTIxZDE1In0.eyJhdWQiOiIzIiwianRpIjoiOWJkNDVlNjYxNjJmODFmZTMyZWQ1NmM1OGFkMTM1M2MzNGZmNzI3YTFiZTg2MDRhMjc5ZjIxNDE1ZTA2NGE4MTE4MGNhZWRmOGQ5MjFkMTUiLCJpYXQiOjE2MDAzNTc3ODEsIm5iZiI6MTYwMDM1Nzc4MSwiZXhwIjoxNjMxODkzNzgxLCJzdWIiOiIzNCIsInNjb3BlcyI6W119.Nf3YcsRM8qAwvvtErfQIDlh-xQzH0T7MlJFDiFi3Ol6piWxZFeOSdjb6gShXj_Ty1tvZbwZppkQ4hn_t9E1-QWo4hI4VdEBZ9ZWVfF1KZ7QI03V_VJij6J0WZgE-OHQeLzqE06Y_Vu5SBsB6Q8DSOkwvhJTuNUM1qPwzW9SE1gK0v-kgqrMDvlOZy3yBsH4-SVS7lfkZXqnpVt7vJdm6mWUo_oyygI8RDiml3Gsbw9F2Qh_o5SaHoBbqkWQK92wveMBrodjaJhAkxEwE_UI5QyBM22BgSWh-48IvYMPrsjSi0mncfAxuCFlcq7UYAr-cGp75DYSstJ2aq6K2dxRPtwNrXoAxj3aIG4J1qhdDYZ83QJ-AkK_-uX8ezRlvBCvdXC4fSpz7J4Nn0kS-EA4pxu2BLYyJFn-Wm3Fck3J3XCZFc2nOlqG11xyi5Ky8ICcBHGhtKfSUN2s_zs3ubJME-9gbOfkI5rVXOaIYIJtqrpfivG4klW276lUc3tNKx6dlrwHYYsW1_as3HrkdWHhovUNCBACE36N9HhB9D1p4y3youOxtScZyjeC0oCnMKdFeH1swp80BQJgf5MZb2rTNP0hIhEo5kgUWYhEFS2cj13Q3h8hIX-OftfHkbDRMFgA4lX-mP3yf_PVeuWgkDTKhe6u42U1lNwHX3hoXVHRbOZo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{base_url}}get-all-card",
+							"host": [
+								"{{base_url}}get-all-card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change/Add  Card Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImEzZDBlYzE0NzgwMDY4ZDZiNzk2M2ZhOTIyMmY2ZWQyNzU2OGQ2NGY4MGE1ZWIxMjA4Njc5ZmIxNjgyYWFlMDU0ZDFmYmQ1M2ZjYWYyNTgxIn0.eyJhdWQiOiIzIiwianRpIjoiYTNkMGVjMTQ3ODAwNjhkNmI3OTYzZmE5MjIyZjZlZDI3NTY4ZDY0ZjgwYTVlYjEyMDg2NzlmYjE2ODJhYWUwNTRkMWZiZDUzZmNhZjI1ODEiLCJpYXQiOjE2MDAzNTI1OTIsIm5iZiI6MTYwMDM1MjU5MiwiZXhwIjoxNjMxODg4NTkyLCJzdWIiOiIyOSIsInNjb3BlcyI6W119.h-4OurlOk2HP076nTEPQWx60Api0h3qM1kiboj_AjCtuKqlE-V_1hEkYnTddNXPsQ29EQthr0SFpQVshZqJpY57p9VYNwaplScdJjrA9gQ38yZ5Tl4Rj-3VQOIWDBJzR3L8AklQG2uN53VOxB457iJoRxCLYzHESNANT67xxn7wKyxYXNkv9CUzgsNgBSjOMfu1p4tFGGqLik7Gww2Y57F9ecsoDM4MG589ECnKynYLjIiHvT80zWtC9zx4p1rCQ562HIf84kdRqFRTFSEOC1mv5D7mIe3_AWMtexB1SUSVFGEshqd07sBAglz1Pi9vGNMjXwpLFENs1CuMWdctGZZ1en5r7EqGqNsZMCofHPLD_m0o0vZ6IcMFuH7MRLyHSW72ayct3XQocj0rnVuHadF8pfa7-Jxe4NsWyV1_Nj44IwLj5nkJUfoZIXjSzR91GskJ2sbuaS9ymbHne0AW88mefKHMV89E4_NpHRlCHumgNfSD-WvIcmD_kwulOLZW9PzWpcwmAlQI1likh9KDxtUC7HOx06fdXif6doGKKNbvnnhckF_wO7qFy7MqjuU5LXige34UCbXbkV1GuhWvjt4osax2mqmQxf3nKOWFfj37VoqICIztXMQH4aJwByJ4kGF2xSbjv7pIupaD5HzzccwLQ_klHvwtiTGVomQVrdOw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "card_no",
+									"value": "4000056655665556",
+									"type": "text"
+								},
+								{
+									"key": "expiry_month",
+									"value": "11",
+									"type": "text"
+								},
+								{
+									"key": "expiry_year",
+									"value": "2021",
+									"type": "text"
+								},
+								{
+									"key": "cvc",
+									"value": "344",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Fahad",
+									"type": "text"
+								},
+								{
+									"key": "is_default",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}change-card",
+							"host": [
+								"{{base_url}}change-card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a card",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImEzZDBlYzE0NzgwMDY4ZDZiNzk2M2ZhOTIyMmY2ZWQyNzU2OGQ2NGY4MGE1ZWIxMjA4Njc5ZmIxNjgyYWFlMDU0ZDFmYmQ1M2ZjYWYyNTgxIn0.eyJhdWQiOiIzIiwianRpIjoiYTNkMGVjMTQ3ODAwNjhkNmI3OTYzZmE5MjIyZjZlZDI3NTY4ZDY0ZjgwYTVlYjEyMDg2NzlmYjE2ODJhYWUwNTRkMWZiZDUzZmNhZjI1ODEiLCJpYXQiOjE2MDAzNTI1OTIsIm5iZiI6MTYwMDM1MjU5MiwiZXhwIjoxNjMxODg4NTkyLCJzdWIiOiIyOSIsInNjb3BlcyI6W119.h-4OurlOk2HP076nTEPQWx60Api0h3qM1kiboj_AjCtuKqlE-V_1hEkYnTddNXPsQ29EQthr0SFpQVshZqJpY57p9VYNwaplScdJjrA9gQ38yZ5Tl4Rj-3VQOIWDBJzR3L8AklQG2uN53VOxB457iJoRxCLYzHESNANT67xxn7wKyxYXNkv9CUzgsNgBSjOMfu1p4tFGGqLik7Gww2Y57F9ecsoDM4MG589ECnKynYLjIiHvT80zWtC9zx4p1rCQ562HIf84kdRqFRTFSEOC1mv5D7mIe3_AWMtexB1SUSVFGEshqd07sBAglz1Pi9vGNMjXwpLFENs1CuMWdctGZZ1en5r7EqGqNsZMCofHPLD_m0o0vZ6IcMFuH7MRLyHSW72ayct3XQocj0rnVuHadF8pfa7-Jxe4NsWyV1_Nj44IwLj5nkJUfoZIXjSzR91GskJ2sbuaS9ymbHne0AW88mefKHMV89E4_NpHRlCHumgNfSD-WvIcmD_kwulOLZW9PzWpcwmAlQI1likh9KDxtUC7HOx06fdXif6doGKKNbvnnhckF_wO7qFy7MqjuU5LXige34UCbXbkV1GuhWvjt4osax2mqmQxf3nKOWFfj37VoqICIztXMQH4aJwByJ4kGF2xSbjv7pIupaD5HzzccwLQ_klHvwtiTGVomQVrdOw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "customer_id",
+									"value": "cus_I2UIs4Kdf1m14q",
+									"type": "text"
+								},
+								{
+									"key": "card_id",
+									"value": "card_1HSPQnChQR3epW4kJY1J9n2R",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}delete-default-card",
+							"host": [
+								"{{base_url}}delete-default-card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set Card default",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVkYjgxZTkwZDU4ZjllOTkzNzJmNjVlMjNhZGY1NjZjOGNhNjI0ZTkyYTMzMzVmMTVlMGQ2NDdlY2U5NmYyNGE0YmYwMDQ4ODM5ZjhjOTI1In0.eyJhdWQiOiIxIiwianRpIjoiZWRiODFlOTBkNThmOWU5OTM3MmY2NWUyM2FkZjU2NmM4Y2E2MjRlOTJhMzMzNWYxNWUwZDY0N2VjZTk2ZjI0YTRiZjAwNDg4MzlmOGM5MjUiLCJpYXQiOjE1OTQ4MjM1NDYsIm5iZiI6MTU5NDgyMzU0NiwiZXhwIjoxNjI2MzU5NTQ2LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.RqMG0eCSFXrAdRmFZnGgicQ6VVJxEG2z5TrV_2zYxU-tS9BBGX6qRE_g7DMCleJjiK5bffZigxnxsqAjpcQUyFaqA7gHTNJzx9d9uYCHQz5tQnGElIMqDWSHq8u0z0ZjxkDNPKFQXsZeYvxYNlPo3bbgBFdlAUUKw3lhoYTXRaE_IR7Ccg7xdyGDG9s4xzneZlQUtEI7O5CBQ25d7ilgzkypt9UYEC0tAAi5holQ56lX326Bz6yS6cKykAsXpsURlr2if7amMV5EZqXNalcAgqE215PwsbiFBb_RxBwfQBhd15bSAe8xDHcSJpzJNgqmHYn9sEpBeEDNpEmtDjaMZ52st2kZPtMUOiPtrcop1w_yqA_9LT-hng8sZa-p8Vp08S-1DopPCb22l5GlNFVl4N80cUJR5gq2NARdsTlXXtQ85js7bOpJy6GpCDtGg8yyu9Fcylmf8F6Xq_YMs5dxRVX6dWRhSuilNZSBAaoBdGPcWpTWZ-V7Dr26zq-t5W4PwpuqDzviubx30nQAJLBejQ4irGEXfIrpsmNgiGh5Kd72g0IuBZO7reVsyuPE1k9RD_VFd8FREYSaFShEQ7LP7RA-h9OwJABrLb2Ylg4dDjR4d_9ZagE7zoooJDokx4kwsI9E05rtnxvf_ubTPH-LMUBSvNhmXEs4NFG01ni7PiY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "card_id",
+									"value": "card_1H8WpDChQR3epW4kl1FQ6vr5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}set-default-card",
+							"host": [
+								"{{base_url}}set-default-card"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Add Image",
+			"item": [
+				{
+					"name": "Upload an Image",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjRhMmRlNWZlMGZlY2IzMzlhN2U4ZTE2ZjM2NzA1NGIxMGU0ODhlOTI4YTg1OGY2ZjU2OTczYWVkM2M2NGU4YzA4ODZiMzgwNWY4MWQxYzBjIn0.eyJhdWQiOiIxIiwianRpIjoiNGEyZGU1ZmUwZmVjYjMzOWE3ZThlMTZmMzY3MDU0YjEwZTQ4OGU5MjhhODU4ZjZmNTY5NzNhZWQzYzY0ZThjMDg4NmIzODA1ZjgxZDFjMGMiLCJpYXQiOjE1OTczMjc2ODEsIm5iZiI6MTU5NzMyNzY4MSwiZXhwIjoxNjI4ODYzNjgxLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.a6YWKjPP2h2MdkfMPdvSWYKpVnwanj0xCUgPPgb7sKlF0gld3J-7Eb5FKDqey5Dx6Z8G7SK9TFV_nNIcD0ngvO9dl-tyfjSldA26MJUdQ_jGOnadseUgEImz3kXR1NolzmuqQXIZsagoQqebKymcK41iVO9--Zvpp4HnoY8VpOHdwEwIR9SWPIJkgL-WQZhPJ2rtECyhJRafQR1-oynGkmQkVZ6VMt7m80ylVTijjVM5o97P1FyvCFC2wEoN2gz7meNvMB2obZOnUF7OI9i6sRLVV-mqHgVvuqAVtoDteoJrocLS7nQDsHiL_5vYK59-vP1YOiLVciRFZWJZ_wkZCChpEpyc5noPiy30htzRM8JMiCqScaSKX3eONixFJfEk1VCqo0YhJrPe7WLGOBQ-3QwvuiHj0bhOQis4AfnnfoH9YG4H4A_7ThReQr5rpH74IGht9VETi5COGcjABZNZcTt9auC2BthmPksUgaKqV6OMrQIATCE-9_L1dmTpXhJ-9wFkA2Wkf6zcDRgS8YTPrcU2GT8l4f2pN2lbyFOKs70zZT-zUaW9JcPKFYseps4KnCuZF_HSGZMpvr_dvVucbI49U0Z0fOfDpxs7YxRGv8EfG563GPgQwQYMTxyoBYnVgg7VlqAkqWKlQ0ua7sO4AKWJa0mKRjZKMrdNfwZ0wWo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Asif/Pictures/97012242_264202414771805_3617367747572269056_n.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}upload-image",
+							"host": [
+								"{{base_url}}upload-image"
+							]
+						},
+						"description": "This Api is used to upload an image"
+					},
+					"response": []
+				},
+				{
+					"name": "Upload a file",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjRhMmRlNWZlMGZlY2IzMzlhN2U4ZTE2ZjM2NzA1NGIxMGU0ODhlOTI4YTg1OGY2ZjU2OTczYWVkM2M2NGU4YzA4ODZiMzgwNWY4MWQxYzBjIn0.eyJhdWQiOiIxIiwianRpIjoiNGEyZGU1ZmUwZmVjYjMzOWE3ZThlMTZmMzY3MDU0YjEwZTQ4OGU5MjhhODU4ZjZmNTY5NzNhZWQzYzY0ZThjMDg4NmIzODA1ZjgxZDFjMGMiLCJpYXQiOjE1OTczMjc2ODEsIm5iZiI6MTU5NzMyNzY4MSwiZXhwIjoxNjI4ODYzNjgxLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.a6YWKjPP2h2MdkfMPdvSWYKpVnwanj0xCUgPPgb7sKlF0gld3J-7Eb5FKDqey5Dx6Z8G7SK9TFV_nNIcD0ngvO9dl-tyfjSldA26MJUdQ_jGOnadseUgEImz3kXR1NolzmuqQXIZsagoQqebKymcK41iVO9--Zvpp4HnoY8VpOHdwEwIR9SWPIJkgL-WQZhPJ2rtECyhJRafQR1-oynGkmQkVZ6VMt7m80ylVTijjVM5o97P1FyvCFC2wEoN2gz7meNvMB2obZOnUF7OI9i6sRLVV-mqHgVvuqAVtoDteoJrocLS7nQDsHiL_5vYK59-vP1YOiLVciRFZWJZ_wkZCChpEpyc5noPiy30htzRM8JMiCqScaSKX3eONixFJfEk1VCqo0YhJrPe7WLGOBQ-3QwvuiHj0bhOQis4AfnnfoH9YG4H4A_7ThReQr5rpH74IGht9VETi5COGcjABZNZcTt9auC2BthmPksUgaKqV6OMrQIATCE-9_L1dmTpXhJ-9wFkA2Wkf6zcDRgS8YTPrcU2GT8l4f2pN2lbyFOKs70zZT-zUaW9JcPKFYseps4KnCuZF_HSGZMpvr_dvVucbI49U0Z0fOfDpxs7YxRGv8EfG563GPgQwQYMTxyoBYnVgg7VlqAkqWKlQ0ua7sO4AKWJa0mKRjZKMrdNfwZ0wWo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Asif/Pictures/97012242_264202414771805_3617367747572269056_n.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}upload-file",
+							"host": [
+								"{{base_url}}upload-file"
+							]
+						},
+						"description": "This Api is used to upload an image"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Clients",
+			"item": [
+				{
+					"name": "Get All Clients",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjRhMmRlNWZlMGZlY2IzMzlhN2U4ZTE2ZjM2NzA1NGIxMGU0ODhlOTI4YTg1OGY2ZjU2OTczYWVkM2M2NGU4YzA4ODZiMzgwNWY4MWQxYzBjIn0.eyJhdWQiOiIxIiwianRpIjoiNGEyZGU1ZmUwZmVjYjMzOWE3ZThlMTZmMzY3MDU0YjEwZTQ4OGU5MjhhODU4ZjZmNTY5NzNhZWQzYzY0ZThjMDg4NmIzODA1ZjgxZDFjMGMiLCJpYXQiOjE1OTczMjc2ODEsIm5iZiI6MTU5NzMyNzY4MSwiZXhwIjoxNjI4ODYzNjgxLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.a6YWKjPP2h2MdkfMPdvSWYKpVnwanj0xCUgPPgb7sKlF0gld3J-7Eb5FKDqey5Dx6Z8G7SK9TFV_nNIcD0ngvO9dl-tyfjSldA26MJUdQ_jGOnadseUgEImz3kXR1NolzmuqQXIZsagoQqebKymcK41iVO9--Zvpp4HnoY8VpOHdwEwIR9SWPIJkgL-WQZhPJ2rtECyhJRafQR1-oynGkmQkVZ6VMt7m80ylVTijjVM5o97P1FyvCFC2wEoN2gz7meNvMB2obZOnUF7OI9i6sRLVV-mqHgVvuqAVtoDteoJrocLS7nQDsHiL_5vYK59-vP1YOiLVciRFZWJZ_wkZCChpEpyc5noPiy30htzRM8JMiCqScaSKX3eONixFJfEk1VCqo0YhJrPe7WLGOBQ-3QwvuiHj0bhOQis4AfnnfoH9YG4H4A_7ThReQr5rpH74IGht9VETi5COGcjABZNZcTt9auC2BthmPksUgaKqV6OMrQIATCE-9_L1dmTpXhJ-9wFkA2Wkf6zcDRgS8YTPrcU2GT8l4f2pN2lbyFOKs70zZT-zUaW9JcPKFYseps4KnCuZF_HSGZMpvr_dvVucbI49U0Z0fOfDpxs7YxRGv8EfG563GPgQwQYMTxyoBYnVgg7VlqAkqWKlQ0ua7sO4AKWJa0mKRjZKMrdNfwZ0wWo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Asif/Pictures/97012242_264202414771805_3617367747572269056_n.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}get_all_clients",
+							"host": [
+								"{{base_url}}get_all_clients"
+							]
+						},
+						"description": "This Api is used to upload an image"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Potential Clients",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImZmMTA0YWZlYzk2NTAxZmEwMjcxYjg5MDE5OTFmMWU3OGMyZmU5NmJiMDA2YzIyOWZmZGVmNjRmMzIwZjRiYzFlZTA1YTg4NDBjYWVkNzM4In0.eyJhdWQiOiIzIiwianRpIjoiZmYxMDRhZmVjOTY1MDFmYTAyNzFiODkwMTk5MWYxZTc4YzJmZTk2YmIwMDZjMjI5ZmZkZWY2NGYzMjBmNGJjMWVlMDVhODg0MGNhZWQ3MzgiLCJpYXQiOjE2MDA0NDI4ODAsIm5iZiI6MTYwMDQ0Mjg4MCwiZXhwIjoxNjMxOTc4ODgwLCJzdWIiOiI0NSIsInNjb3BlcyI6W119.dbpuAQfbM5QtJQS5L8W9-7b_frvuCjUnDNOJCldrgoVWv2qOPeLpECDdNhInVVEQqZJm-vY7IQ53kR0B-VhQvYxGtAaiLouvLCoOuhCOoyC3Dez8oAaTigpj3NF4B7inPEr8ZSHhPZzz4HN80xCUeBRWeGCSF9P4orbJybPCuKh5rbLVbR-_0byYmqWBDHj95NVZEXhc72Tgmxbwy59Eh7uzFQ1J4G0ZM-eoNunsuoCkE_Szw-xbkPsvyF5I5XbXSpxZ3uj1vmPiNYbL_JWhqxRAWaujrEZoQwS4-s2f8Vm43nyzZA4Iv7B3Lsr0mfOzZLrlzJY-MnMfdOzZOXQ385-ZGdXS2NcfI7EV8ybW_xNa3_76IoRnu9nyk_z2vF76ZB3xNmnW016BlWKS-egJUHml8Gd4nMphFYuAdoEZq0XcSrsnqA-q4SqvczG2wmx8qWP4CBgdMidSLCuoVqKiZ2D6No-x_GueBHU3Yw85FerB_Jd7wghAHfaxNfbL0HOkNt3bCwPh6B0OmPHIfCSWH8YsWHxVd_4Y9luu-dTUynBdJGHIzfP6YGwL4q_qf64G4nu2Sd0BnHKQlHQXLqKzXZ8vopAfj1ib03uY93Vz8zFCpPCkGjPLRV6yuErWytg7ha4BYlX8TP-DoXrIjgBrMrWwW6vFYMmvCn8UYekEO6E",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{base_url}}get_all_potential_clients",
+							"host": [
+								"{{base_url}}get_all_potential_clients"
+							]
+						},
+						"description": "This Api is used to upload an image"
+					},
+					"response": []
+				},
+				{
+					"name": "Get SingleClient detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjRhMmRlNWZlMGZlY2IzMzlhN2U4ZTE2ZjM2NzA1NGIxMGU0ODhlOTI4YTg1OGY2ZjU2OTczYWVkM2M2NGU4YzA4ODZiMzgwNWY4MWQxYzBjIn0.eyJhdWQiOiIxIiwianRpIjoiNGEyZGU1ZmUwZmVjYjMzOWE3ZThlMTZmMzY3MDU0YjEwZTQ4OGU5MjhhODU4ZjZmNTY5NzNhZWQzYzY0ZThjMDg4NmIzODA1ZjgxZDFjMGMiLCJpYXQiOjE1OTczMjc2ODEsIm5iZiI6MTU5NzMyNzY4MSwiZXhwIjoxNjI4ODYzNjgxLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.a6YWKjPP2h2MdkfMPdvSWYKpVnwanj0xCUgPPgb7sKlF0gld3J-7Eb5FKDqey5Dx6Z8G7SK9TFV_nNIcD0ngvO9dl-tyfjSldA26MJUdQ_jGOnadseUgEImz3kXR1NolzmuqQXIZsagoQqebKymcK41iVO9--Zvpp4HnoY8VpOHdwEwIR9SWPIJkgL-WQZhPJ2rtECyhJRafQR1-oynGkmQkVZ6VMt7m80ylVTijjVM5o97P1FyvCFC2wEoN2gz7meNvMB2obZOnUF7OI9i6sRLVV-mqHgVvuqAVtoDteoJrocLS7nQDsHiL_5vYK59-vP1YOiLVciRFZWJZ_wkZCChpEpyc5noPiy30htzRM8JMiCqScaSKX3eONixFJfEk1VCqo0YhJrPe7WLGOBQ-3QwvuiHj0bhOQis4AfnnfoH9YG4H4A_7ThReQr5rpH74IGht9VETi5COGcjABZNZcTt9auC2BthmPksUgaKqV6OMrQIATCE-9_L1dmTpXhJ-9wFkA2Wkf6zcDRgS8YTPrcU2GT8l4f2pN2lbyFOKs70zZT-zUaW9JcPKFYseps4KnCuZF_HSGZMpvr_dvVucbI49U0Z0fOfDpxs7YxRGv8EfG563GPgQwQYMTxyoBYnVgg7VlqAkqWKlQ0ua7sO4AKWJa0mKRjZKMrdNfwZ0wWo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Asif/Pictures/97012242_264202414771805_3617367747572269056_n.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}get_client/19",
+							"host": [
+								"{{base_url}}get_client"
+							],
+							"path": [
+								"19"
+							]
+						},
+						"description": "This Api is used to upload an image"
+					},
+					"response": []
+				},
+				{
+					"name": "Client update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjRhMmRlNWZlMGZlY2IzMzlhN2U4ZTE2ZjM2NzA1NGIxMGU0ODhlOTI4YTg1OGY2ZjU2OTczYWVkM2M2NGU4YzA4ODZiMzgwNWY4MWQxYzBjIn0.eyJhdWQiOiIxIiwianRpIjoiNGEyZGU1ZmUwZmVjYjMzOWE3ZThlMTZmMzY3MDU0YjEwZTQ4OGU5MjhhODU4ZjZmNTY5NzNhZWQzYzY0ZThjMDg4NmIzODA1ZjgxZDFjMGMiLCJpYXQiOjE1OTczMjc2ODEsIm5iZiI6MTU5NzMyNzY4MSwiZXhwIjoxNjI4ODYzNjgxLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.a6YWKjPP2h2MdkfMPdvSWYKpVnwanj0xCUgPPgb7sKlF0gld3J-7Eb5FKDqey5Dx6Z8G7SK9TFV_nNIcD0ngvO9dl-tyfjSldA26MJUdQ_jGOnadseUgEImz3kXR1NolzmuqQXIZsagoQqebKymcK41iVO9--Zvpp4HnoY8VpOHdwEwIR9SWPIJkgL-WQZhPJ2rtECyhJRafQR1-oynGkmQkVZ6VMt7m80ylVTijjVM5o97P1FyvCFC2wEoN2gz7meNvMB2obZOnUF7OI9i6sRLVV-mqHgVvuqAVtoDteoJrocLS7nQDsHiL_5vYK59-vP1YOiLVciRFZWJZ_wkZCChpEpyc5noPiy30htzRM8JMiCqScaSKX3eONixFJfEk1VCqo0YhJrPe7WLGOBQ-3QwvuiHj0bhOQis4AfnnfoH9YG4H4A_7ThReQr5rpH74IGht9VETi5COGcjABZNZcTt9auC2BthmPksUgaKqV6OMrQIATCE-9_L1dmTpXhJ-9wFkA2Wkf6zcDRgS8YTPrcU2GT8l4f2pN2lbyFOKs70zZT-zUaW9JcPKFYseps4KnCuZF_HSGZMpvr_dvVucbI49U0Z0fOfDpxs7YxRGv8EfG563GPgQwQYMTxyoBYnVgg7VlqAkqWKlQ0ua7sO4AKWJa0mKRjZKMrdNfwZ0wWo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Asif/Pictures/97012242_264202414771805_3617367747572269056_n.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}update_client",
+							"host": [
+								"{{base_url}}update_client"
+							]
+						},
+						"description": "This Api is used to upload an image"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Connected Advisors",
+			"item": [
+				{
+					"name": "Get Connected Advisors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImEzZDBlYzE0NzgwMDY4ZDZiNzk2M2ZhOTIyMmY2ZWQyNzU2OGQ2NGY4MGE1ZWIxMjA4Njc5ZmIxNjgyYWFlMDU0ZDFmYmQ1M2ZjYWYyNTgxIn0.eyJhdWQiOiIzIiwianRpIjoiYTNkMGVjMTQ3ODAwNjhkNmI3OTYzZmE5MjIyZjZlZDI3NTY4ZDY0ZjgwYTVlYjEyMDg2NzlmYjE2ODJhYWUwNTRkMWZiZDUzZmNhZjI1ODEiLCJpYXQiOjE2MDAzNTI1OTIsIm5iZiI6MTYwMDM1MjU5MiwiZXhwIjoxNjMxODg4NTkyLCJzdWIiOiIyOSIsInNjb3BlcyI6W119.h-4OurlOk2HP076nTEPQWx60Api0h3qM1kiboj_AjCtuKqlE-V_1hEkYnTddNXPsQ29EQthr0SFpQVshZqJpY57p9VYNwaplScdJjrA9gQ38yZ5Tl4Rj-3VQOIWDBJzR3L8AklQG2uN53VOxB457iJoRxCLYzHESNANT67xxn7wKyxYXNkv9CUzgsNgBSjOMfu1p4tFGGqLik7Gww2Y57F9ecsoDM4MG589ECnKynYLjIiHvT80zWtC9zx4p1rCQ562HIf84kdRqFRTFSEOC1mv5D7mIe3_AWMtexB1SUSVFGEshqd07sBAglz1Pi9vGNMjXwpLFENs1CuMWdctGZZ1en5r7EqGqNsZMCofHPLD_m0o0vZ6IcMFuH7MRLyHSW72ayct3XQocj0rnVuHadF8pfa7-Jxe4NsWyV1_Nj44IwLj5nkJUfoZIXjSzR91GskJ2sbuaS9ymbHne0AW88mefKHMV89E4_NpHRlCHumgNfSD-WvIcmD_kwulOLZW9PzWpcwmAlQI1likh9KDxtUC7HOx06fdXif6doGKKNbvnnhckF_wO7qFy7MqjuU5LXige34UCbXbkV1GuhWvjt4osax2mqmQxf3nKOWFfj37VoqICIztXMQH4aJwByJ4kGF2xSbjv7pIupaD5HzzccwLQ_klHvwtiTGVomQVrdOw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}connected_advisors",
+							"host": [
+								"{{base_url}}connected_advisors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Client Offered Adv",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImEzZDBlYzE0NzgwMDY4ZDZiNzk2M2ZhOTIyMmY2ZWQyNzU2OGQ2NGY4MGE1ZWIxMjA4Njc5ZmIxNjgyYWFlMDU0ZDFmYmQ1M2ZjYWYyNTgxIn0.eyJhdWQiOiIzIiwianRpIjoiYTNkMGVjMTQ3ODAwNjhkNmI3OTYzZmE5MjIyZjZlZDI3NTY4ZDY0ZjgwYTVlYjEyMDg2NzlmYjE2ODJhYWUwNTRkMWZiZDUzZmNhZjI1ODEiLCJpYXQiOjE2MDAzNTI1OTIsIm5iZiI6MTYwMDM1MjU5MiwiZXhwIjoxNjMxODg4NTkyLCJzdWIiOiIyOSIsInNjb3BlcyI6W119.h-4OurlOk2HP076nTEPQWx60Api0h3qM1kiboj_AjCtuKqlE-V_1hEkYnTddNXPsQ29EQthr0SFpQVshZqJpY57p9VYNwaplScdJjrA9gQ38yZ5Tl4Rj-3VQOIWDBJzR3L8AklQG2uN53VOxB457iJoRxCLYzHESNANT67xxn7wKyxYXNkv9CUzgsNgBSjOMfu1p4tFGGqLik7Gww2Y57F9ecsoDM4MG589ECnKynYLjIiHvT80zWtC9zx4p1rCQ562HIf84kdRqFRTFSEOC1mv5D7mIe3_AWMtexB1SUSVFGEshqd07sBAglz1Pi9vGNMjXwpLFENs1CuMWdctGZZ1en5r7EqGqNsZMCofHPLD_m0o0vZ6IcMFuH7MRLyHSW72ayct3XQocj0rnVuHadF8pfa7-Jxe4NsWyV1_Nj44IwLj5nkJUfoZIXjSzR91GskJ2sbuaS9ymbHne0AW88mefKHMV89E4_NpHRlCHumgNfSD-WvIcmD_kwulOLZW9PzWpcwmAlQI1likh9KDxtUC7HOx06fdXif6doGKKNbvnnhckF_wO7qFy7MqjuU5LXige34UCbXbkV1GuhWvjt4osax2mqmQxf3nKOWFfj37VoqICIztXMQH4aJwByJ4kGF2xSbjv7pIupaD5HzzccwLQ_klHvwtiTGVomQVrdOw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}client_offered_advisors",
+							"host": [
+								"{{base_url}}client_offered_advisors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Advisor Offered Clients",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjM0NzRjMTdiMmRlMzI2OGU3ZmFmMTdjZDk2ZGU1ODIwZWRlMWRhMjE2MjU5OGIxYzkzMGQ1MGE0MTc0YTk5ODhhYmI4YzUxNzljMGNmMDJiIn0.eyJhdWQiOiIzIiwianRpIjoiMzQ3NGMxN2IyZGUzMjY4ZTdmYWYxN2NkOTZkZTU4MjBlZGUxZGEyMTYyNTk4YjFjOTMwZDUwYTQxNzRhOTk4OGFiYjhjNTE3OWMwY2YwMmIiLCJpYXQiOjE2MDA0NDUyNzIsIm5iZiI6MTYwMDQ0NTI3MiwiZXhwIjoxNjMxOTgxMjcyLCJzdWIiOiI0NSIsInNjb3BlcyI6W119.XpKRqaLWdNbnULSc7tdh2krPpu_ZqT_kRcLjBFiNmWY-AmnCDwBZYMXiEX3hgQ0HmtpiDPmTturLP9FuP79zUApvjw5tFeOl87P0y58Rx26UDB1J4I_Mp0kN19Bx-yxRHpZHRb5yiVmTYLW6u-tnuVJA6TiWwED6XwZDQ1NOrzO2PieyYzQjlILwEW6HsF6xbOF9_ebZDiriDzbv2BDiRN3ObRL1zJ0nz0yF3FU2-7iLh58Yx4suBhp7M1reiryvq5oJCRKasDuM4GfqX7HMScoTs2ZPZgdbjh1dsi0X8b7blVr_zUlObpywKsPgccmkvbPIkR2a0K7oZuDHxWq4ssEgqppFxbPJPSvYNubE0wO-lYI7gSPr3fxkHwAX3do9Tod9dSgx7K-XrVQnJ-MqcvCryGSBPxNX5Ee84vPljgHil6bWY9BU4KAhsEEaroxWa-u4KTQJsTl5hy73oIZufThZ9qr-QxXGDDCiK5caOrvPsIrev5I91G_zFh-N0POjrnW_rVPbCFmqiUHkS-VzjEDdAsBmbRtUITM6-6XEMYQcXRryYU_JYDip4Bl_fhCY_9cbeLtgut8zQi1-8CYNYhwJMZfGxgxj-8yxaW2w9xLfzvxD9uYnUE4Rp_7bdIk-pylxqgvUQwRH5lwNAv_uAQkLVz3apONrmMdGJr4NJ1w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}advisor_offered_clients",
+							"host": [
+								"{{base_url}}advisor_offered_clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update request for connection",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjRhMmRlNWZlMGZlY2IzMzlhN2U4ZTE2ZjM2NzA1NGIxMGU0ODhlOTI4YTg1OGY2ZjU2OTczYWVkM2M2NGU4YzA4ODZiMzgwNWY4MWQxYzBjIn0.eyJhdWQiOiIxIiwianRpIjoiNGEyZGU1ZmUwZmVjYjMzOWE3ZThlMTZmMzY3MDU0YjEwZTQ4OGU5MjhhODU4ZjZmNTY5NzNhZWQzYzY0ZThjMDg4NmIzODA1ZjgxZDFjMGMiLCJpYXQiOjE1OTczMjc2ODEsIm5iZiI6MTU5NzMyNzY4MSwiZXhwIjoxNjI4ODYzNjgxLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.a6YWKjPP2h2MdkfMPdvSWYKpVnwanj0xCUgPPgb7sKlF0gld3J-7Eb5FKDqey5Dx6Z8G7SK9TFV_nNIcD0ngvO9dl-tyfjSldA26MJUdQ_jGOnadseUgEImz3kXR1NolzmuqQXIZsagoQqebKymcK41iVO9--Zvpp4HnoY8VpOHdwEwIR9SWPIJkgL-WQZhPJ2rtECyhJRafQR1-oynGkmQkVZ6VMt7m80ylVTijjVM5o97P1FyvCFC2wEoN2gz7meNvMB2obZOnUF7OI9i6sRLVV-mqHgVvuqAVtoDteoJrocLS7nQDsHiL_5vYK59-vP1YOiLVciRFZWJZ_wkZCChpEpyc5noPiy30htzRM8JMiCqScaSKX3eONixFJfEk1VCqo0YhJrPe7WLGOBQ-3QwvuiHj0bhOQis4AfnnfoH9YG4H4A_7ThReQr5rpH74IGht9VETi5COGcjABZNZcTt9auC2BthmPksUgaKqV6OMrQIATCE-9_L1dmTpXhJ-9wFkA2Wkf6zcDRgS8YTPrcU2GT8l4f2pN2lbyFOKs70zZT-zUaW9JcPKFYseps4KnCuZF_HSGZMpvr_dvVucbI49U0Z0fOfDpxs7YxRGv8EfG563GPgQwQYMTxyoBYnVgg7VlqAkqWKlQ0ua7sO4AKWJa0mKRjZKMrdNfwZ0wWo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"advisor_id\": \"1\",\r\n    \"status\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}update_connected_advisor",
+							"host": [
+								"{{base_url}}update_connected_advisor"
+							]
+						},
+						"description": "This Api is used to upload an image"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Text/Audio/Video Calling",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Listing",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "192.168.1.3:8888/v1/users",
+									"host": [
+										"192",
+										"168",
+										"1",
+										"3"
+									],
+									"port": "8888",
+									"path": [
+										"v1",
+										"users"
+									]
+								},
+								"description": "Get Staff list"
+							},
+							"response": []
+						},
+						{
+							"name": "Digital ocean server",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://128.199.149.189:8888/v1/users",
+									"protocol": "http",
+									"host": [
+										"128",
+										"199",
+										"149",
+										"189"
+									],
+									"port": "8888",
+									"path": [
+										"v1",
+										"users"
+									]
+								},
+								"description": "Get Staff list"
+							},
+							"response": []
+						},
+						{
+							"name": "AWS Server Chat server",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://chat.ayanatherapy.com/v1/users",
+									"protocol": "http",
+									"host": [
+										"chat",
+										"ayanatherapy",
+										"com"
+									],
+									"path": [
+										"v1",
+										"users"
+									]
+								},
+								"description": "Get Staff list"
+							},
+							"response": []
+						},
+						{
+							"name": "Listing DGOCEN",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://128.199.149.189:8888/v1/users",
+									"protocol": "http",
+									"host": [
+										"128",
+										"199",
+										"149",
+										"189"
+									],
+									"port": "8888",
+									"path": [
+										"v1",
+										"users"
+									]
+								},
+								"description": "Get Staff list"
+							},
+							"response": []
+						},
+						{
+							"name": "Single rec Details (:id)",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://chat.ayanatherapy.com:8888/v1/users/5e8da41478afc744fd04802f",
+									"protocol": "http",
+									"host": [
+										"chat",
+										"ayanatherapy",
+										"com"
+									],
+									"port": "8888",
+									"path": [
+										"v1",
+										"users",
+										"5e8da41478afc744fd04802f"
+									]
+								},
+								"description": "Get Staff list"
+							},
+							"response": []
+						},
+						{
+							"name": "Single rec Details by User and Project.",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "0546fa3bf59a3ba804a51ab7f13d29caac9dcc6f1528fc4dac01cf4878777f805e6f96279240110b18659f61",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}users/1231/ayaana",
+									"host": [
+										"{{base_url}}users"
+									],
+									"path": [
+										"1231",
+										"ayaana"
+									]
+								},
+								"description": "Get Staff list"
+							},
+							"response": []
+						},
+						{
+							"name": "Create  (payload)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Asif Hussain\",\n\t\"email\": \"arshianarula@hotmail.com\",\n\t\"phone\": 123123,\n\t\"user\":\"3297\",\n\t\"image\":\"picsum/photos/200\",\n\t\"status\": \"new\",\n\t\"project\": \"ayaana\",\n\t\"token\": \"tesphoto5e79f60712c51407fac65baesstews\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://chat.ayanatherapy.com/v1/users",
+									"protocol": "http",
+									"host": [
+										"chat",
+										"ayanatherapy",
+										"com"
+									],
+									"path": [
+										"v1",
+										"users"
+									]
+								},
+								"description": "This is a staff create request with a post state including a payload."
+							},
+							"response": []
+						},
+						{
+							"name": "Create  (payload) Local",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Asif Hussain\",\n\t\"email\": \"ayanatestingclient@outlook.com\",\n\t\"phone\": 123123,\n\t\"user\":\"32172\",\n\t\"image\":\"picsum/photos/200\",\n\t\"status\": \"new\",\n\t\"project\": \"ayaana\",\n\t\"token\": \"tesphoto5e79f60712c51407fac65baesstews\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8888/v1/users",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8888",
+									"path": [
+										"v1",
+										"users"
+									]
+								},
+								"description": "This is a staff create request with a post state including a payload."
+							},
+							"response": []
+						},
+						{
+							"name": "add token",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"token\": \"tesphoto5e79f60712c51407fac65baesstews\",\n\t\"topic\": \"com.ayanatherapy.app.therapist.voip\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}users/addToken/5e79f8178daaff0b2629ceb5",
+									"host": [
+										"{{base_url}}users"
+									],
+									"path": [
+										"addToken",
+										"5e79f8178daaff0b2629ceb5"
+									]
+								},
+								"description": "This is a staff create request with a post state including a payload."
+							},
+							"response": []
+						},
+						{
+							"name": "Update  (payload)",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"this\",\n\t\"email\": \"tessts@gma.co\",\n\t\"phone\": 22323,\n\t\"user\":\"1231\",\n\t\"image\":\"picsum/photos/200\",\n\t\"status\": \"new\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://128.199.76.21:8888/v1/users/5e8da4e678afc744fd048031",
+									"protocol": "http",
+									"host": [
+										"128",
+										"199",
+										"76",
+										"21"
+									],
+									"port": "8888",
+									"path": [
+										"v1",
+										"users",
+										"5e8da4e678afc744fd048031"
+									]
+								},
+								"description": "This is a staff create request with a post state including a payload."
+							},
+							"response": []
+						},
+						{
+							"name": "Remove (:id)",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}callmessages/5e79d77bdee5da62c79d0d14",
+									"host": [
+										"{{base_url}}callmessages"
+									],
+									"path": [
+										"5e79d77bdee5da62c79d0d14"
+									]
+								},
+								"description": "Get Staff list"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Call Messages Apis",
+					"item": [
+						{
+							"name": "Listing",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "0546fa3bf59a3ba804a51ab7f13d29caac9dcc6f1528fc4dac01cf4878777f805e6f96279240110b18659f61",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "192.168.1.3:8889/v1/callmessages",
+									"host": [
+										"192",
+										"168",
+										"1",
+										"3"
+									],
+									"port": "8889",
+									"path": [
+										"v1",
+										"callmessages"
+									]
+								},
+								"description": "Get Staff list"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Messages for users (sender receiver)",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "0546fa3bf59a3ba804a51ab7f13d29caac9dcc6f1528fc4dac01cf4878777f805e6f96279240110b18659f61",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}callmessages/messages?sender=5ec779f63c3fc62178d59551&receiver=5ec77a083c3fc62178d59552",
+									"host": [
+										"{{base_url}}callmessages"
+									],
+									"path": [
+										"messages"
+									],
+									"query": [
+										{
+											"key": "sender",
+											"value": "5ec779f63c3fc62178d59551"
+										},
+										{
+											"key": "receiver",
+											"value": "5ec77a083c3fc62178d59552"
+										}
+									]
+								},
+								"description": "Get Staff list"
+							},
+							"response": []
+						},
+						{
+							"name": "Mark read all messages",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "0546fa3bf59a3ba804a51ab7f13d29caac9dcc6f1528fc4dac01cf4878777f805e6f96279240110b18659f61",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "sender",
+											"value": "5ec779f63c3fc62178d59551"
+										},
+										{
+											"key": "receiver",
+											"value": "5ec77a083c3fc62178d59552",
+											"type": "text"
+										},
+										{
+											"key": "is_read",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}callmessages/read-all",
+									"host": [
+										"{{base_url}}callmessages"
+									],
+									"path": [
+										"read-all"
+									]
+								},
+								"description": "Get Staff list"
+							},
+							"response": []
+						},
+						{
+							"name": "Get count of unread and last message",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "0546fa3bf59a3ba804a51ab7f13d29caac9dcc6f1528fc4dac01cf4878777f805e6f96279240110b18659f61",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sender\":\"5ec779f63c3fc62178d59551\",\r\n    \"receiver\": [2, 3297, 3217, 3216]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}callmessages/getunreadcount",
+									"host": [
+										"{{base_url}}callmessages"
+									],
+									"path": [
+										"getunreadcount"
+									]
+								},
+								"description": "Get Staff list"
+							},
+							"response": []
+						},
+						{
+							"name": "Single rec Details (:id)",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "0546fa3bf59a3ba804a51ab7f13d29caac9dcc6f1528fc4dac01cf4878777f805e6f96279240110b18659f61",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}callmessages/5e79ec50aa899c7d2d5001e0",
+									"host": [
+										"{{base_url}}callmessages"
+									],
+									"path": [
+										"5e79ec50aa899c7d2d5001e0"
+									]
+								},
+								"description": "Get Staff list"
+							},
+							"response": []
+						},
+						{
+							"name": "Create  (payload)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"sender\": \"5e79d73923171b629206872b\",\n\t\"receiver\": \"5e79d4cb9bd28a5e4c6523d5\",\n\t\"message\": \"this is a text message\",\n\t\"type\": \"message\",\n\t\"status\": \"new\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}callmessages",
+									"host": [
+										"{{base_url}}callmessages"
+									]
+								},
+								"description": "This is a staff create request with a post state including a payload."
+							},
+							"response": []
+						},
+						{
+							"name": "Upload File",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "content-type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "sender",
+											"value": "5e8ee187ea94e620c56a9482",
+											"type": "text"
+										},
+										{
+											"key": "receiver",
+											"value": "5ec0032052a58062a58a0d94",
+											"type": "text"
+										},
+										{
+											"key": "message",
+											"value": "AYANA App Feedback Compiled new.docx",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "doc",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "new",
+											"type": "text"
+										},
+										{
+											"key": "filepath",
+											"type": "file",
+											"src": "/C:/Users/Asif/Downloads/file-sample_100kB.doc"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}callmessages/uploadMedia",
+									"host": [
+										"{{base_url}}callmessages"
+									],
+									"path": [
+										"uploadMedia"
+									]
+								},
+								"description": "This is a staff create request with a post state including a payload."
+							},
+							"response": []
+						},
+						{
+							"name": "Update  (payload)",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"sender\": \"5e79d73923171b629206872b\",\n\t\"receiver\": \"5e79d4cb9bd28a5e4c6523d5\",\n\t\"message\": \"this is a text message\",\n\t\"type\": \"message\",\n\t\"status\": \"read\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}callmessages/5ee071c32b39ed6734b2bc4a",
+									"host": [
+										"{{base_url}}callmessages"
+									],
+									"path": [
+										"5ee071c32b39ed6734b2bc4a"
+									]
+								},
+								"description": "This is a staff create request with a post state including a payload."
+							},
+							"response": []
+						},
+						{
+							"name": "Remove (:id)",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}callmessages/5ec792bbd190a746f76d1316",
+									"host": [
+										"{{base_url}}callmessages"
+									],
+									"path": [
+										"5ec792bbd190a746f76d1316"
+									]
+								},
+								"description": "Get Staff list"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Payments",
+			"item": [
+				{
+					"name": "Make a Payment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjliZDQ1ZTY2MTYyZjgxZmUzMmVkNTZjNThhZDEzNTNjMzRmZjcyN2ExYmU4NjA0YTI3OWYyMTQxNWUwNjRhODExODBjYWVkZjhkOTIxZDE1In0.eyJhdWQiOiIzIiwianRpIjoiOWJkNDVlNjYxNjJmODFmZTMyZWQ1NmM1OGFkMTM1M2MzNGZmNzI3YTFiZTg2MDRhMjc5ZjIxNDE1ZTA2NGE4MTE4MGNhZWRmOGQ5MjFkMTUiLCJpYXQiOjE2MDAzNTc3ODEsIm5iZiI6MTYwMDM1Nzc4MSwiZXhwIjoxNjMxODkzNzgxLCJzdWIiOiIzNCIsInNjb3BlcyI6W119.Nf3YcsRM8qAwvvtErfQIDlh-xQzH0T7MlJFDiFi3Ol6piWxZFeOSdjb6gShXj_Ty1tvZbwZppkQ4hn_t9E1-QWo4hI4VdEBZ9ZWVfF1KZ7QI03V_VJij6J0WZgE-OHQeLzqE06Y_Vu5SBsB6Q8DSOkwvhJTuNUM1qPwzW9SE1gK0v-kgqrMDvlOZy3yBsH4-SVS7lfkZXqnpVt7vJdm6mWUo_oyygI8RDiml3Gsbw9F2Qh_o5SaHoBbqkWQK92wveMBrodjaJhAkxEwE_UI5QyBM22BgSWh-48IvYMPrsjSi0mncfAxuCFlcq7UYAr-cGp75DYSstJ2aq6K2dxRPtwNrXoAxj3aIG4J1qhdDYZ83QJ-AkK_-uX8ezRlvBCvdXC4fSpz7J4Nn0kS-EA4pxu2BLYyJFn-Wm3Fck3J3XCZFc2nOlqG11xyi5Ky8ICcBHGhtKfSUN2s_zs3ubJME-9gbOfkI5rVXOaIYIJtqrpfivG4klW276lUc3tNKx6dlrwHYYsW1_as3HrkdWHhovUNCBACE36N9HhB9D1p4y3youOxtScZyjeC0oCnMKdFeH1swp80BQJgf5MZb2rTNP0hIhEo5kgUWYhEFS2cj13Q3h8hIX-OftfHkbDRMFgA4lX-mP3yf_PVeuWgkDTKhe6u42U1lNwHX3hoXVHRbOZo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"amount\": 230,\r\n\"currency\": \"USD\",\r\n\"descreption\": \"Advisor payment For getting the client profile\",\r\n\"user_id\": \"29\",\r\n\"rate_card_id\": \"\",\r\n\"payment_for\": \"client\",\r\n\"card_no\":\"4000056655665556\",\r\n\"expiry_month\":\"11\",\r\n\"expiry_year\":\"2021\",\r\n\"cvc\":\"344\",\r\n\"name\":\"Fahad\",\r\n\"is_default\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}make_payment",
+							"host": [
+								"{{base_url}}make_payment"
+							]
+						},
+						"description": "This is an api to make a new payment."
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Offers",
+			"item": [
+				{
+					"name": "Send Rate card offer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA0YTI4ODUxMmU3Y2MwZGE3ZDNmNTE0ZjY3NzQ4MDdjMTIyODY0ZmJhMjJjNzUxYTMyZmI4MWVkNzZmNzdmMDRiMzk1N2MwZTRhOTJlODkwIn0.eyJhdWQiOiIzIiwianRpIjoiMDRhMjg4NTEyZTdjYzBkYTdkM2Y1MTRmNjc3NDgwN2MxMjI4NjRmYmEyMmM3NTFhMzJmYjgxZWQ3NmY3N2YwNGIzOTU3YzBlNGE5MmU4OTAiLCJpYXQiOjE2MDA3MDAxODUsIm5iZiI6MTYwMDcwMDE4NSwiZXhwIjoxNjMyMjM2MTg1LCJzdWIiOiIzOSIsInNjb3BlcyI6W119.PWkCA3ib3RfQTrTit4gqjgTv_jze_r_osuBwVt_HUBXoN-_mNbr70zdhslTpFbIAP1DyXLORsR2vd9LtxYaIgloCWqPmqMis1KcD82CHnRQMlQs4j4WMP8BhLlo3bQIQiyJC_7LoOjPvMM2Rp1mOiSRnfkOoSe0Cghd2EI2fQFFbN1Val-4t0099FctXz0KYQXOtA9h2_lSivCfIFe_RkV39lpp2X6TrSyEh0qlUPU0yMCZvPA_e-wi7aKpCPt98mjmKkDzBg6tSHiIPa7oN6FeuFWU51SRXj-1RU_n7tb0j861JQ7vX1Wfj8k9-G2Z3aOr1CUkep3b6bpHRC7XiVf3I_rbRJM5E89ljvHsWBbTbUAp_kFyPSB46vQg-tRN1IFFOHdRWaMa043YvhHbYyQrg3vhSpNs_tpA5G6nTiKHvGNPoCOhN1fSs7NIsfwys5mmqwoKkBGN-J_ZKJUvThRiVYRTNgwWirUflmPD0FKjLF0PEm_uHndw5BpQzGKe4i6qn98qbNa8shDfuhJF5BhguEgE5iBWr7wsidoXYTZ2RuvHUSEshcG2EyxzHIiIn5Fj3mGHoKvq4O8CcASPAjclGgfm-DSSpIFqV-pFH-mUAJkxWKwFNemXLFbr-ceNUa9Z5PuT8Ug0p-JA0_YukWeacUkqsdAl8Q_zJllTvfg0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"client_id\":\"39\",\r\n    \"amount\":\"200\",\r\n    \"rate_card_id\":\"8\",\r\n    \"offer_title\":\"Consulting\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}send_offer_to_client",
+							"host": [
+								"{{base_url}}send_offer_to_client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all offers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ2YTU5YWM4MTI5OGQ2ZWViMmZhMGNjMzhkMWU3ZTBkZDViYWQ1ODUwMWZhM2Y4NjEwZWJiNjM1NDcyZGFhN2M3NWZhNjUxMDQ2OTQyNDM5In0.eyJhdWQiOiIzIiwianRpIjoiZDZhNTlhYzgxMjk4ZDZlZWIyZmEwY2MzOGQxZTdlMGRkNWJhZDU4NTAxZmEzZjg2MTBlYmI2MzU0NzJkYWE3Yzc1ZmE2NTEwNDY5NDI0MzkiLCJpYXQiOjE2MDE1MzkyMTksIm5iZiI6MTYwMTUzOTIxOSwiZXhwIjoxNjMzMDc1MjE5LCJzdWIiOiI0NSIsInNjb3BlcyI6W119.alzLA7lskyKGIHCyMkUrivuEaHkRFWRObsdia7hC9LEqFZAbCy5qwyWfEHWYTraBDIJYpytVqDE9qKeuYoRub-32iQTnaaQhGH_bNuYPSz8Hp8K1MhhiJmnskgMyhL085moG3QqOjlYxp3nrka-bNTrgOkrtQSjmAoJOk1FNCQ0dl6s9yS1CNKUoxRJ8W37a8xwwODuFgFFVvoLBfCKRwd32-XTxOLYsoSHNignzJ8mDW1xvETrOtq1Dg44bPjEX96m7NGEL6WFgVRfP6g_7MwN-ndfGeoQV9gA_ke3F9Y1KNM4_0xymSrNiLb1tBjjbEpr0K1n3diP6HD7eh3JIOkObQQdk0hPG3rs8fdMvggBQP1VHH6wSv3tGzdCl-YrfKTQGBqti-ELcBMtpCRKp2bzicyX47otDg2IiqQlSIbbCvPZ-t9tC1CVsp-ezUpWuhZhnd-0g6oxKxEmhRwlh_Kpwwq_a9n6hBWPLZS1J8gPz53TsAAxdttyYSH2-MXy_GK_LoFEPtSytmjx0mxJ7ZjruDvtoMQLIMGPMf4XmRig4z84zyYUPQvX75kQ_Px7lFNAWOxRUYYpp2lmGzZRaUO5EivBDegsM0vTyLZi74PPRhG_oz--eV7PajvIVd6CuLQJg5omrnh7aW-b644TQzKB5KiAkN5vBtLG45YUAd_8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}get-rate-card-offers",
+							"host": [
+								"{{base_url}}get-rate-card-offers"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Call Logs",
+			"item": [
+				{
+					"name": "get Call Logs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA0YTI4ODUxMmU3Y2MwZGE3ZDNmNTE0ZjY3NzQ4MDdjMTIyODY0ZmJhMjJjNzUxYTMyZmI4MWVkNzZmNzdmMDRiMzk1N2MwZTRhOTJlODkwIn0.eyJhdWQiOiIzIiwianRpIjoiMDRhMjg4NTEyZTdjYzBkYTdkM2Y1MTRmNjc3NDgwN2MxMjI4NjRmYmEyMmM3NTFhMzJmYjgxZWQ3NmY3N2YwNGIzOTU3YzBlNGE5MmU4OTAiLCJpYXQiOjE2MDA3MDAxODUsIm5iZiI6MTYwMDcwMDE4NSwiZXhwIjoxNjMyMjM2MTg1LCJzdWIiOiIzOSIsInNjb3BlcyI6W119.PWkCA3ib3RfQTrTit4gqjgTv_jze_r_osuBwVt_HUBXoN-_mNbr70zdhslTpFbIAP1DyXLORsR2vd9LtxYaIgloCWqPmqMis1KcD82CHnRQMlQs4j4WMP8BhLlo3bQIQiyJC_7LoOjPvMM2Rp1mOiSRnfkOoSe0Cghd2EI2fQFFbN1Val-4t0099FctXz0KYQXOtA9h2_lSivCfIFe_RkV39lpp2X6TrSyEh0qlUPU0yMCZvPA_e-wi7aKpCPt98mjmKkDzBg6tSHiIPa7oN6FeuFWU51SRXj-1RU_n7tb0j861JQ7vX1Wfj8k9-G2Z3aOr1CUkep3b6bpHRC7XiVf3I_rbRJM5E89ljvHsWBbTbUAp_kFyPSB46vQg-tRN1IFFOHdRWaMa043YvhHbYyQrg3vhSpNs_tpA5G6nTiKHvGNPoCOhN1fSs7NIsfwys5mmqwoKkBGN-J_ZKJUvThRiVYRTNgwWirUflmPD0FKjLF0PEm_uHndw5BpQzGKe4i6qn98qbNa8shDfuhJF5BhguEgE5iBWr7wsidoXYTZ2RuvHUSEshcG2EyxzHIiIn5Fj3mGHoKvq4O8CcASPAjclGgfm-DSSpIFqV-pFH-mUAJkxWKwFNemXLFbr-ceNUa9Z5PuT8Ug0p-JA0_YukWeacUkqsdAl8Q_zJllTvfg0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}get-call-logs",
+							"host": [
+								"{{base_url}}get-call-logs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save CAll Logs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA0YTI4ODUxMmU3Y2MwZGE3ZDNmNTE0ZjY3NzQ4MDdjMTIyODY0ZmJhMjJjNzUxYTMyZmI4MWVkNzZmNzdmMDRiMzk1N2MwZTRhOTJlODkwIn0.eyJhdWQiOiIzIiwianRpIjoiMDRhMjg4NTEyZTdjYzBkYTdkM2Y1MTRmNjc3NDgwN2MxMjI4NjRmYmEyMmM3NTFhMzJmYjgxZWQ3NmY3N2YwNGIzOTU3YzBlNGE5MmU4OTAiLCJpYXQiOjE2MDA3MDAxODUsIm5iZiI6MTYwMDcwMDE4NSwiZXhwIjoxNjMyMjM2MTg1LCJzdWIiOiIzOSIsInNjb3BlcyI6W119.PWkCA3ib3RfQTrTit4gqjgTv_jze_r_osuBwVt_HUBXoN-_mNbr70zdhslTpFbIAP1DyXLORsR2vd9LtxYaIgloCWqPmqMis1KcD82CHnRQMlQs4j4WMP8BhLlo3bQIQiyJC_7LoOjPvMM2Rp1mOiSRnfkOoSe0Cghd2EI2fQFFbN1Val-4t0099FctXz0KYQXOtA9h2_lSivCfIFe_RkV39lpp2X6TrSyEh0qlUPU0yMCZvPA_e-wi7aKpCPt98mjmKkDzBg6tSHiIPa7oN6FeuFWU51SRXj-1RU_n7tb0j861JQ7vX1Wfj8k9-G2Z3aOr1CUkep3b6bpHRC7XiVf3I_rbRJM5E89ljvHsWBbTbUAp_kFyPSB46vQg-tRN1IFFOHdRWaMa043YvhHbYyQrg3vhSpNs_tpA5G6nTiKHvGNPoCOhN1fSs7NIsfwys5mmqwoKkBGN-J_ZKJUvThRiVYRTNgwWirUflmPD0FKjLF0PEm_uHndw5BpQzGKe4i6qn98qbNa8shDfuhJF5BhguEgE5iBWr7wsidoXYTZ2RuvHUSEshcG2EyxzHIiIn5Fj3mGHoKvq4O8CcASPAjclGgfm-DSSpIFqV-pFH-mUAJkxWKwFNemXLFbr-ceNUa9Z5PuT8Ug0p-JA0_YukWeacUkqsdAl8Q_zJllTvfg0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\":\"audio\",\r\n    \"start_time\":\"12:30\",\r\n    \"end_time\":\"1:00\",\r\n    \"appointment_id\": 23,\r\n    \"with_user\": 45\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}save-call-logs",
+							"host": [
+								"{{base_url}}save-call-logs"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1194a8f6-68aa-4103-9e75-f773eff8798c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "abe4e237-3cec-46a8-a6af-58bab634224a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
